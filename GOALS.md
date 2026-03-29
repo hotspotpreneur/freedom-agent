@@ -25,6 +25,16 @@
    - Build toward streams that don't require active trading of time for money
    - Not the primary driver, but important for long-term security
 
+## Active Projects
+
+### 1. HealthStoreUK (healthstoreuk.com)
+- **Goal:** Build into affiliate site → $1,000/month → flip for $40k+ (or hold)
+- **Domain:** Aged domain with history
+- **Platform:** WordPress
+- **Current Status:** Holding page, needs to be wired up
+
+---
+
 ## Why Now?
 
 - Management changes made the job less enjoyable
