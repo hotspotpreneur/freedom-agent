@@ -1,5 +1,5 @@
-# HealthStoreUK — Brand Guide
-## Draft v1.0
+# PureForm Wellness — Brand Guide
+## Final v1.0 — SELECTED
 
 ---
 
@@ -10,47 +10,19 @@
 - Biohackers & performance optimisers (Gary Brecka crowd)
 - General wellness seekers
 - Health-conscious individuals wanting organic, natural ingredients
+- People who want chemical-free foods, supplements, exercise, wellbeing, meditation
 
 **Vibe:** Clean. Clinical-grade quality. Nature meets science. Premium but accessible.
 
 ---
 
-## Name Options
-
-### Option A: PureForm Wellness
-- Clean, modern, professional
-- Implies pure ingredients + personal transformation
-- Works for supplements, guides, content
-
-### Option B: The Vitality Co.
-- Strong, action-oriented
-- Conveys energy and life force
-- Professional, trustworthy
-
-### Option C: HealthStore UK (Keep Current)
-- Already established domain
-- Trustworthy, descriptive
-- Slightly generic — can be elevated with branding
-
-### Option D: OrganiQ
-- Modern, distinctive
-- Combines "organic" with a premium feel
-- Memorable, unique
-
-### Option E: PureRoot Health
-- Natural, grounded
-- "Root" implies foundation, returning to nature
-- Warm yet professional
+## SELECTED NAME: PureForm Wellness ✅
 
 ---
 
-## Recommended: PureForm Wellness
+## Tagline
 
-**Why:**
-- Distinctive but professional
-- Works across multiple niches (not stuck to just "health")
-- Pairs well with content, supplements, courses
-- Premium feel without being stuffy
+*"Wellness, Without the Chemicals."*
 
 ---
 
@@ -75,89 +47,77 @@
 | **Body** | Inter | 400-500 |
 | **Accents** | Manrope | 500 italic |
 
-**Why:**
-- Manrope: Modern, geometric but readable
-- Inter: Clean, highly legible for body text
-- Both free (Google Fonts) and professional
-
 ---
 
 ## Logo Concept
 
 ### Primary Logo
-- Symbol: Stylized "P" or "PF" with subtle leaf/plus element (carried from favicon)
+- Symbol: Stylized "PF" with leaf accent
 - Wordmark: "PureForm" in Manrope Bold
-- Tagline: "Wellness, Rooted in Science."
+- Tagline: "Wellness, Without the Chemicals."
 
-### Variations
-- **Icon only:** For favicon, social icons
-- **Horizontal:** For header, email signatures
-- **Stacked:** For square spaces
+### Favicon
+- "PF" monogram with subtle leaf element
 
 ---
 
-## Brand Voice
+## The 5 Pillars (Site Structure)
 
-**Tone:** Informative, confident, friendly. Never preachy or "woo-woo."
-
-**Voice Characteristics:**
-- **Helpful** — We educate, not lecture
-- **Scientific** — We cite research, not just opinions
-- **Approachable** — No jargon, plain English
-- **Premium** — Quality matters, but we don't gate-keep
-
-**Sample Copy:**
-- ❌ "Detox your body with magic minerals!"
-- ✅ "The science-backed supplements Gary Brecka recommends — and where to find them."
+1. 🥗 **Foods** — Organic, chemical-free nutrition
+2. 💊 **Supplements** — Gary Brecka stack, quality brands
+3. 🏃 **Exercise** — Fitness, movement, performance
+4. 🧘 **Wellbeing** — Mental health, sleep, stress
+5. 🌿 **Meditation** — Mindfulness, breathing, calm
 
 ---
 
-## Visual Guidelines
+## Brand Voice: Vitale + Kern Blend
 
-### Buttons
-- Primary: Green (#00B559), white text, rounded corners
-- Secondary: Navy outline, green text
-- Hover: Slight darken/lighten
+### Dr. Joe Vitale's Influence
+- Write from good feeling
+- Curiosity gaps + embedded commands
+- Lead with emotion, back up with science
+- Phraseology: "What if I told you...", "The secret is...", "Imagine if..."
 
-### Cards & Containers
-- White background
-- Subtle shadow: `0 2px 8px rgba(0,0,0,0.08)`
-- Rounded corners: 8-12px
+### Frank Kern's Influence
+- Conversational, like emailing a friend
+- Intent-based branding — mirror desires
+- Story-driven, results-oriented
+- Phraseology: "So here's the thing...", "Here's what works...", "Bottom line..."
 
-### Images
-- Clean product shots
-- Lifestyle photos (real people, natural light)
-- Avoid stock-y "medical" photos
-
-### Icons
-- Rounded, minimal
-- Use line icons for navigation
-- Solid icons for CTAs
+### PureForm Voice
+- **Conversational** but with emotional depth
+- **Confident** but never arrogant
+- **Helpful** — give first, sell second
+- **Mysterious** — "there's more..."
+- Reading level: 8th grade, short sentences, white space
 
 ---
 
-## Content Strategy
+## Copy Templates
 
-### Blog Post Categories
-1. **Supplement Guides** — "Best Vitamin D3 for Brits"
-2. **Gary Brecka Series** — His stack, explained
-3. **Buying Guides** — "What to look for in Omega-3"
-4. **Health Explainers** — "Why Magnesium matters for sleep"
+### Homepage Hero
 
-### Product Display
-- Use Lasso or ThirstyAffiliates for clean link boxes
-- Show price, rating, key features
-- Honest pros/cons
+> What if the secret to better health… was simpler than you think?
+>
+> You've tried the supplements. The powders. The "miracle" pills that promised everything and delivered nothing.
+>
+> Here's what nobody tells you: You don't need more products. You need the RIGHT ones.
+>
+> At PureForm, we cut through the chemical noise. No fillers. No hype. Just what actually works — backed by science, proven by the top biohackers.
+>
+> Curious? Good. Let's dive in.
 
 ---
 
 ## Immediate Action Items
 
-- [ ] Finalise name (recommend PureForm Wellness)
-- [ ] Finalise color codes
-- [ ] Design logo (we have favicon — can expand)
+- [x] Finalise name → PureForm Wellness ✅
+- [x] Finalise color codes ✅
+- [x] Design logo (SVG in repo) ✅
 - [ ] Apply colors in WordPress Customizer
 - [ ] Update site copy to match brand voice
+- [ ] Install ThirstyAffiliates or Pretty Links
 
 ---
 
