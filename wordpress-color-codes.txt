@@ -1,0 +1,89 @@
+# PureForm Wellness — WordPress Color Codes
+## Apply these in Appearance → Customize → Colors / Additional CSS
+
+---
+
+## PRIMARY COLORS
+
+Fresh Green (Primary/Accent):
+#00B559
+
+Deep Navy (Headings/Footer):
+#1A2B4C
+
+---
+
+## NEUTRAL COLORS
+
+Clean White (Backgrounds):
+#FFFFFF
+
+Soft Sage (Light backgrounds):
+#E8F5E9
+
+Warm Cream (Alt backgrounds):
+#FAF9F6
+
+Charcoal (Body text):
+#2D3436
+
+---
+
+## COLOUR PALETTE SUMMARY
+
+--color-primary: #00B559;
+--color-secondary: #1A2B4C;
+--color-background: #FFFFFF;
+--color-surface: #FAF9F6;
+--color-text: #2D3436;
+--color-accent: #00B559;
+
+---
+
+## CSS Snippet for Additional CSS
+
+/* Buttons - Primary */
+.wp-block-button__link, 
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    background-color: #00B559 !important;
+    border-radius: 8px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #1A2B4C !important;
+}
+
+/* Footer background */
+.site-footer,
+.footer-widgets {
+    background-color: #1A2B4C !important;
+    color: #FFFFFF !important;
+}
+
+/* Links */
+a {
+    color: #00B559 !important;
+}
+
+a:hover {
+    color: #00A04A !important;
+}
+
+---
+
+## HOW TO APPLY IN WORDPRESS
+
+1. Go to Appearance → Customize → Colors
+2. Set:
+   - Base & Accent → Fresh Green (#00B559)
+   - Homepage Settings → Your preference
+
+3. Go to Additional CSS → Paste the CSS above
+
+---
+
+*PureForm Wellness — Let's get this live.* 🔥

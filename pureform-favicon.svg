@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- PureForm Favicon — PF monogram with leaf accent -->
+  
+  <!-- P letterform -->
+  <path d="M6 24 L6 8 L12 8 C16 8 18 12 18 16 C18 20 16 22 12 22 L10 22 L10 24 Z M8 14 L8 19 L11 19 C13 19 14 18 14 16 C14 14 13 14 11 14 Z" 
+        fill="#00B559"/>
+  
+  <!-- F letterform -->
+  <path d="M20 8 L20 24 L24 24 L24 20 L27 20 L27 17 L24 17 L24 14 L28 14 L28 11 L24 11 L24 10 L20 10 Z" 
+        fill="#00B559" opacity="0.8"/>
+  
+  <!-- Leaf accent -->
+  <path d="M27 7 Q30 4 31 3 Q29 6 27 7 Z" 
+        fill="#00B559"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <!-- Background (transparent) -->
+  
+  <!-- Symbol: Stylized PF with leaf -->
+  <g transform="20, 20">
+    <!-- P letterform -->
+    <path d="M10 70 L10 10 L30 10 C45 10 50 20 50 35 C50 50 40 55 30 55 L20 55 L20 70 Z M20 22 L20 45 L28 45 C35 45 40 42 40 35 C40 28 35 22 28 22 Z" 
+          fill="#00B559"/>
+    <!-- F merged subtly with leaf accent -->
+    <path d="M55 10 L55 70 L65 70 L65 55 L80 55 L80 45 L65 45 L65 35 L85 35 L85 25 L65 25 L65 22 L55 22 Z" 
+          fill="#00B559" opacity="0.7"/>
+    <!-- Leaf accent on top of F -->
+    <path d="M82 20 Q88 10 95 5 Q88 12 82 18 Z" 
+          fill="#00B559"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="130" y="45" font-family="Manrope, sans-serif" font-weight="700" font-size="42" fill="#1A2B4C">PureForm</text>
+  <text x="130" y="65" font-family="Manrope, sans-serif" font-weight="500" font-size="16" fill="#00B559" letter-spacing="2">WELLNESS</text>
+  
+  <!-- Tagline -->
+  <text x="130" y="95" font-family="Inter, sans-serif" font-weight="400" font-size="14" fill="#666666">Wellness, Without the Chemicals.</text>
+</svg>
