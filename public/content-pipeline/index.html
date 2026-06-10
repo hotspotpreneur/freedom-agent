@@ -34,7 +34,7 @@
     const API_CONFIG = {
       provider: 'openrouter',
       apiKey: getStoredKey(),
-      model: 'anthropic/claude-sonnet-4-20250514',
+      model: 'google/gemma-4-26b-a4b-it:free',
     };
 
     const SYSTEM_PROMPT = `You are a content strategist and ghostwriter for Paul, a Quality Liaison Engineer with 30+ years in the automotive industry. He creates content for automotive professionals — engineers, quality managers, supply chain leads, and technical directors at OEMs and Tier 1 suppliers.
@@ -268,7 +268,7 @@ Rules:
             };
             body = JSON.stringify({
               model: API_CONFIG.model,
-              max_tokens: 1500,
+              max_tokens: 1000,
               system: SYSTEM_PROMPT,
               messages: [{ role: "user", content: userMessage }],
             });
@@ -281,7 +281,7 @@ Rules:
             };
             body = JSON.stringify({
               model: "claude-sonnet-4-20250514",
-              max_tokens: 1500,
+              max_tokens: 1000,
               system: SYSTEM_PROMPT,
               messages: [{ role: "user", content: userMessage }],
             });
