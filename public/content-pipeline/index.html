@@ -24,14 +24,10 @@
     const { useState, useRef } = React;
 
     // NOTE: Configure your API below
-    // Options:
-    // 1. Anthropic API (default) - requires ANTHROPIC_API_KEY
-    // 2. OpenRouter - uses OpenRouter API.
     const API_CONFIG = {
       provider: 'openrouter', // 'anthropic' or 'openrouter'
-      // For OpenRouter, get free key from https://openrouter.ai/keys
-      apiKey: '', // YOUR API KEY HERE
-      model: 'anthropic/claude-sonnet-4-20250514', // or openrouter model
+      apiKey: '', // YOUR API KEY HERE - will be prompted if empty
+      model: 'anthropic/claude-sonnet-4-20250514',
     };
 
     const SYSTEM_PROMPT = `You are a content strategist and ghostwriter for Paul, a Quality Liaison Engineer with 30+ years in the automotive industry. He creates content for automotive professionals — engineers, quality managers, supply chain leads, and technical directors at OEMs and Tier 1 suppliers.
@@ -159,7 +155,7 @@ Rules:
             </h2>
             <p style={{ color: '#888', fontSize: '13px', marginBottom: '20px', lineHeight: '1.6' }}>
               This tool needs an API key to generate content. Get a free key from:<br/>
-              • <a href="https://openrouter.ai/keys" target="_blank" style={{color:'#00ff88'}}>OpenRouter</a> (recommended - supports Anthropic, OpenAI, Google)<br/>
+              • <a href="https://openrouter.ai/keys" target="_blank" style={{color:'#00ff88'}}>OpenRouter</a> (recommended)<br/>
               • <a href="https://console.anthropic.com/" target="_blank" style={{color:'#00ff88'}}>Anthropic</a> (Claude)
             </p>
             <input
@@ -200,6 +196,41 @@ Rules:
       );
     }
 
+    // Robust JSON extractor
+    function extractJSON(text) {
+      // Try direct parse first
+      try {
+        return JSON.parse(text);
+      } catch (e) {}
+      
+      // Try to find JSON in code blocks
+      const codeBlockMatch = text.match(/```(?:json)?\s*([\s\S]*?)```/);
+      if (codeBlockMatch) {
+        try {
+          return JSON.parse(codeBlockMatch[1].trim());
+        } catch (e) {}
+      }
+      
+      // Try to find JSON object in text
+      const jsonMatch = text.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        try {
+          return JSON.parse(jsonMatch[0]);
+        } catch (e) {
+          // Try to fix common JSON issues
+          let fixed = jsonMatch[0]
+            .replace(/,\s*}/g, '}')  // trailing commas
+            .replace(/,\s*]/g, ']')  // trailing commas in arrays
+            .replace(/'([^']+)'/g, '"$1"'); // single quotes
+          try {
+            return JSON.parse(fixed);
+          } catch (e2) {}
+        }
+      }
+      
+      throw new Error("Could not parse JSON from response");
+    }
+
     function App() {
       const [input, setInput] = useState("");
       const [loading, setLoading] = useState(false);
@@ -230,7 +261,7 @@ Rules:
             };
             body = JSON.stringify({
               model: API_CONFIG.model,
-              max_tokens: 1000,
+              max_tokens: 1500,
               system: SYSTEM_PROMPT,
               messages: [{ role: "user", content: userMessage }],
             });
@@ -243,7 +274,7 @@ Rules:
             };
             body = JSON.stringify({
               model: "claude-sonnet-4-20250514",
-              max_tokens: 1000,
+              max_tokens: 1500,
               system: SYSTEM_PROMPT,
               messages: [{ role: "user", content: userMessage }],
             });
@@ -271,9 +302,7 @@ Rules:
           
           if (!raw) throw new Error("Empty response received.");
 
-          const jsonMatch = raw.match(/```(?:json)?\s*([\s\S]*?)```/);
-          let jsonStr = jsonMatch ? jsonMatch[1].trim() : raw.slice(raw.indexOf("{"), raw.lastIndexOf("}") + 1);
-          return JSON.parse(jsonStr);
+          return extractJSON(raw);
         };
 
         try {
