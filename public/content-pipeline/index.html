@@ -24,9 +24,15 @@
     const { useState, useRef } = React;
 
     // NOTE: Configure your API below
+    const getStoredKey = () => {
+      try { return localStorage.getItem('openrouter_api_key') || ''; } catch(e) { return ''; }
+    };
+    const saveKey = (key) => {
+      try { localStorage.setItem('openrouter_api_key', key); } catch(e) {}
+    };
     const API_CONFIG = {
-      provider: 'openrouter', // 'anthropic' or 'openrouter'
-      apiKey: '', // YOUR API KEY HERE - will be prompted if empty
+      provider: 'openrouter',
+      apiKey: getStoredKey(),
       model: 'anthropic/claude-sonnet-4-20250514',
     };
 
@@ -399,7 +405,7 @@ Rules:
 
       return (
         <div style={{ minHeight: "100vh", background: "#0a0a0a", fontFamily: "'DM Mono', monospace", padding: "0" }}>
-          <ApiKeyModal isOpen={showApiModal} onClose={() => savedApiKey && setShowApiModal(false)} onSave={(key) => { if (key) { setSavedApiKey(key); setShowApiModal(false); } } } />
+          <ApiKeyModal isOpen={showApiModal} onClose={() => savedApiKey && setShowApiModal(false)} onSave={(key) => { if (key) { saveKey(key); setSavedApiKey(key); setShowApiModal(false); } } } />
           
           <div style={{ borderBottom: "1px solid #1a1a1a", padding: "24px 32px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div>
