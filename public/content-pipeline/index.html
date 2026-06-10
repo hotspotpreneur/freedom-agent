@@ -399,7 +399,7 @@ Rules:
 
       return (
         <div style={{ minHeight: "100vh", background: "#0a0a0a", fontFamily: "'DM Mono', monospace", padding: "0" }}>
-          <ApiKeyModal isOpen={showApiModal} onClose={() => savedApiKey && setShowApiModal(false)} onSave={(key) => { setSavedApiKey(key); setShowApiModal(false); }} />
+          <ApiKeyModal isOpen={showApiModal} onClose={() => savedApiKey && setShowApiModal(false)} onSave={(key) => { if (key) { setSavedApiKey(key); setShowApiModal(false); } } } />
           
           <div style={{ borderBottom: "1px solid #1a1a1a", padding: "24px 32px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div>
