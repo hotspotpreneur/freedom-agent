@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1a2e">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #0f3460);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 3rem;
+            box-shadow: 0 10px 40px rgba(233, 69, 96, 0.4);
+        }
+        h1 { margin-bottom: 0.5rem; font-size: 1.8rem; }
+        p { opacity: 0.7; margin-bottom: 2rem; }
+        input {
+            width: 100%;
+            max-width: 300px;
+            padding: 1rem;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+        input::placeholder { color: rgba(255,255,255,0.5); }
+        button {
+            background: linear-gradient(135deg, #e94560, #c73659);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        button:hover { transform: scale(1.05); box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">🔥</div>
+        <h1>James</h1>
+        <p>Your Freedom Agent</p>
+        <input type="text" id="message" placeholder="What's on your mind?">
+        <br>
+        <button onclick="sendMessage()">Send to Telegram</button>
+    </div>
+    <script>
+        function sendMessage() {
+            const msg = document.getElementById('message').value;
+            const encoded = encodeURIComponent(msg);
+            window.location.href = 'https://t.me/TheFreedomAgent?text=' + encoded;
+        }
+    </script>
+</body>
+</html>

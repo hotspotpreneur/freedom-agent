@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-10T10:03:26.947Z",
+  "entries": {
+    "memory:memory/2026-05-12.md:1:13": {
+      "key": "memory:memory/2026-05-12.md:1:13",
+      "path": "memory/2026-05-12.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "# 2026-05-12 ## Action Plan Update - Symphony agent architecture defined with visual flowchart - Paul liked the infographic design - **TOMORROW**: Video session with Paul to: - Get avatar sorted (HeyGen) - Get voice sorted (ElevenLabs) - Build out symphony agents together ## Notes - Browser still unavailable - Still need GitHub token",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-31T11:24:25.679Z",
+      "lastRecalledAt": "2026-06-10T10:03:26.947Z",
+      "queryHashes": [
+        "fe147f88d792",
+        "49bde1558396",
+        "0f1000a14b3f",
+        "16ffdaf531d3"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-06-08",
+        "2026-06-10"
+      ],
+      "conceptTags": [
+        "action",
+        "plan",
+        "update",
+        "symphony",
+        "architecture",
+        "defined",
+        "visual",
+        "flowchart"
+      ]
+    },
+    "memory:memory/2026-05-08.md:1:48": {
+      "key": "memory:memory/2026-05-08.md:1:48",
+      "path": "memory/2026-05-08.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# 2026-05-08 ## Session: Discord DM with Paul - Continued discussion on content strategy - Avatar selected: Image 2 (warm smile) - represents me (James) - Decided on name: James (named after Paul's dad Jimbob) - Handle confirmed: @TheFreedomAgent - Role defined: I'm (James) the orchestrator/director — I manage the agent network, Paul is my human partner - To-do: Set up accounts for video/voice production: - HeyGen (text to talking avatar video) - ElevenLabs (professional voice) - Paul is on holiday — will set up accounts over next few days ## Paul's Freedom Plan (Ongoing) - Goal: £10k/month in 6-12 months - Handle: @TheFreedomAgent - Content pillars: AI tutorials, short tips, freedom",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.9987150717249555,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-31T11:24:25.679Z",
+      "lastRecalledAt": "2026-06-09T17:32:13.034Z",
+      "queryHashes": [
+        "fe147f88d792",
+        "49bde1558396",
+        "0f1000a14b3f",
+        "a6fe80d7b56c"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-06-08",
+        "2026-06-09"
+      ],
+      "conceptTags": [
+        "network",
+        "orchestrator/director",
+        "to-do",
+        "video/voice",
+        "10k/month",
+        "6-12",
+        "discord",
+        "paul"
+      ]
+    },
+    "memory:memory/2026-05-07.md:1:59": {
+      "key": "memory:memory/2026-05-07.md:1:59",
+      "path": "memory/2026-05-07.md",
+      "startLine": 1,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "# 2026-05-07 ## Session: Discord DM with Paul - Paul introduced himself — name is Paul (also \"Newbo\" on Discord) - I'm his \"freedom agent\" - Checked GitHub repo: https://github.com/hotspotpreneur/freedom-agent (bare bones, just started) - Tried to set up GitHub token but: - Browser unavailable - Paul is on holiday — said will get to it later - Explained my capabilities in simple terms - Set up memory system (MEMORY.md + memory/ folder) ## My Identity - **Name:** Flip - **Role:** Paul's freedom agent - **Avatar:** avatars/freedom-agent.png (warm smile, dark hair, blue eyes) --- ## Paul's Freedom Plan (IMPORTANT) **Goal:** Replace £68k/year income with ~£10k/month (£120k/year) **Ti",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.9871809248936136,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-31T11:24:25.679Z",
+      "lastRecalledAt": "2026-06-10T10:03:26.947Z",
+      "queryHashes": [
+        "fe147f88d792",
+        "0f1000a14b3f",
+        "16ffdaf531d3"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-06-08",
+        "2026-06-10"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "avatars/freedom-agent.png",
+        "68k/year",
+        "10k/month",
+        "120k/year",
+        "discord",
+        "paul",
+        "introduced"
+      ]
+    },
+    "memory:memory/2026-05-14.md:17:49": {
+      "key": "memory:memory/2026-05-14.md:17:49",
+      "path": "memory/2026-05-14.md",
+      "startLine": 17,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "- Shelves, books, trophy with \"AI\", snake plant, desk all present ## HeyGen Pricing Decision - Recommended: Creator plan at $29/mo - Unlimited videos, voice cloning, 175+ languages - Pro ($99/mo) only needed at scale - No pay-per-minute option available (subscription only) ## Affiliate Programs Noted - Cursor, Windsurf, Linear, Teachable, Raycast, 1Password - Need to research specific commission rates ## 🔒 FREEDOM AGENT PROTOCOL (NEW) Built safety framework including: - **Core Operating Principles** (7 immutable rules) - **Verification Process** (pre-action check) - **Symphony Agent Protocol** (rules for all sub-agents) - **Consequences Matrix** (violations = disconnect) - **Paul's Co",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-08T11:37:49.687Z",
+      "lastRecalledAt": "2026-06-08T11:37:49.687Z",
+      "queryHashes": [
+        "0f1000a14b3f"
+      ],
+      "recallDays": [
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "29/mo",
+        "99/mo",
+        "pay-per-minute",
+        "pre-action",
+        "sub-agents",
+        "shelves",
+        "books",
+        "trophy"
+      ]
+    },
+    "memory:memory/2026-05-14.md:11:28": {
+      "key": "memory:memory/2026-05-14.md:11:28",
+      "path": "memory/2026-05-14.md",
+      "startLine": 11,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Prompt: Professional YouTube studio background, modern minimalist home office, warm soft lighting like camera at f/2.8 aperture creating shallow depth of field, center open space for avatar compositing. Wall made of ribbed wood paneling with vertical slats of light to medium beige-brown natural oak wood, narrow evenly spaced slats with dark charcoal/black gaps between each slat creating strong vertical lines, subtle linear grain texture in matte finish. High floating wooden shelf on left side with 2-3 stacked books in varied sizes (blue, orange, green spine colors). High floating wooden shelf on right side with 2-3 stacked books in varied sizes, plus one small trophy award with \"AI\" engraved",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-08T11:37:49.687Z",
+      "lastRecalledAt": "2026-06-08T11:37:49.687Z",
+      "queryHashes": [
+        "0f1000a14b3f"
+      ],
+      "recallDays": [
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "f/2.8",
+        "beige-brown",
+        "charcoal/black",
+        "2-3",
+        "prompt",
+        "professional",
+        "youtube",
+        "studio"
+      ]
+    },
+    "memory:memory/2026-05-07.md:48:100": {
+      "key": "memory:memory/2026-05-07.md:48:100",
+      "path": "memory/2026-05-07.md",
+      "startLine": 48,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "- Big enterprise adoption (NVIDIA, Y Combinator companies) - **Affiliate potential:** Likely has partner program - **Content gap:** Not many comprehensive tutorials **Windsurf** (windsurf.com) - Codeium's AI editor - Cascade agent system - Devin autonomous cloud agent - **Content gap:** Newer = less competition **Linear** (linear.app) - Product development system - AI-powered for human + agent workflows - Built for modern teams - **Affiliate potential:** Solutions partner program exists ### Content Opportunities 1. **Cursor tutorials** — From zero to \"shipping your first app\" 2. **AI agent tutorials** — Building autonomous agents 3. **Windsurf workflows** — Advanced Cascade patterns 4. *",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-08T11:37:49.687Z",
+      "lastRecalledAt": "2026-06-09T17:32:13.034Z",
+      "queryHashes": [
+        "0f1000a14b3f",
+        "5e2c19bb2fd7",
+        "a6fe80d7b56c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-09"
+      ],
+      "conceptTags": [
+        "windsurf.com",
+        "linear.app",
+        "ai-powered",
+        "big",
+        "enterprise",
+        "adoption",
+        "nvidia",
+        "combinator"
+      ]
+    },
+    "memory:memory/2026-05-07.md:85:154": {
+      "key": "memory:memory/2026-05-07.md:85:154",
+      "path": "memory/2026-05-07.md",
+      "startLine": 85,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "### SaaS Affiliate Networks - **Rewardful** — for recurring commissions - **AffiliateWP** — WordPress plugin affiliates - **Awin / CJ Affiliate** — enterprise programs ### Course Platforms - **Teachable** — 30% commission - **Thinkific** — affiliate program - **Udemy** — (blocked, but known) --- ## Content Handle Ideas (20) ### AI Developer Focus 1. @AICodeMastery 2. @CursorCrafter 3. @WindsurfWizard 4. @AgentBuilder 5. @DevInRealTime 6. @CodeWithAI 7. @PromptToProduct ### Business / Freedom Focus 8. @FreedomWithAI 9. @TwoHourFounder 10. @LazyTechBiz 11. @BuildInPublicUK 12. @TheAIExit 13. @RemoteRebellion 14. @LifestyleEngineer ### Creative / General 15. @NextGenBuild 16. @ToolHa",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-08T11:37:54.886Z",
+      "lastRecalledAt": "2026-06-09T17:32:13.034Z",
+      "queryHashes": [
+        "5e2c19bb2fd7",
+        "a6fe80d7b56c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-09"
+      ],
+      "conceptTags": [
+        "network",
+        "saas",
+        "affiliate",
+        "networks",
+        "rewardful",
+        "recurring",
+        "commissions",
+        "affiliatewp"
+      ]
+    },
+    "memory:memory/2026-05-08.md:39:62": {
+      "key": "memory:memory/2026-05-08.md:39:62",
+      "path": "memory/2026-05-08.md",
+      "startLine": 39,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "- AI developer community active - Share journey, get feedback - Connect with other creators ### Why These Three? | Platform | Speed | Monetization | Agent Leverage | |----------|-------|--------------|----------------| | YouTube | Medium | Affiliate + ads | Script, research, SEO | | TikTok | Fast | Brand deals | Clip repurposing | | Twitter | Fast | Affiliate + consulting | Content scheduling | ### Later (Scale Phase) - LinkedIn (B2B thought leadership) - Newsletter (email list) - Instagram (visual brand) ## To-do - [ ] HeyGen account (Paul will set up) - [ ] ElevenLabs account (Paul will set up) - [ ] GitHub token (paused) - [ ] Set up YouTube, TikTok, Twitter",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-10T10:03:26.947Z",
+      "lastRecalledAt": "2026-06-10T10:03:26.947Z",
+      "queryHashes": [
+        "16ffdaf531d3"
+      ],
+      "recallDays": [
+        "2026-06-10"
+      ],
+      "conceptTags": [
+        "to-do",
+        "developer",
+        "community",
+        "active",
+        "share",
+        "journey",
+        "get",
+        "feedback"
+      ]
+    }
+  }
+}
