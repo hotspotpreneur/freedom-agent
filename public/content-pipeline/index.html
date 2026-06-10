@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContentOS - Automotive Authority Pipeline</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0a0a; font-family: 'DM Mono', monospace; }
+    @keyframes pulse { 0%, 100% { opacity: 0.2; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.2); } }
+    textarea::placeholder { color: #333; }
+    ::-webkit-scrollbar { width: 4px; height: 4px; }
+    ::-webkit-scrollbar-track { background: #0a0a0a; }
+    ::-webkit-scrollbar-thumb { background: #222; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const { useState, useRef } = React;
+
+    // NOTE: Configure your API below
+    // Options:
+    // 1. Anthropic API (default) - requires ANTHROPIC_API_KEY
+    // 2. OpenRouter - uses OpenRouter API.
+    const API_CONFIG = {
+      provider: 'openrouter', // 'anthropic' or 'openrouter'
+      // For OpenRouter, get free key from https://openrouter.ai/keys
+      apiKey: '', // YOUR API KEY HERE
+      model: 'anthropic/claude-sonnet-4-20250514', // or openrouter model
+    };
+
+    const SYSTEM_PROMPT = `You are a content strategist and ghostwriter for Paul, a Quality Liaison Engineer with 30+ years in the automotive industry. He creates content for automotive professionals — engineers, quality managers, supply chain leads, and technical directors at OEMs and Tier 1 suppliers.
+
+His content authority comes from real-world hands-on experience: running vehicle repair businesses, managing large inspection teams, global quality coverage across cars, commercial vehicles, and two-wheelers. His tone is direct, no-fluff, experienced. He is NOT a generalist. He speaks peer-to-peer to industry professionals.
+
+Given a raw idea or voice note transcript, generate a complete content suite in valid JSON with these exact keys:
+
+{
+  "youtube_script": {
+    "title": "...",
+    "hook": "...",
+    "body": "...",
+    "cta": "..."
+  },
+  "newsletter": {
+    "subject": "...",
+    "preview_text": "...",
+    "body": "..."
+  },
+  "linkedin": "...",
+  "twitter_thread": ["tweet1", "tweet2", "tweet3", "tweet4", "tweet5"],
+  "youtube_description": "...",
+  "tags": ["tag1", "tag2", "...up to 10 tags"],
+  "content_angles": ["angle1", "angle2", "angle3"]
+}
+
+Rules:
+- YouTube hook must grab an automotive professional in the first 10 seconds — lead with a pain point, surprising stat, or bold claim
+- Newsletter body should be 250-350 words, structured with a clear insight and one actionable takeaway
+- LinkedIn post: 150-200 words, professional but punchy, ends with a question to drive comments
+- Twitter thread: 5 tweets, first tweet is the hook/thesis, last tweet is CTA to YouTube or newsletter
+- Tags: mix of broad (#automotive #quality) and specific (#IATF16949 #supplychainquality)
+- content_angles: 3 alternative angles for future content based on this same topic
+- Return ONLY valid JSON. No markdown, no backticks, no preamble.`;
+
+    const TABS = [
+      { id: "youtube_script", label: "▶ YouTube Script", icon: "▶" },
+      { id: "newsletter", label: "✉ Newsletter", icon: "✉" },
+      { id: "linkedin", label: "in LinkedIn", icon: "in" },
+      { id: "twitter_thread", label: "𝕏 Thread", icon: "𝕏" },
+      { id: "youtube_description", label: "≡ Description", icon: "≡" },
+      { id: "content_angles", label: "⚡ Future Angles", icon: "⚡" },
+    ];
+
+    function CopyButton({ text }) {
+      const [copied, setCopied] = useState(false);
+      const copy = () => {
+        navigator.clipboard.writeText(text);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      };
+      return (
+        <button onClick={copy} style={{
+          background: copied ? "#00ff88" : "transparent",
+          border: "1px solid " + (copied ? "#00ff88" : "#444"),
+          color: copied ? "#0a0a0a" : "#888",
+          padding: "4px 12px",
+          fontSize: "11px",
+          fontFamily: "'DM Mono', monospace",
+          cursor: "pointer",
+          letterSpacing: "0.08em",
+          transition: "all 0.2s",
+          borderRadius: "2px",
+        }}>
+          {copied ? "COPIED" : "COPY"}
+        </button>
+      );
+    }
+
+    function ScriptBlock({ label, text }) {
+      return (
+        <div style={{ marginBottom: "28px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+            <span style={{ color: "#00ff88", fontSize: "10px", fontFamily: "'DM Mono', monospace", letterSpacing: "0.15em", textTransform: "uppercase" }}>{label}</span>
+            <CopyButton text={text} />
+          </div>
+          <div style={{
+            background: "#111",
+            border: "1px solid #222",
+            padding: "16px",
+            color: "#ccc",
+            fontSize: "14px",
+            lineHeight: "1.7",
+            fontFamily: "'Lora', Georgia, serif",
+            whiteSpace: "pre-wrap",
+            borderLeft: "3px solid #00ff88",
+          }}>{text}</div>
+        </div>
+      );
+    }
+
+    function TagList({ tags }) {
+      return (
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "16px" }}>
+          {tags.map((tag, i) => (
+            <span key={i} style={{
+              background: "#1a1a1a",
+              border: "1px solid #333",
+              color: "#00ff88",
+              padding: "4px 10px",
+              fontSize: "12px",
+              fontFamily: "'DM Mono', monospace",
+              borderRadius: "2px",
+            }}>{tag}</span>
+          ))}
+        </div>
+      );
+    }
+
+    function ApiKeyModal({ isOpen, onClose, onSave }) {
+      const [key, setKey] = useState('');
+      if (!isOpen) return null;
+      return (
+        <div style={{
+          position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
+          background: 'rgba(0,0,0,0.9)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+          zIndex: 1000
+        }}>
+          <div style={{
+            background: '#111', border: '1px solid #333', padding: '32px', maxWidth: '500px', width: '90%'
+          }}>
+            <h2 style={{ color: '#fff', fontFamily: "'Bebas Neue', sans-serif", fontSize: '24px', marginBottom: '16px' }}>
+              API KEY REQUIRED
+            </h2>
+            <p style={{ color: '#888', fontSize: '13px', marginBottom: '20px', lineHeight: '1.6' }}>
+              This tool needs an API key to generate content. Get a free key from:<br/>
+              • <a href="https://openrouter.ai/keys" target="_blank" style={{color:'#00ff88'}}>OpenRouter</a> (recommended - supports Anthropic, OpenAI, Google)<br/>
+              • <a href="https://console.anthropic.com/" target="_blank" style={{color:'#00ff88'}}>Anthropic</a> (Claude)
+            </p>
+            <input
+              type="password"
+              value={key}
+              onChange={e => setKey(e.target.value)}
+              placeholder="Paste your API key..."
+              style={{
+                width: '100%', background: '#0a0a0a', border: '1px solid #333',
+                color: '#fff', padding: '12px', fontSize: '13px', fontFamily: "'DM Mono', monospace",
+                marginBottom: '16px'
+              }}
+            />
+            <div style={{ display: 'flex', gap: '12px' }}>
+              <button
+                onClick={() => onSave(key)}
+                style={{
+                  background: '#00ff88', border: 'none', color: '#0a0a0a', padding: '12px 24px',
+                  fontSize: '12px', fontFamily: "'DM Mono', monospace", cursor: 'pointer',
+                  letterSpacing: '0.1em'
+                }}
+              >
+                SAVE & CONTINUE
+              </button>
+              <button
+                onClick={onClose}
+                style={{
+                  background: 'transparent', border: '1px solid #333', color: '#666', padding: '12px 24px',
+                  fontSize: '12px', fontFamily: "'DM Mono', monospace", cursor: 'pointer',
+                  letterSpacing: '0.1em'
+                }}
+              >
+                CANCEL
+              </button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    function App() {
+      const [input, setInput] = useState("");
+      const [loading, setLoading] = useState(false);
+      const [output, setOutput] = useState(null);
+      const [error, setError] = useState("");
+      const [activeTab, setActiveTab] = useState("youtube_script");
+      const [progress, setProgress] = useState("");
+      const [showApiModal, setShowApiModal] = useState(!API_CONFIG.apiKey);
+      const [savedApiKey, setSavedApiKey] = useState(API_CONFIG.apiKey);
+
+      const generate = async () => {
+        if (!input.trim()) return;
+        setLoading(true);
+        setError("");
+        setOutput(null);
+        setProgress("Starting pipeline...");
+
+        const callAPI = async (userMessage) => {
+          let url, headers, body;
+
+          if (API_CONFIG.provider === 'openrouter') {
+            url = "https://openrouter.ai/api/v1/messages";
+            headers = {
+              "Content-Type": "application/json",
+              "Authorization": "Bearer " + savedApiKey,
+              "HTTP-Referer": window.location.href,
+              "X-Title": "ContentOS Pipeline",
+            };
+            body = JSON.stringify({
+              model: API_CONFIG.model,
+              max_tokens: 1000,
+              system: SYSTEM_PROMPT,
+              messages: [{ role: "user", content: userMessage }],
+            });
+          } else {
+            url = "https://api.anthropic.com/v1/messages";
+            headers = {
+              "Content-Type": "application/json",
+              "x-api-key": savedApiKey,
+              "anthropic-version": "2023-06-01"
+            };
+            body = JSON.stringify({
+              model: "claude-sonnet-4-20250514",
+              max_tokens: 1000,
+              system: SYSTEM_PROMPT,
+              messages: [{ role: "user", content: userMessage }],
+            });
+          }
+
+          const res = await fetch(url, {
+            method: "POST",
+            headers: headers,
+            body: body,
+          });
+
+          if (!res.ok) {
+            const errData = await res.json().catch(() => ({}));
+            throw new Error(`API ${res.status}: ${errData?.error?.message || res.statusText}`);
+          }
+
+          const data = await res.json();
+          
+          let raw;
+          if (API_CONFIG.provider === 'openrouter') {
+            raw = data.content?.filter(b => b.type === "text").map(b => b.text).join("").trim();
+          } else {
+            raw = data.content?.filter(b => b.type === "text").map(b => b.text).join("").trim();
+          }
+          
+          if (!raw) throw new Error("Empty response received.");
+
+          const jsonMatch = raw.match(/```(?:json)?\s*([\s\S]*?)```/);
+          let jsonStr = jsonMatch ? jsonMatch[1].trim() : raw.slice(raw.indexOf("{"), raw.lastIndexOf("}") + 1);
+          return JSON.parse(jsonStr);
+        };
+
+        try {
+          setProgress("Building script and newsletter...");
+          const part1 = await callAPI(
+            `Raw idea / voice note:\n\n${input}\n\nReturn ONLY a JSON object with keys: youtube_script (title, hook, body, cta) and newsletter (subject, preview_text, body).`
+          );
+
+          setProgress("Building social posts and metadata...");
+          const part2 = await callAPI(
+            `Raw idea / voice note:\n\n${input}\n\nReturn ONLY a JSON object with keys: linkedin (string), twitter_thread (array of 5 strings), youtube_description (string), tags (array of 10 strings), content_angles (array of 3 strings).`
+          );
+
+          setOutput({ ...part1, ...part2 });
+          setActiveTab("youtube_script");
+        } catch (e) {
+          setError(`Error: ${e.message}`);
+        } finally {
+          setLoading(false);
+          setProgress("");
+        }
+      };
+
+      const fullCopyText = output ? JSON.stringify(output, null, 2) : "";
+
+      const renderTab = () => {
+        if (!output) return null;
+        switch (activeTab) {
+          case "youtube_script":
+            return (
+              <div>
+                <ScriptBlock label="Video Title" text={output.youtube_script?.title} />
+                <ScriptBlock label="Opening Hook" text={output.youtube_script?.hook} />
+                <ScriptBlock label="Main Body" text={output.youtube_script?.body} />
+                <ScriptBlock label="Call to Action" text={output.youtube_script?.cta} />
+              </div>
+            );
+          case "newsletter":
+            return (
+              <div>
+                <ScriptBlock label="Subject Line" text={output.newsletter?.subject} />
+                <ScriptBlock label="Preview Text" text={output.newsletter?.preview_text} />
+                <ScriptBlock label="Body" text={output.newsletter?.body} />
+              </div>
+            );
+          case "linkedin":
+            return <ScriptBlock label="LinkedIn Post" text={output.linkedin} />;
+          case "twitter_thread":
+            return (
+              <div>
+                {output.twitter_thread?.map((tweet, i) => (
+                  <ScriptBlock key={i} label={"Tweet " + (i + 1) + (i === 0 ? " — Hook" : i === output.twitter_thread.length - 1 ? " — CTA" : "")} text={tweet} />
+                ))}
+              </div>
+            );
+          case "youtube_description":
+            return (
+              <div>
+                <ScriptBlock label="YouTube Description" text={output.youtube_description} />
+                <div>
+                  <span style={{ color: "#00ff88", fontSize: "10px", fontFamily: "'DM Mono', monospace", letterSpacing: "0.15em" }}>TAGS</span>
+                  <TagList tags={output.tags || []} />
+                </div>
+              </div>
+            );
+          case "content_angles":
+            return (
+              <div>
+                <div style={{ color: "#777", fontSize: "12px", fontFamily: "'DM Mono', monospace", marginBottom: "20px", letterSpacing: "0.05em" }}>
+                  3 FUTURE CONTENT ANGLES FROM THIS TOPIC
+                </div>
+                {output.content_angles?.map((angle, i) => (
+                  <div key={i} style={{
+                    background: "#111",
+                    border: "1px solid #222",
+                    borderLeft: "3px solid #ff6b35",
+                    padding: "16px",
+                    marginBottom: "12px",
+                    color: "#ccc",
+                    fontSize: "14px",
+                    fontFamily: "'Lora', Georgia, serif",
+                    lineHeight: "1.6",
+                  }}>
+                    <span style={{ color: "#ff6b35", fontFamily: "'DM Mono', monospace", fontSize: "11px", marginRight: "12px" }}>#{i + 1}</span>
+                    {angle}
+                  </div>
+                ))}
+              </div>
+            );
+          default:
+            return null;
+        }
+      };
+
+      return (
+        <div style={{ minHeight: "100vh", background: "#0a0a0a", fontFamily: "'DM Mono', monospace", padding: "0" }}>
+          <ApiKeyModal isOpen={showApiModal} onClose={() => savedApiKey && setShowApiModal(false)} onSave={(key) => { setSavedApiKey(key); setShowApiModal(false); }} />
+          
+          <div style={{ borderBottom: "1px solid #1a1a1a", padding: "24px 32px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div>
+              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "28px", color: "#fff", letterSpacing: "0.1em" }}>
+                CONTENT<span style={{ color: "#00ff88" }}>OS</span>
+              </div>
+              <div style={{ fontSize: "10px", color: "#444", letterSpacing: "0.2em", marginTop: "2px" }}>
+                AUTOMOTIVE AUTHORITY PIPELINE
+              </div>
+            </div>
+            <div style={{ fontSize: "10px", color: "#333", letterSpacing: "0.1em", textAlign: "right" }}>
+              <div style={{ color: "#00ff88", marginBottom: "2px" }}>● READY</div>
+              <div>{API_CONFIG.provider.toUpperCase()}</div>
+            </div>
+          </div>
+
+          <div style={{ padding: "32px", maxWidth: "900px", margin: "0 auto" }}>
+            <div style={{ marginBottom: "32px" }}>
+              <div style={{ fontSize: "10px", color: "#555", letterSpacing: "0.2em", marginBottom: "12px" }}>
+                INPUT — RAW IDEA / VOICE NOTE TRANSCRIPT
+              </div>
+              <textarea
+                value={input}
+                onChange={e => setInput(e.target.value)}
+                placeholder="Drop your raw idea, voice note transcript, or rough thoughts here. Don't polish it — that's the engine's job..."
+                style={{
+                  width: "100%",
+                  minHeight: "140px",
+                  background: "#111",
+                  border: "1px solid #222",
+                  borderLeft: "3px solid #00ff88",
+                  color: "#ddd",
+                  padding: "16px",
+                  fontSize: "13px",
+                  fontFamily: "'Lora', Georgia, serif",
+                  lineHeight: "1.7",
+                  resize: "vertical",
+                  outline: "none",
+                  boxSizing: "border-box",
+                }}
+              />
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span style={{ fontSize: "10px", color: "#333", letterSpacing: "0.1em" }}>{input.length} CHARS</span>
+                <button
+                  onClick={generate}
+                  disabled={loading || !input.trim()}
+                  style={{
+                    background: loading || !input.trim() ? "#222" : "#00ff88",
+                    border: "none",
+                    color: loading || !input.trim() ? "#444" : "#0a0a0a",
+                    padding: "12px 24px",
+                    fontSize: "12px",
+                    fontFamily: "'DM Mono', monospace",
+                    cursor: loading || !input.trim() ? "not-allowed" : "pointer",
+                    letterSpacing: "0.1em",
+                    transition: "all 0.2s",
+                  }}
+                >
+                  {loading ? "PROCESSING..." : "▶ RUN PIPELINE"}
+                </button>
+              </div>
+            </div>
+
+            {loading && (
+              <div style={{ border: "1px solid #1a1a1a", borderLeft: "3px solid #00ff88", padding: "20px", marginBottom: "24px", display: "flex", alignItems: "center", gap: "16px" }}>
+                <div style={{ display: "flex", gap: "4px" }}>
+                  {[0, 1, 2].map(i => (
+                    <div key={i} style={{ width: "6px", height: "6px", background: "#00ff88", borderRadius: "50%", animation: "pulse 1.2s ease-in-out " + (i * 0.2) + "s infinite" }} />
+                  ))}
+                </div>
+                <span style={{ color: "#888", fontSize: "12px", letterSpacing: "0.1em" }}>{progress}</span>
+              </div>
+            )}
+
+            {error && (
+              <div style={{ borderLeft: "3px solid #ff4444", padding: "16px", color: "#ff4444", fontSize: "13px", marginBottom: "24px" }}>
+                {error}
+              </div>
+            )}
+
+            {output && (
+              <div>
+                <div style={{ display: "flex", gap: "0", borderBottom: "1px solid #1a1a1a", marginBottom: "28px", overflowX: "auto" }}>
+                  {TABS.map(tab => (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      style={{
+                        background: "transparent",
+                        border: "none",
+                        borderBottom: activeTab === tab.id ? "2px solid #00ff88" : "2px solid transparent",
+                        color: activeTab === tab.id ? "#fff" : "#555",
+                        padding: "10px 16px",
+                        fontSize: "10px",
+                        fontFamily: "'DM Mono', monospace",
+                        letterSpacing: "0.1em",
+                        cursor: "pointer",
+                        whiteSpace: "nowrap",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      {tab.label}
+                    </button>
+                  ))}
+                </div>
+
+                {renderTab()}
+
+                <div style={{ marginTop: "32px", paddingTop: "24px", borderTop: "1px solid #1a1a1a", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ fontSize: "10px", color: "#333", letterSpacing: "0.1em" }}>PIPELINE COMPLETE</span>
+                  <div style={{ display: "flex", gap: "12px" }}>
+                    <CopyButton text={fullCopyText} />
+                    <button onClick={() => { setOutput(null); setInput(""); }} style={{ background: "transparent", border: "1px solid #222", color: "#555", padding: "4px 12px", fontSize: "11px", fontFamily: "'DM Mono', monospace", cursor: "pointer", letterSpacing: "0.08em", borderRadius: "2px" }}>RESET</button>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
