@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ContentOS - Automotive Authority Pipeline</title>
+  <title>ContentOS - Content Pipeline</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
@@ -37,39 +37,25 @@
       model: 'google/gemma-4-26b-a4b-it:free',
     };
 
-    const SYSTEM_PROMPT = `You are a content strategist and ghostwriter for Paul, a Quality Liaison Engineer with 30+ years in the automotive industry. He creates content for automotive professionals — engineers, quality managers, supply chain leads, and technical directors at OEMs and Tier 1 suppliers.
+    // Simple profile template - edit this to customise who you're writing as
+    const DEFAULT_PROFILE = `You are a content strategist. Write in this style:
 
-His content authority comes from real-world hands-on experience: running vehicle repair businesses, managing large inspection teams, global quality coverage across cars, commercial vehicles, and two-wheelers. His tone is direct, no-fluff, experienced. He is NOT a generalist. He speaks peer-to-peer to industry professionals.
+MY PERSONA:
+- Name: [Your name]
+- What I do: [What you do for a living]
+- My experience: [How many years, what you've done]
+- Who I write for: [Your audience]
+- My tone: [How you talk - e.g. friendly, professional, no-fluff]
 
-Given a raw idea or voice note transcript, generate a complete content suite in valid JSON with these exact keys:
+CONTENT RULES:
+- YouTube: Hook grabs attention in 10 seconds, clear takeaway
+- Newsletter: 250-350 words, one actionable insight
+- LinkedIn: 150-200 words, end with a question
+- Twitter: 5 tweets, first hooks, last is CTA
+- Tags: 10 relevant hashtags
 
-{
-  "youtube_script": {
-    "title": "...",
-    "hook": "...",
-    "body": "...",
-    "cta": "..."
-  },
-  "newsletter": {
-    "subject": "...",
-    "preview_text": "...",
-    "body": "..."
-  },
-  "linkedin": "...",
-  "twitter_thread": ["tweet1", "tweet2", "tweet3", "tweet4", "tweet5"],
-  "youtube_description": "...",
-  "tags": ["tag1", "tag2", "...up to 10 tags"],
-  "content_angles": ["angle1", "angle2", "angle3"]
-}
-
-Rules:
-- YouTube hook must grab an automotive professional in the first 10 seconds — lead with a pain point, surprising stat, or bold claim
-- Newsletter body should be 250-350 words, structured with a clear insight and one actionable takeaway
-- LinkedIn post: 150-200 words, professional but punchy, ends with a question to drive comments
-- Twitter thread: 5 tweets, first tweet is the hook/thesis, last tweet is CTA to YouTube or newsletter
-- Tags: mix of broad (#automotive #quality) and specific (#IATF16949 #supplychainquality)
-- content_angles: 3 alternative angles for future content based on this same topic
-- Return ONLY valid JSON. No markdown, no backticks, no preamble.`;
+Return ONLY valid JSON with these keys:
+{youtube_script: {title, hook, body, cta}, newsletter: {subject, preview_text, body}, linkedin, twitter_thread: [5 tweets], youtube_description, tags: [10 tags], content_angles: [3 angles]}`;
 
     const TABS = [
       { id: "youtube_script", label: "▶ YouTube Script", icon: "▶" },
@@ -239,6 +225,9 @@ Rules:
     }
 
     function App() {
+      const [profilePrompt, setProfilePrompt] = useState(() => {
+        try { return localStorage.getItem('profile_prompt') || DEFAULT_PROFILE; } catch(e) { return DEFAULT_PROFILE; }
+      });
       const [input, setInput] = useState("");
       const [loading, setLoading] = useState(false);
       const [output, setOutput] = useState(null);
@@ -269,7 +258,7 @@ Rules:
             body = JSON.stringify({
               model: API_CONFIG.model,
               max_tokens: 1000,
-              system: SYSTEM_PROMPT,
+              system: profilePrompt,
               messages: [{ role: "user", content: userMessage }],
             });
           } else {
@@ -282,7 +271,7 @@ Rules:
             body = JSON.stringify({
               model: "claude-sonnet-4-20250514",
               max_tokens: 1000,
-              system: SYSTEM_PROMPT,
+              system: profilePrompt,
               messages: [{ role: "user", content: userMessage }],
             });
           }
@@ -414,7 +403,7 @@ Rules:
                 CONTENT<span style={{ color: "#00ff88" }}>OS</span>
               </div>
               <div style={{ fontSize: "10px", color: "#444", letterSpacing: "0.2em", marginTop: "2px" }}>
-                AUTOMOTIVE AUTHORITY PIPELINE
+                CONTENT PIPELINE
               </div>
             </div>
             <div style={{ fontSize: "10px", color: "#333", letterSpacing: "0.1em", textAlign: "right" }}>
@@ -424,6 +413,35 @@ Rules:
           </div>
 
           <div style={{ padding: "32px", maxWidth: "900px", margin: "0 auto" }}>
+            <div style={{ marginBottom: "24px" }}>
+              <div style={{ fontSize: "10px", color: "#555", letterSpacing: "0.2em", marginBottom: "12px" }}>
+                PROFILE / PERSONA — WHO ARE YOU WRITING FOR?
+              </div>
+              <textarea
+                value={profilePrompt}
+                onChange={e => {
+                  setProfilePrompt(e.target.value);
+                  try { localStorage.setItem('profile_prompt', e.target.value); } catch(e) {}
+                }}
+                placeholder="Define your persona, expertise, audience, and tone..."
+                style={{
+                  width: "100%",
+                  minHeight: "120px",
+                  background: "#111",
+                  border: "1px solid #222",
+                  borderLeft: "3px solid #ff6b35",
+                  color: "#ddd",
+                  padding: "16px",
+                  fontSize: "13px",
+                  fontFamily: "'DM Mono', monospace",
+                  lineHeight: "1.6",
+                  resize: "vertical",
+                  outline: "none",
+                  boxSizing: "border-box",
+                }}
+              />
+            </div>
+
             <div style={{ marginBottom: "32px" }}>
               <div style={{ fontSize: "10px", color: "#555", letterSpacing: "0.2em", marginBottom: "12px" }}>
                 INPUT — RAW IDEA / VOICE NOTE TRANSCRIPT
