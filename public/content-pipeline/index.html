@@ -426,41 +426,56 @@ Return ONLY valid JSON with these keys:
                 PROFILE / PERSONA — FILL THE FIELDS
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <input
-                  type="text"
-                  value={name}
-                  onChange={e => { setName(e.target.value); try { localStorage.setItem('profile_name', e.target.value); } catch(e) {} }}
-                  placeholder="Name"
-                  style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
-                />
-                <input
-                  type="text"
-                  value={role}
-                  onChange={e => { setRole(e.target.value); try { localStorage.setItem('profile_role', e.target.value); } catch(e) {} }}
-                  placeholder="What I do (role)"
-                  style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
-                />
-                <input
-                  type="text"
-                  value={experience}
-                  onChange={e => { setExperience(e.target.value); try { localStorage.setItem('profile_experience', e.target.value); } catch(e) {} }}
-                  placeholder="My experience (years/summary)"
-                  style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
-                />
-                <input
-                  type="text"
-                  value={audience}
-                  onChange={e => { setAudience(e.target.value); try { localStorage.setItem('profile_audience', e.target.value); } catch(e) {} }}
-                  placeholder="Who I write for (audience)"
-                  style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
-                />
-                <input
-                  type="text"
-                  value={tone}
-                  onChange={e => { setTone(e.target.value); try { localStorage.setItem('profile_tone', e.target.value); } catch(e) {} }}
-                  placeholder="My tone (e.g., friendly, professional)"
-                  style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
-                />
+                <div>
+                  <div style={{ color: "#00ff88", marginBottom: "4px", fontSize: "10px", fontFamily: "'DM Mono', monospace" }}>Name</div>
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={e => { setName(e.target.value); try { localStorage.setItem('profile_name', e.target.value); } catch(e) {} }}
+                    placeholder="Name"
+                    style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                  />
+                </div>
+                <div>
+                  <div style={{ color: "#00ff88", marginBottom: "4px", fontSize: "10px", fontFamily: "'DM Mono', monospace" }}>Role</div>
+                  <input
+                    type="text"
+                    value={role}
+                    onChange={e => { setRole(e.target.value); try { localStorage.setItem('profile_role', e.target.value); } catch(e) {} }}
+                    placeholder="What I do (role)"
+                    style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                  />
+                </div>
+                <div>
+                  <div style={{ color: "#00ff88", marginBottom: "4px", fontSize: "10px", fontFamily: "'DM Mono', monospace" }}>Experience</div>
+                  <input
+                    type="text"
+                    value={experience}
+                    onChange={e => { setExperience(e.target.value); try { localStorage.setItem('profile_experience', e.target.value); } catch(e) {} }}
+                    placeholder="My experience (years/summary)"
+                    style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                  />
+                </div>
+                <div>
+                  <div style={{ color: "#00ff88", marginBottom: "4px", fontSize: "10px", fontFamily: "'DM Mono', monospace" }}>Audience</div>
+                  <input
+                    type="text"
+                    value={audience}
+                    onChange={e => { setAudience(e.target.value); try { localStorage.setItem('profile_audience', e.target.value); } catch(e) {} }}
+                    placeholder="Who I write for (audience)"
+                    style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                  />
+                </div>
+                <div>
+                  <div style={{ color: "#00ff88", marginBottom: "4px", fontSize: "10px", fontFamily: "'DM Mono', monospace" }}>Tone</div>
+                  <input
+                    type="text"
+                    value={tone}
+                    onChange={e => { setTone(e.target.value); try { localStorage.setItem('profile_tone', e.target.value); } catch(e) {} }}
+                    placeholder="My tone (e.g., friendly, professional)"
+                    style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                  />
+                </div>
               </div>
             </div>
 
