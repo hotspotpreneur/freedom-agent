@@ -32,11 +32,26 @@
     const saveKey = (key) => {
       try { localStorage.setItem('openrouter_api_key', key); } catch(e) {}
     };
-    const API_CONFIG = {
-      provider: 'openrouter',
-      apiKey: getStoredKey(),
-      model: 'google/gemma-4-26b-a4b-it:free',
+    // Model map – each entry defines the provider, model identifier, and API endpoint URL.
+    const MODEL_MAP = {
+      // Free models
+      gemma: { provider: 'openrouter', model: 'google/gemma-4-26b-a4b-it:free', url: 'https://openrouter.ai/api/v1/messages' },
+      claude3: { provider: 'anthropic', model: 'claude-3-sonnet-20240229', url: 'https://api.anthropic.com/v1/messages' },
+      // Paid models (you'll need a paid key for these)
+      claude35: { provider: 'anthropic', model: 'claude-3-5-sonnet-20240620', url: 'https://api.anthropic.com/v1/messages' },
+      gemini15: { provider: 'google', model: 'gemini-1.5-flash', url: 'https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent' },
+      gpt4o: { provider: 'openai', model: 'gpt-4o-mini', url: 'https://api.openai.com/v1/chat/completions' },
     };
+    // Selected model – defaults to the free Gemma model.
+    const [selectedModel, setSelectedModel] = useState('gemma');
+    const { provider, model, url } = MODEL_MAP[selectedModel] || MODEL_MAP['gemma'];
+    const API_CONFIG = {
+      provider,
+      apiKey: getStoredKey(),
+      model,
+      url,
+    };
+
 
     // Simple profile template - edit this to customise who you're writing as
     const DEFAULT_PROFILE = `You are a content strategist. Write in this style:
@@ -257,7 +272,7 @@ Return ONLY valid JSON with these keys:
           let url, headers, body;
 
           if (API_CONFIG.provider === 'openrouter') {
-            url = "https://openrouter.ai/api/v1/messages";
+            url = API_CONFIG.url;
             headers = {
               "Content-Type": "application/json",
               "Authorization": "Bearer " + savedApiKey,
@@ -422,6 +437,33 @@ Return ONLY valid JSON with these keys:
           </div>
 
           <div style={{ padding: "32px", maxWidth: "900px", margin: "0 auto" }}>
+            {/* Model selector UI – separate dropdowns for free and paid models */}
+            <div style={{ display: "flex", gap: "16px", marginBottom: "24px" }}>
+              <div>
+                <label style={{ color: "#00ff88", fontSize: "10px", fontFamily: "'DM Mono', monospace" }}>Free model</label>
+                <select
+                  value={selectedModel === 'gemini15' || selectedModel === 'claude35' || selectedModel === 'gpt4o' ? 'gemma' : selectedModel}
+                  onChange={e => setSelectedModel(e.target.value)}
+                  style={{ width: "150px", background: "#111", border: "1px solid #222", color: "#ddd", padding: "4px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                >
+                  <option value="gemma">Gemma 4‑26b (OpenRouter)</option>
+                  <option value="claude3">Claude 3 Sonnet (Anthropic)</option>
+                </select>
+              </div>
+              <div>
+                <label style={{ color: "#ff6b35", fontSize: "10px", fontFamily: "'DM Mono', monospace" }}>Paid model</label>
+                <select
+                  value={selectedModel.startsWith('claude35') || selectedModel.startsWith('gemini15') || selectedModel.startsWith('gpt4o') ? selectedModel : ''}
+                  onChange={e => setSelectedModel(e.target.value)}
+                  style={{ width: "150px", background: "#111", border: "1px solid #222", color: "#ddd", padding: "4px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                >
+                  <option value="">-- select --</option>
+                  <option value="claude35">Claude 3.5 Sonnet (Anthropic)</option>
+                  <option value="gemini15">Gemini 1.5 Flash (Google)</option>
+                  <option value="gpt4o">GPT‑4o mini (OpenAI)</option>
+                </select>
+              </div>
+            </div>
             <div style={{ marginBottom: "24px" }}>
               <div style={{ fontSize: "10px", color: "#555", letterSpacing: "0.2em", marginBottom: "12px" }}>
                 PROFILE / PERSONA — FILL THE FIELDS
