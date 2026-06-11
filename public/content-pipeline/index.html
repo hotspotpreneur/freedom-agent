@@ -26,7 +26,7 @@
     // NOTE: Configure your API below
     const HARDCODED_KEY = '';
     const getStoredKey = () => {
-      try { return localStorage.getItem('openrouter_api_key') || HARDCODED_KEY; } catch(e) { return HARDCODED_KEY; }
+      try { return localStorage.removeItem('openrouter_api_key'); location.reload(); | }
     };
     const saveKey = (key) => {
       try { localStorage.setItem('openrouter_api_key', key); } catch(e) {}
