@@ -26,7 +26,8 @@
     // NOTE: Configure your API below
     const HARDCODED_KEY = '';
     const getStoredKey = () => {
-      try { return localStorage.getItem('openrouter_api_key') || HARDCODED_KEY; } catch(e) { return HARDCODED_KEY; }
+      // Always return empty to force user to input API key via modal
+      return '';
     };
     const saveKey = (key) => {
       try { localStorage.setItem('openrouter_api_key', key); } catch(e) {}
