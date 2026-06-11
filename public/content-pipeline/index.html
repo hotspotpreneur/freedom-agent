@@ -225,9 +225,17 @@ Return ONLY valid JSON with these keys:
     }
 
     function App() {
-      const [profilePrompt, setProfilePrompt] = useState(() => {
-        try { return localStorage.getItem('profile_prompt') || DEFAULT_PROFILE; } catch(e) { return DEFAULT_PROFILE; }
-      });
+      // Individual profile fields
+      const [name, setName] = useState(() => { try { return localStorage.getItem('profile_name') || ''; } catch(e) { return ''; } });
+      const [role, setRole] = useState(() => { try { return localStorage.getItem('profile_role') || ''; } catch(e) { return ''; } });
+      const [experience, setExperience] = useState(() => { try { return localStorage.getItem('profile_experience') || ''; } catch(e) { return ''; } });
+      const [audience, setAudience] = useState(() => { try { return localStorage.getItem('profile_audience') || ''; } catch(e) { return ''; } });
+      const [tone, setTone] = useState(() => { try { return localStorage.getItem('profile_tone') || ''; } catch(e) { return ''; } });
+      // Build composite profile prompt from fields
+      const buildProfilePrompt = () => {
+        return `You are a content strategist. Write in this style:\n\nMY PERSONA:\n- Name: ${name}\n- What I do: ${role}\n- My experience: ${experience}\n- Who I write for: ${audience}\n- My tone: ${tone}\n\nCONTENT RULES:\n- YouTube: Hook grabs attention in 10 seconds, clear takeaway\n- Newsletter: 250-350 words, one actionable insight\n- LinkedIn: 150-200 words, end with a question\n- Twitter: 5 tweets, first hooks, last is CTA\n- Tags: 10 relevant hashtags\n\nReturn ONLY valid JSON with these keys:\n{youtube_script: {title, hook, body, cta}, newsletter: {subject, preview_text, body}, linkedin, twitter_thread: [5 tweets], youtube_description, tags: [10 tags], content_angles: [3 angles]}`;
+      };
+
       const [input, setInput] = useState("");
       const [loading, setLoading] = useState(false);
       const [output, setOutput] = useState(null);
@@ -258,7 +266,7 @@ Return ONLY valid JSON with these keys:
             body = JSON.stringify({
               model: API_CONFIG.model,
               max_tokens: 1000,
-              system: profilePrompt,
+              system: buildProfilePrompt(),
               messages: [{ role: "user", content: userMessage }],
             });
           } else {
@@ -271,7 +279,7 @@ Return ONLY valid JSON with these keys:
             body = JSON.stringify({
               model: "claude-sonnet-4-20250514",
               max_tokens: 1000,
-              system: profilePrompt,
+              system: buildProfilePrompt(),
               messages: [{ role: "user", content: userMessage }],
             });
           }
@@ -415,31 +423,45 @@ Return ONLY valid JSON with these keys:
           <div style={{ padding: "32px", maxWidth: "900px", margin: "0 auto" }}>
             <div style={{ marginBottom: "24px" }}>
               <div style={{ fontSize: "10px", color: "#555", letterSpacing: "0.2em", marginBottom: "12px" }}>
-                PROFILE / PERSONA — WHO ARE YOU WRITING FOR?
+                PROFILE / PERSONA — FILL THE FIELDS
               </div>
-              <textarea
-                value={profilePrompt}
-                onChange={e => {
-                  setProfilePrompt(e.target.value);
-                  try { localStorage.setItem('profile_prompt', e.target.value); } catch(e) {}
-                }}
-                placeholder="Define your persona, expertise, audience, and tone..."
-                style={{
-                  width: "100%",
-                  minHeight: "120px",
-                  background: "#111",
-                  border: "1px solid #222",
-                  borderLeft: "3px solid #ff6b35",
-                  color: "#ddd",
-                  padding: "16px",
-                  fontSize: "13px",
-                  fontFamily: "'DM Mono', monospace",
-                  lineHeight: "1.6",
-                  resize: "vertical",
-                  outline: "none",
-                  boxSizing: "border-box",
-                }}
-              />
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                <input
+                  type="text"
+                  value={name}
+                  onChange={e => { setName(e.target.value); try { localStorage.setItem('profile_name', e.target.value); } catch(e) {} }}
+                  placeholder="Name"
+                  style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                />
+                <input
+                  type="text"
+                  value={role}
+                  onChange={e => { setRole(e.target.value); try { localStorage.setItem('profile_role', e.target.value); } catch(e) {} }}
+                  placeholder="What I do (role)"
+                  style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                />
+                <input
+                  type="text"
+                  value={experience}
+                  onChange={e => { setExperience(e.target.value); try { localStorage.setItem('profile_experience', e.target.value); } catch(e) {} }}
+                  placeholder="My experience (years/summary)"
+                  style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                />
+                <input
+                  type="text"
+                  value={audience}
+                  onChange={e => { setAudience(e.target.value); try { localStorage.setItem('profile_audience', e.target.value); } catch(e) {} }}
+                  placeholder="Who I write for (audience)"
+                  style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                />
+                <input
+                  type="text"
+                  value={tone}
+                  onChange={e => { setTone(e.target.value); try { localStorage.setItem('profile_tone', e.target.value); } catch(e) {} }}
+                  placeholder="My tone (e.g., friendly, professional)"
+                  style={{ width: "100%", background: "#111", border: "1px solid #222", borderLeft: "3px solid #ff6b35", color: "#ddd", padding: "8px", fontSize: "13px", fontFamily: "'DM Mono', monospace" }}
+                />
+              </div>
             </div>
 
             <div style={{ marginBottom: "32px" }}>
