@@ -294,14 +294,14 @@ Return ONLY valid JSON with these keys:
               messages: [{ role: "user", content: userMessage }],
             });
           } else {
-            apiUrl = "https://api.anthropic.com/v1/messages";
+            apiUrl = url;
             headers = {
               "Content-Type": "application/json",
               "x-api-key": savedApiKey,
               "anthropic-version": "2023-06-01"
             };
             body = JSON.stringify({
-              model: "claude-sonnet-4-20250514",
+              model: model,
               max_tokens: 1000,
               system: buildProfilePrompt(),
               messages: [{ role: "user", content: userMessage }],
