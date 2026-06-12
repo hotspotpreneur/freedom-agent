@@ -42,15 +42,7 @@
       gemini15: { provider: 'google', model: 'gemini-1.5-flash', url: 'https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent' },
       gpt4o: { provider: 'openai', model: 'gpt-4o-mini', url: 'https://api.openai.com/v1/chat/completions' },
     };
-    // Selected model – defaults to the free Gemma model.
-    const [selectedModel, setSelectedModel] = useState('gemma');
-    const { provider, model, url } = MODEL_MAP[selectedModel] || MODEL_MAP['gemma'];
-    const API_CONFIG = {
-      provider,
-      apiKey: getStoredKey(),
-      model,
-      url,
-    };
+
 
 
     // Simple profile template - edit this to customise who you're writing as
@@ -241,6 +233,13 @@ Return ONLY valid JSON with these keys:
     }
 
     function App() {
+      // Model selection state
+      const [selectedModel, setSelectedModel] = useState('gemma');
+      const { provider, model, url } = MODEL_MAP[selectedModel] || MODEL_MAP['gemma'];
+      const [savedApiKey, setSavedApiKey] = useState(() => {
+        try { return localStorage.getItem('openrouter_api_key') || ''; } catch(e) { return ''; }
+      });
+
       // Individual profile fields
       const [name, setName] = useState(() => { try { return localStorage.getItem('profile_name') || ''; } catch(e) { return ''; } });
       const [role, setRole] = useState(() => { try { return localStorage.getItem('profile_role') || ''; } catch(e) { return ''; } });
@@ -258,8 +257,7 @@ Return ONLY valid JSON with these keys:
       const [error, setError] = useState("");
       const [activeTab, setActiveTab] = useState("youtube_script");
       const [progress, setProgress] = useState("");
-      const [showApiModal, setShowApiModal] = useState(!API_CONFIG.apiKey);
-      const [savedApiKey, setSavedApiKey] = useState(API_CONFIG.apiKey);
+      const [showApiModal, setShowApiModal] = useState(!savedApiKey);
 
       const generate = async () => {
         if (!input.trim()) return;
@@ -269,10 +267,10 @@ Return ONLY valid JSON with these keys:
         setProgress("Starting pipeline...");
 
         const callAPI = async (userMessage) => {
-          let url, headers, body;
+          let apiUrl, headers, body;
 
-          if (API_CONFIG.provider === 'openrouter') {
-            url = API_CONFIG.url;
+          if (provider === 'openrouter') {
+            apiUrl = url;
             headers = {
               "Content-Type": "application/json",
               "Authorization": "Bearer " + savedApiKey,
@@ -280,13 +278,13 @@ Return ONLY valid JSON with these keys:
               "X-Title": "ContentOS Pipeline",
             };
             body = JSON.stringify({
-              model: API_CONFIG.model,
+              model: model,
               max_tokens: 1000,
               system: buildProfilePrompt(),
               messages: [{ role: "user", content: userMessage }],
             });
           } else {
-            url = "https://api.anthropic.com/v1/messages";
+            apiUrl = "https://api.anthropic.com/v1/messages";
             headers = {
               "Content-Type": "application/json",
               "x-api-key": savedApiKey,
@@ -300,7 +298,7 @@ Return ONLY valid JSON with these keys:
             });
           }
 
-          const res = await fetch(url, {
+          const res = await fetch(apiUrl, {
             method: "POST",
             headers: headers,
             body: body,
@@ -314,7 +312,7 @@ Return ONLY valid JSON with these keys:
           const data = await res.json();
           
           let raw;
-          if (API_CONFIG.provider === 'openrouter') {
+          if (provider === 'openrouter') {
             raw = data.content?.filter(b => b.type === "text").map(b => b.text).join("").trim();
           } else {
             raw = data.content?.filter(b => b.type === "text").map(b => b.text).join("").trim();
@@ -432,7 +430,7 @@ Return ONLY valid JSON with these keys:
             </div>
             <div style={{ fontSize: "10px", color: "#333", letterSpacing: "0.1em", textAlign: "right" }}>
               <div style={{ color: "#00ff88", marginBottom: "2px" }}>● READY</div>
-              <div>{API_CONFIG.provider.toUpperCase()}</div>
+              <div>{provider.toUpperCase()}</div>
             </div>
           </div>
 
