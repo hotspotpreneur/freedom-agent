@@ -197,8 +197,9 @@ Return ONLY valid JSON with these keys:
       );
     }
 
-    // Robust JSON extractor
-    function extractJSON(text) {
+    // Robust JSON extractor with logging
+    function extractJSON(text, context = "") {
+      console.log("extractJSON called with context:", context, "| length:", text?.length);
       // Try direct parse first
       try {
         return JSON.parse(text);
@@ -320,7 +321,8 @@ Return ONLY valid JSON with these keys:
           
           if (!raw) throw new Error("Empty response received.");
 
-          return extractJSON(raw);
+          console.log("Raw API response:", raw);
+          return extractJSON(raw, "part1");
         };
 
         try {
@@ -332,7 +334,7 @@ Return ONLY valid JSON with these keys:
           setProgress("Building social posts and metadata...");
           const part2 = await callAPI(
             `Raw idea / voice note:\n\n${input}\n\nReturn ONLY a JSON object with keys: linkedin (string), twitter_thread (array of 5 strings), youtube_description (string), tags (array of 10 strings), content_angles (array of 3 strings).`
-          );
+          ).then(result => { console.log("Raw API response part2:", result); return result; });
 
           setOutput({ ...part1, ...part2 });
           setActiveTab("youtube_script");
