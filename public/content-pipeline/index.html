@@ -21,6 +21,30 @@
 <body>
   <div id="root"></div>
   <script type="text/babel">
+    // Error boundary to prevent blank screens
+    class ErrorBoundary extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = { hasError: false, error: null };
+      }
+      static getDerivedStateFromError(error) {
+        return { hasError: true, error };
+      }
+      componentDidCatch(error, errorInfo) {
+        console.error('React Error:', error, errorInfo);
+      }
+      render() {
+        if (this.state.hasError) {
+          return <div style={{ padding: '40px', background: '#0a0a0a', color: '#ff4444', fontFamily: 'monospace' }}>
+            <h2>Something went wrong</h2>
+            <pre style={{ color: '#888', fontSize: '12px' }}>{this.state.error?.message || 'Unknown error'}</pre>
+            <button onClick={() => window.location.reload()} style={{ marginTop: '20px', padding: '10px 20px', background: '#00ff88', border: 'none', cursor: 'pointer' }}>Reload Page</button>
+          </div>;
+        }
+        return this.props.children;
+      }
+    }
+
     const { useState, useRef } = React;
 
     // NOTE: Configure your API below
@@ -638,7 +662,7 @@ Return ONLY valid JSON with these keys:
     }
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(<App />);
+    root.render(<ErrorBoundary><App /></ErrorBoundary>);
   </script>
 </body>
 </html>
