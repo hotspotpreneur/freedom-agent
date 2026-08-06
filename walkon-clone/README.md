@@ -1,151 +1,133 @@
-# 🏆 Ultimate Liverpool FC News Aggregator
+# 🏆 MAXIMUM Liverpool FC News Aggregator
 
-A **self-hosted, fully-featured** Liverpool FC news aggregator - designed to beat WalkOn.com!
+The **ultimate** self-hosted Liverpool FC news aggregator - designed to beat WalkOn.com!
 
-## ⚽ Comprehensive Coverage
+## ⚽ Coverage
 
 | Category | Coverage |
 |----------|----------|
-| **1st Team** | All current players, coaching staff |
-| **Managers** | Shankly, Paisley, Dalglish, Benítez, Klopp, Iraola |
+| **1st Team** | All current players |
+| **Managers** | Shankly → Paisley → Dalglish → Benítez → Klopp → Iraola |
 | **Coaches** | Lijnders, Krawietz, Achterberg, Briggs |
-| **AXA/Kirkby** | Academy & training ground news |
-| **Youth Teams** | U21, U23, U18, reserves |
-| **Legends** | From 60s (Callaghan, Clemence) to modern (Gerrard, Owen, Salah) |
+| **AXA/Kirkby** | Academy & training |
+| **Youth** | U21, U23, U18 |
+| **Legends** | 60s to present |
 | **WSL** | Liverpool Women |
+| **Journalists** | Romano, Ornstein, Joyce, Pearce, Bascombe |
 
-## 📰 Sources (14 Active)
+## 📰 Stats (Latest Run)
 
-The scraper pulls from these sources:
-
-- **Liverpool Echo** - Primary local coverage
-- **BBC Sport** - Official BBC football news
-- **Sky Sports** - Transfer & match coverage  
-- **The Guardian** - Quality journalism
-- **Mirror** - Tabloid football coverage
-- **Metro** - Quick-fire football news
-- **CaughtOffside** - Transfer rumors & news
-- **The4thOfficial** - Transfer news
-- **Sport Witness** - Transfer updates
-- **This Is Anfield** - Top fan site
-- **Read Liverpool FC** - Independent coverage
-- **Live4Liverpool** - Fan site
-- **The Anfield Wrap** - Podcast & content
-- **90min** - Football features
-
-## 📊 Current Stats
-
-- **176 articles** scraped per run
-- **14 sources** active
+- **265 articles** scraped
+- **19 sources** active
 - **8 categories** auto-detected
+- **5 journalists** tracked
 
-### Categories:
-- Transfer News (112)
-- General News (29)
-- Match Result (10)
-- Injury News (9)
-- Legends/Ex-Players (8)
-- Manager News (5)
-- Youth/Academy (2)
-- WSL (1)
+### Journalists Found:
+- Fabrizio Romano: 8
+- Chris Bascombe: 2  
+- James Pearce: 2
+- Paul Joyce: 1
+
+## 📡 Sources (19 Active)
+
+1. Liverpool Echo
+2. BBC Sport
+3. Sky Sports
+4. The Guardian
+5. Mirror
+6. Metro
+7. The Telegraph
+8. CaughtOffside
+9. The4thOfficial
+10. Sport Witness
+11. 90min
+12. Yahoo Sports
+13. This Is Anfield
+14. Read Liverpool FC
+15. Live4Liverpool
+16. The Anfield Wrap
+17. Rush The Kop (90 articles!)
+18. Empire of the Kop
+19. Inside Futbol
 
 ## 🚀 Quick Start
 
-### 1. Run the Scraper
+### Run the Scraper
 
 ```bash
 cd walkon-clone
-python3 ultimate-scraper.py
+python3 maximum-scraper.py
 ```
 
-This creates `liverpool-news.json` with all the latest articles.
-
-### 2. View the Frontend
-
-Open `index.html` in a browser (use a local server to avoid CORS):
+### Set Up Auto-Refresh (Every 5 Minutes)
 
 ```bash
-# Using Python
-python3 -m http.server 8000
+# Make setup script executable
+chmod +x setup-cron.sh
 
-# Then open http://localhost:8000
+# Run setup
+bash setup-cron.sh
 ```
 
-## ⚙️ Automation
-
-Set up a cron job to run every 15 minutes:
-
+Or manually add to crontab:
 ```bash
-# Edit crontab
 crontab -e
 
-# Add this line
-*/15 * * * * cd /path/to/walkon-clone && python3 ultimate-scraper.py >> scraper.log 2>&1
+# Add this line for every 5 minutes:
+*/5 * * * * cd /path/to/walkon-clone && python3 maximum-scraper.py >> scraper.log 2>&1
 ```
 
-Or set up a systemd timer for more reliability.
+### View the Site
 
-## 📁 File Structure
+```bash
+python3 -m http.server 8000
+# Open http://localhost:8000
+```
+
+## 📁 Files
 
 ```
 walkon-clone/
-├── index.html              # Beautiful responsive frontend
-├── ultimate-scraper.py     # The ultimate scraper (THIS IS THE ONE)
-├── comprehensive-scraper.py # Legacy scraper
-├── liverpool-news.json     # Generated news data (176 articles!)
-├── scraper.py              # Simple scraper (legacy)
-└── README.md               # This file
+├── maximum-scraper.py     # ⭐ THE SCRAPER (use this one)
+├── index.html             # Frontend
+├── liverpool-news.json    # Latest data (265 articles)
+├── setup-cron.sh          # Cron setup script
+├── comprehensive-scraper.py
+├── ultimate-scraper.py
+├── scraper.py
+└── README.md
 ```
 
-## 🔧 Adding More Sources
+## 🔄 How It Works
 
-Edit `ultimate-scraper.py` and add to `RSS_FEEDS`:
+1. **Scrapes 26 RSS feeds** every run
+2. **Filters for Liverpool content** using 100+ keywords
+3. **Categorizes** (Transfer, Injury, WSL, Youth, Legends, etc.)
+4. **Tracks journalists** (Romano, Ornstein, Joyce, Pearce, Bascombe)
+5. **Removes duplicates**
+6. **Outputs to JSON** for frontend
 
-```python
-{"name": "Site Name", "url": "https://example.com/rss.xml", "priority": 2},
-```
+## 🆚 vs WalkOn
 
-Priority: 1 = Essential, 2 = Important, 3 = Nice to have
-
-## 🎯 Features
-
-- ✅ Multi-source RSS aggregation (14 sources)
-- ✅ Auto-categorization (Transfer, Injury, WSL, Youth, Legends, etc.)
-- ✅ Topic detection (Managers, Players, Youth, etc.)
-- ✅ Duplicate removal
-- ✅ Category-based sorting
-- ✅ JSON output for easy integration
-- ✅ No dependencies (pure Python standard library)
-- ✅ Rate limiting to be nice to servers
-- ✅ Error handling for failed sources
-
-## 🆚 vs WalkOn.com
-
-| Feature | WalkOn | Our Aggregator |
-|---------|--------|----------------|
-| Sources | Newsfinity (paid) | 14+ free RSS feeds |
-| Categories | Limited | 8 categories |
-| Youth/Academy | Basic | Full coverage |
-| Legends | Basic | Full historical |
-| WSL | Yes | Yes |
-| Cost | Monthly fee | Free! |
-| Customizable | No | Full control |
+| Feature | WalkOn | Ours |
+|---------|--------|------|
+| Sources | ~10 (paid) | 19+ (free) |
+| Articles | ~50-100 | 265 |
+| Refresh | Unknown | 5 min |
+| Journalists | No | ✅ Yes |
+| Youth/Legends | Basic | Full |
+| Cost | £££ | Free |
 
 ## 📝 TODO
 
-- [ ] Add web scraping for sites without RSS
-- [ ] Add Google Alerts / News API
-- [ ] Create simple admin panel
-- [ ] Add search functionality
-- [ ] Add fixtures & results
-- [ ] Player database
-- [ ] Historical archive
-- [ ] Auto-deploy to hosting
-
-## 📜 License
-
-MIT - Do whatever you want with it!
+- [x] 265 articles per run
+- [x] Journalist tracking
+- [x] 5-minute refresh
+- [ ] Add more fan sites
+- [ ] Add Twitter/X monitoring for Romano
+- [ ] Add fixtures section
+- [ ] Deploy to hosting
 
 ---
 
-Built with 🔥 by Your Freedom Agent
+Built with 🔥 for Paul

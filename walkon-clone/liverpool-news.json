@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "last_updated": "2026-08-06T15:25:41.512774",
-    "total_sources": 17,
-    "successful_sources": 14,
+    "last_updated": "2026-08-06T15:32:32.069999",
+    "total_sources": 26,
+    "successful_sources": 19,
     "sources_used": [
       "Liverpool Echo",
       "BBC Sport",
@@ -10,31 +10,46 @@
       "The Guardian",
       "Mirror",
       "Metro",
+      "The Telegraph",
       "CaughtOffside",
       "The4thOfficial",
       "Sport Witness",
+      "90min",
+      "Yahoo Sports",
       "This Is Anfield",
       "Read Liverpool FC",
       "Live4Liverpool",
       "The Anfield Wrap",
-      "90min"
+      "Rush The Kop",
+      "Empire of the Kop",
+      "Inside Futbol"
     ],
     "sources_failed": [
+      "The Times",
       "Football FanCast",
+      "Daveockop",
+      "The Liverpool Way",
       "Football Transfers"
     ]
   },
   "summary": {
-    "Transfer News": 112,
-    "Injury News": 9,
-    "Match Result": 10,
-    "Manager News": 5,
-    "WSL": 1,
-    "Youth/Academy": 2,
-    "Legends/Ex-Players": 8,
-    "General News": 29
+    "Transfer News": 145,
+    "Injury News": 12,
+    "Match Preview": 2,
+    "Match Result": 6,
+    "Manager News": 27,
+    "WSL": 4,
+    "Youth/Academy": 5,
+    "Legends/Ex-Players": 6,
+    "General News": 58
   },
-  "total_articles": 176,
+  "journalists": {
+    "Chris Bascombe": 2,
+    "Fabrizio Romano": 8,
+    "Paul Joyce": 1,
+    "James Pearce": 2
+  },
+  "total_articles": 265,
   "articles": [
     {
       "title": "Liverpool transfer news LIVE: Big Barcola development, Konsa latest, Tottenham talks begin",
@@ -47,20 +62,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:26.496684"
-    },
-    {
-      "title": "Everton set for unexpected financial boost as Man Utd forced to change transfer plans",
-      "link": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/everton-transfer-news-man-united-34414526",
-      "description": "The transfer window is still ongoing, but it appears Manchester United are set to hand Everton a windfall the Toffees would not have been expecting",
-      "image": "https://i2-prod.birminghammail.co.uk/incoming/article34414557.ece/ALTERNATES/s615/0_Stoke-City-v-Everton-Pre-Season-Friendly-Football-Bet365-Stadium-Stoke-on-Trent-UK-28-Jul-202.jpg",
-      "source": "Liverpool Echo",
-      "pub_date": "Thu, 6 Aug 2026 12:00:20 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:26.497026"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.340293"
     },
     {
       "title": "Andoni Iraola's private promise to Victor Munoz and what he can expect at Liverpool",
@@ -74,7 +77,8 @@
         "Manager",
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:26.497429"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.340635"
     },
     {
       "title": "Jamie Carragher criticises Mohamed Salah transfer decision as Cristiano Ronaldo point made",
@@ -86,9 +90,10 @@
       "category": "Transfer News",
       "topics": [
         "First Team",
-        "Legends/Ex-Players"
+        "Legends"
       ],
-      "scraped_at": "2026-08-06T15:25:26.497550"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.340703"
     },
     {
       "title": "Mohamed Salah may request 5 Liverpool players to join him to get  gang back together",
@@ -101,7 +106,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:26.498108"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.340931"
     },
     {
       "title": "Liverpool transfer news: Bradley Barcola latest, Ibrahim Mbaye surprise, two moves done",
@@ -114,7 +120,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:26.498202"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.340979"
     },
     {
       "title": "Michael Owen warns PSG 'taking advantage' of Liverpool with Bradley Barcola transfer detail",
@@ -126,9 +133,10 @@
       "category": "Transfer News",
       "topics": [
         "First Team",
-        "Legends/Ex-Players"
+        "Legends"
       ],
-      "scraped_at": "2026-08-06T15:25:26.498340"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.341042"
     },
     {
       "title": "Liverpool latest: Andoni Iraola considers £188m bids as bleak Reds prediction delivered",
@@ -141,7 +149,8 @@
       "topics": [
         "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:26.498455"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.341103"
     },
     {
       "title": "Liverpool's £100m Bradley Barcola stance as second PSG deal explored",
@@ -155,7 +164,8 @@
         "Manager",
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:26.499012"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.341389"
     },
     {
       "title": "Sadio Mane has already told Liverpool why they should sign 'exceptional' Ibrahim Mbaye",
@@ -166,10 +176,10 @@
       "pub_date": "Thu, 6 Aug 2026 00:00:00 +0000",
       "category": "Transfer News",
       "topics": [
-        "First Team",
-        "Legends/Ex-Players"
+        "General"
       ],
-      "scraped_at": "2026-08-06T15:25:26.499113"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.341456"
     },
     {
       "title": "Everton confirm Christian Norgaard transfer from Arsenal",
@@ -182,7 +192,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:26.499286"
+      "journalist": "Chris Bascombe",
+      "scraped_at": "2026-08-06T15:32:05.341545"
     },
     {
       "title": "Liverpool told to swallow difficult pill and sign Trent Alexander-Arnold - 'Get that boy back'",
@@ -195,7 +206,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:26.499436"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.341619"
     },
     {
       "title": "Cody Gakpo transfer would be a major risk - Liverpool need proven players",
@@ -208,7 +220,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:26.499573"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.341687"
     },
     {
       "title": "Bournemouth sign Spanish right-back Juanlu",
@@ -221,20 +234,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:26.903047"
-    },
-    {
-      "title": "Everton sign midfielder Norgaard from Arsenal",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm2gvlnjndpo?at_medium=RSS&at_campaign=rss",
-      "description": "Everton sign Denmark midfielder Christian Norgaard from Arsenal on a two-year contract for a reported fee of £7m.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e5a7/live/c3aa8680-9106-11f1-883e-7f87b9cbea15.jpg",
-      "source": "BBC Sport",
-      "pub_date": "Wed, 05 Aug 2026 21:18:29 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:26.903311"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.772032"
     },
     {
       "title": "Real Madrid make Vinicius Jr improved contract offer",
@@ -247,20 +248,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:26.903402"
-    },
-    {
-      "title": "Rush urges Liverpool to give Iraola time to succeed",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5yd98ep9r8o?at_medium=RSS&at_campaign=rss",
-      "description": "Liverpool legend Ian Rush says new boss Andoni Iraola deserves time to succeed at Anfield but should target winning silverware in his debut campaign.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ed90/live/ba106ef0-9101-11f1-b8ee-9b3c26ad07bb.png",
-      "source": "BBC Sport",
-      "pub_date": "Thu, 06 Aug 2026 08:58:29 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "Manager"
-      ],
-      "scraped_at": "2026-08-06T15:25:26.903510"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.772212"
     },
     {
       "title": "Salah given hero's welcome before Trabzonspor move",
@@ -273,7 +262,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:26.904084"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.772373"
     },
     {
       "title": "Why Liverpool are ready to make Barcola third £100m signing",
@@ -286,7 +276,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:26.904205"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.772438"
     },
     {
       "title": "Liverpool explore Mbaye deal - Thursday's gossip",
@@ -297,22 +288,10 @@
       "pub_date": "Wed, 05 Aug 2026 20:17:47 GMT",
       "category": "Transfer News",
       "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:26.904412"
-    },
-    {
-      "title": "Why Arsenal are signing Newcastle captain Guimaraes",
-      "link": "https://www.bbc.co.uk/sport/football/articles/clyl2e351vlo?at_medium=RSS&at_campaign=rss",
-      "description": "With Bruno Guimaraes set to sign for Premier League champions Arsenal, BBC Sport look at why the Gunners wanted the Newcastle skipper.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ebae/live/740028c0-9010-11f1-9b87-418a05eb4792.jpg",
-      "source": "BBC Sport",
-      "pub_date": "Wed, 05 Aug 2026 11:55:50 GMT",
-      "category": "Transfer News",
-      "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:26.904515"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.772560"
     },
     {
       "title": "No WSL experience but who is new Man Utd boss Olid?",
@@ -325,7 +304,8 @@
       "topics": [
         "WSL"
       ],
-      "scraped_at": "2026-08-06T15:25:26.904621"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.772655"
     },
     {
       "title": "Palace set to sign Tomiyasu and consider March deal",
@@ -338,7 +318,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:26.904793"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.772751"
     },
     {
       "title": "What happened to star signings your club never made?",
@@ -351,7 +332,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:26.905240"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.773004"
     },
     {
       "title": "All done deals in August 2026",
@@ -364,7 +346,8 @@
       "topics": [
         "WSL"
       ],
-      "scraped_at": "2026-08-06T15:25:26.905443"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.773123"
     },
     {
       "title": "Salah joins Turkish side Trabzonspor",
@@ -377,7 +360,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:27.364689"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.248268"
     },
     {
       "title": "Mohamed Salah to earn upwards of £14.5m per season in two-year Trabzonspor deal",
@@ -390,20 +374,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:27.768797"
-    },
-    {
-      "title": "Mohamed Salah’s story of success and sacrifice: ‘Chasing a dream I had to reach’",
-      "link": "https://www.theguardian.com/football/2026/aug/05/mohamed-salah-book-extract-liverpool-egypt",
-      "description": "In this exclusive book extract, Melissa Reddy documents the Egyptian King’s sacrifice and dedication to make his vision a realityThe entrance to Al Mokawloon Al Arab’s youth sector feels imposing. At ...",
-      "image": "https://i.guim.co.uk/img/media/65d734f13b420c10ad4ceebdbe607039809c31e0/395_0_3948_3158/master/3948.jpg?width=140&quality=85&auto=format&fit=max&s=e1eed1b226d1f5b6d3553008f59a529c",
-      "source": "The Guardian",
-      "pub_date": "Wed, 05 Aug 2026 18:00:25 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:27.769380"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.873905"
     },
     {
       "title": "‘I can’t wait’: Dominik Szoboszlai hungry for Liverpool reset under Andoni Iraola",
@@ -415,10 +387,10 @@
       "category": "Transfer News",
       "topics": [
         "Manager",
-        "Coaching Staff",
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:27.770385"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.874872"
     },
     {
       "title": "Worn in the USA: Liverpool’s pre-season tour had highs but exposed glaring gaps in the squad | Andy Hunter",
@@ -430,10 +402,10 @@
       "category": "Transfer News",
       "topics": [
         "Manager",
-        "Coaching Staff",
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:27.770841"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.875111"
     },
     {
       "title": "Leeds stage thrilling comeback to sink Liverpool in Chicago friendly",
@@ -444,10 +416,10 @@
       "pub_date": "Sun, 02 Aug 2026 22:40:51 GMT",
       "category": "Transfer News",
       "topics": [
-        "Manager",
-        "Coaching Staff"
+        "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:27.771359"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.875399"
     },
     {
       "title": "Faster, faster: Iraola in a rush to plug Liverpool gaps before Premier League starts",
@@ -458,10 +430,10 @@
       "pub_date": "Sat, 01 Aug 2026 15:25:14 GMT",
       "category": "Transfer News",
       "topics": [
-        "Manager",
-        "Coaching Staff"
+        "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:27.772387"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.875874"
     },
     {
       "title": "Inter make new approach to Liverpool for Curtis Jones with £30m offer likely",
@@ -474,7 +446,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:27.772825"
+      "journalist": "Fabrizio Romano",
+      "scraped_at": "2026-08-06T15:32:06.876103"
     },
     {
       "title": "Harvey Elliott revels in ‘second chance’ at Liverpool and has no regrets over Aston Villa loan",
@@ -487,7 +460,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:27.773266"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.876338"
     },
     {
       "title": "Football transfer rumours: Jack Grealish to make Saudi switch to Al-Hilal?",
@@ -501,7 +475,8 @@
         "Manager",
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:27.773830"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.876661"
     },
     {
       "title": "Liverpool prepare opening offer for Paris Saint-Germain’s Bradley Barcola",
@@ -515,22 +490,8 @@
         "Manager",
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:27.774760"
-    },
-    {
-      "title": "‘Don’t become the protagonist’: Andoni Iraola on the secret of Spain’s success and his role at Liverpool",
-      "link": "https://www.theguardian.com/football/2026/jul/23/andoni-iraola-liverpool-interview-spain",
-      "description": "Liverpool’s new head coach is settling into the pre-season tour in Chicago as he begins to reshape the Reds’ identityOver coffee in Liverpool’s plush hotel in Chicago, Andoni Iraola presents his theor...",
-      "image": "https://i.guim.co.uk/img/media/05a4c677b7e2c83207eb515fea4b8af5f8dc4b28/1138_612_1730_1383/master/1730.jpg?width=140&quality=85&auto=format&fit=max&s=ccee97d99d518b7df7bc140f5fc9e6f2",
-      "source": "The Guardian",
-      "pub_date": "Thu, 23 Jul 2026 11:00:42 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "Manager",
-        "Coaching Staff",
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:27.791109"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.877169"
     },
     {
       "title": "Transfer news LIVE: Vinicius Jr to Arsenal blow, Barcola 'agreement', Man Utd ready £60m bid",
@@ -543,7 +504,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:28.193484"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:07.242472"
     },
     {
       "title": "7 transfer targets Arsenal could miss out on with Vinicius Jr set to stay at Real Madrid",
@@ -556,7 +518,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.193950"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:07.242749"
     },
     {
       "title": "Liverpool weigh up hijacking £60m Arsenal transfer to appease desperate Andoni Iraola",
@@ -569,7 +532,8 @@
       "topics": [
         "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:28.194705"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:07.243224"
     },
     {
       "title": "Mikel Arteta gives blunt response to Bruno Guimaraes question after Newcastle transfer agreed",
@@ -582,7 +546,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.195232"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:07.243485"
     },
     {
       "title": "Transfer news: Huge Vinicius Jr to Arsenal update, Man Utd £60m talks, Bruno Guimaraes bid",
@@ -595,7 +560,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.195497"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:07.243637"
     },
     {
       "title": "Arsenal's 17 Brazilian stars ranked as Bruno Guimaraes deal nears – from Wellington Silva to Edu",
@@ -608,7 +574,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.195735"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:07.243750"
     },
     {
       "title": "Liverpool could lose TEN players for nothing as they fail to learn their transfer lesson",
@@ -621,7 +588,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.195856"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:07.243824"
     },
     {
       "title": "Liverpool news: Andoni Iraola eyes £188m raid as gloomy prediction made by Reds hero",
@@ -634,7 +602,8 @@
       "topics": [
         "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:28.195973"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:07.243898"
     },
     {
       "title": "Man Utd news: Atalanta star scouted as Michael Carrick ready to strike deal for £36.5m ace",
@@ -645,9 +614,10 @@
       "pub_date": "Thu, 6 Aug 2026 03:30:00 +0000",
       "category": "Transfer News",
       "topics": [
-        "Legends/Ex-Players"
+        "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.196080"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:07.243969"
     },
     {
       "title": "Arsenal news: Gabriel Martinelli transfer route becomes clearer as club 'braced for fresh bid'",
@@ -660,20 +630,22 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.196268"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:07.244057"
     },
     {
-      "title": "Vinicius Jr takes extreme measures amid Arsenal transfer interest and Real Madrid meeting",
-      "link": "https://www.mirror.co.uk/sport/football/news/vinicius-jr-transfer-arsenal-instagram-37519024",
-      "description": "The forward has taken an interesting step on social media amid interest from Arsenal.",
-      "image": "https://i2-prod.mirror.co.uk/sport/football/news/article37519023.ece/ALTERNATES/s615/0_Brazil-v-Norway-Round-of-16-FIFA-World-Cup-2026.jpg",
-      "source": "Mirror",
-      "pub_date": "Wed, 5 Aug 2026 21:30:13 +0000",
+      "title": "Manchester United and Liverpool offered chance to sign £35m Tottenham star",
+      "link": "https://metro.co.uk/2026/08/06/man-utd-liverpool-offered-chance-sign-35m-tottenham-star-29315737/",
+      "description": "",
+      "image": "",
+      "source": "Metro",
+      "pub_date": "Thu, 06 Aug 2026 15:31:23 +0000",
       "category": "Transfer News",
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.196395"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:08.560099"
     },
     {
       "title": "Jody Morris names Arsenal and Liverpool transfer target as dream Chelsea signing",
@@ -686,7 +658,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.592114"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:08.560223"
     },
     {
       "title": "Liverpool plotting transfer swoop for surprise £35m England star",
@@ -699,33 +672,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.592181"
-    },
-    {
-      "title": "Joao Pedro praises Chelsea transfer as Xabi Alonso signs ‘top player’",
-      "link": "https://metro.co.uk/2026/08/06/joao-pedro-praises-chelsea-transfer-xabi-alonso-signs-top-player-29312514/",
-      "description": "",
-      "image": "",
-      "source": "Metro",
-      "pub_date": "Thu, 06 Aug 2026 10:10:14 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:28.592372"
-    },
-    {
-      "title": "New Chelsea signing buzzing about ‘wonderful world’ of Premier League",
-      "link": "https://metro.co.uk/2026/08/06/new-chelsea-signing-buzzing-wonderful-world-premier-league-29311995/",
-      "description": "",
-      "image": "",
-      "source": "Metro",
-      "pub_date": "Thu, 06 Aug 2026 09:04:23 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:28.592543"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:08.560269"
     },
     {
       "title": "Arsenal set to make second bid for £60m World Cup star after Bruno Guimaraes transfer",
@@ -738,20 +686,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:28.592655"
-    },
-    {
-      "title": "Manchester United join race to sign £42m Chelsea transfer target",
-      "link": "https://metro.co.uk/2026/08/05/manchester-united-join-race-sign-42m-chelsea-transfer-target-29304672/",
-      "description": "",
-      "image": "",
-      "source": "Metro",
-      "pub_date": "Wed, 05 Aug 2026 13:07:46 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:28.593120"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:08.560542"
     },
     {
       "title": "“No-brainer” to choose Manchester City over Arsenal, says new signing",
@@ -764,20 +700,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:29.612081"
-    },
-    {
-      "title": "Report: Arsenal & Man United scouts watch £30m transfer target score stunning hat-trick",
-      "link": "https://www.caughtoffside.com/2026/08/06/arsenal-and-man-united-scout-kaua-elias/",
-      "description": "Arsenal and Manchester United have reportedly both had scouts watch highly-rated young Shakhtar Donetsk striker Kaua Elias. The 20-year-old has long looked like a hugely promising talent, and it seems...",
-      "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/08/COS-FeaturedHero-Image-Templates-79.jpg",
-      "source": "CaughtOffside",
-      "pub_date": "Thu, 06 Aug 2026 13:30:36 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:29.612360"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:10.769778"
     },
     {
       "title": "Source claims Arsenal tried “absolutely everything” to sign Vinicius Junior with historic offer",
@@ -790,20 +714,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:29.612663"
-    },
-    {
-      "title": "12 G/A youngster speaks out on future amid Arsenal transfer links",
-      "link": "https://www.caughtoffside.com/2026/08/06/arsenal-transfer-target-antonio-nusa-on-media-speculation/",
-      "description": "Arsenal may have been linked with RB Leipzig winger Antonio Nusa at points this summer, but it seems he’s not paying attention to media speculation. The talented young Norway international looks an ex...",
-      "image": "https://icdn.caughtoffside.com/wp-content/uploads/2026/08/COS-FeaturedHero-Image-Templates-77.jpg",
-      "source": "CaughtOffside",
-      "pub_date": "Thu, 06 Aug 2026 12:32:50 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:29.612953"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:10.770068"
     },
     {
       "title": "Aston Villa want Brazil star as Ezri Konsa replacement",
@@ -816,7 +728,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:29.613232"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:10.770323"
     },
     {
       "title": "Exit likely: Aston Villa make decision that could impact Arsenal’s transfer plans",
@@ -829,7 +742,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:29.613865"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:10.770662"
     },
     {
       "title": "How much Mo Salah will actually earn at Trabzonspor following historic move",
@@ -842,7 +756,8 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:29.614144"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:10.770824"
     },
     {
       "title": "Transfer window winners and losers so far – where do Arsenal, Chelsea, Liverpool & Man Utd rank?",
@@ -855,7 +770,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:29.614452"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:10.770992"
     },
     {
       "title": "Rangers Stunned As £8m Bid For 23-Year-Old Rejected Amid Transfer Battle: Should They Pay Over The Odds?",
@@ -868,7 +784,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:31.331007"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:12.707209"
     },
     {
       "title": "Celtic Agree Exit As £3.5m Signing Leaves With Permanent Transfer Clause: Good Deal For The Hoops?",
@@ -879,9 +796,10 @@
       "pub_date": "Wed, 05 Aug 2026 21:00:54 +0000",
       "category": "Transfer News",
       "topics": [
-        "Legends/Ex-Players"
+        "General"
       ],
-      "scraped_at": "2026-08-06T15:25:31.331881"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:12.707432"
     },
     {
       "title": "Liverpool Are Pushing To Land This Paris Saint-Germain Talent: One For The Future?",
@@ -892,9 +810,10 @@
       "pub_date": "Wed, 05 Aug 2026 20:15:15 +0000",
       "category": "Transfer News",
       "topics": [
-        "First Team"
+        "General"
       ],
-      "scraped_at": "2026-08-06T15:25:31.333651"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:12.707872"
     },
     {
       "title": "West Ham United Set To Land £30m-Rated 24-Year-Old In Major Attacking Statement: How Will Nuno Use Him?",
@@ -907,7 +826,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:31.334979"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:12.708176"
     },
     {
       "title": "Arsenal Are Big Admirers Of This Aston Villa Defender: Should Arteta Get Him On Board?",
@@ -920,7 +840,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:31.335816"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:12.708365"
     },
     {
       "title": "Everton Eye £17m Alternative After Major Transfer Twist: Are The Toffees Taking A Gamble?",
@@ -933,33 +854,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:31.337204"
-    },
-    {
-      "title": "Coventry City face Marinakis competition for Porto player – Forest link could prove significant",
-      "link": "https://sportwitness.co.uk/coventry-city-face-marinakis-competition-for-porto-player-forest-link-could-prove-significant/",
-      "description": "Coventry City’s hopes of signing Porto left-back Francisco Moura may have become a little more complicated. The newly-promoted Premier League side have already been named among the English clubs keepi...",
-      "image": "",
-      "source": "Sport Witness",
-      "pub_date": "Thu, 06 Aug 2026 15:18:54 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.258177"
-    },
-    {
-      "title": "Manchester City reach verbal agreement with club for signing",
-      "link": "https://sportwitness.co.uk/manchester-city-reach-verbal-agreement-with-club-for-signing/",
-      "description": "Manchester City have reached a verbal agreement with Olympique Marseille for the signing of goalkeeper Gerónimo Rulli. Foot Mercato report that Rulli is on the verge of leaving Marseille this summer, ...",
-      "image": "",
-      "source": "Sport Witness",
-      "pub_date": "Thu, 06 Aug 2026 15:14:43 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.258485"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:12.708687"
     },
     {
       "title": "Everton authorised agent arrives in Istanbul – Toffees offer awaited",
@@ -972,33 +868,8 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:32.258783"
-    },
-    {
-      "title": "Sunderland target left ‘furious’ as door slammed on transfer",
-      "link": "https://sportwitness.co.uk/sunderland-target-left-furious-as-door-slammed-on-transfer/",
-      "description": "  Sunderland’s failed attempt to sign Geny Catamo appears to have had a bigger impact than first thought. The winger is now said to be deeply unhappy after Sporting blocked the move. Portuguese newspa...",
-      "image": "",
-      "source": "Sport Witness",
-      "pub_date": "Thu, 06 Aug 2026 14:29:39 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.259070"
-    },
-    {
-      "title": "Manchester United considering meeting €25m request for easy incoming",
-      "link": "https://sportwitness.co.uk/manchester-united-considering-meeting-e25m-request-for-easy-incoming/",
-      "description": "Manchester United are now weighing up whether to meet Bologna’s €25m (£21.7m) asking price for Jhon Lucumí. The Serie A club are increasingly convinced a Premier League bidding battle could soon take ...",
-      "image": "",
-      "source": "Sport Witness",
-      "pub_date": "Thu, 06 Aug 2026 14:10:30 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.259768"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:13.610954"
     },
     {
       "title": "The Daily Diomande: Nottingham Forest transfer collapses",
@@ -1009,493 +880,10 @@
       "pub_date": "Thu, 06 Aug 2026 13:02:48 +0000",
       "category": "Transfer News",
       "topics": [
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.260311"
-    },
-    {
-      "title": "Bradley Barcola: 3 factors can help deal – Liverpool and PSG “confident”",
-      "link": "https://www.thisisanfield.com/2026/08/bradley-barcola-3-factors-liverpool-psg-transfer-deal/",
-      "description": "",
-      "image": "https://www.thisisanfield.com/wp-content/uploads/Paris-Saint-Germain-v-Atletico-de-Madrid-UEFA-Champions-League-202425-League-Phase-MD4-10-copy.jpg",
-      "source": "This Is Anfield",
-      "pub_date": "Thu, 06 Aug 2026 10:34:20 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.623702"
-    },
-    {
-      "title": "Mo Salah wages at Trabzonspor: 2-year contract, record-breaking salary",
-      "link": "https://www.thisisanfield.com/2026/08/mo-salah-wages-trabzonspor-2-year-contract-salary/",
-      "description": "",
-      "image": "https://www.thisisanfield.com/wp-content/uploads/featureimage-540.jpg",
-      "source": "This Is Anfield",
-      "pub_date": "Thu, 06 Aug 2026 09:09:40 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.623757"
-    },
-    {
-      "title": "When Liverpool’s manager punched player over a transfer – and he fought back!",
-      "link": "https://www.thisisanfield.com/2026/08/graeme-souness-punched-don-hutchison/",
-      "description": "",
-      "image": "https://www.thisisanfield.com/wp-content/uploads/Feature-image-template-43.jpg",
-      "source": "This Is Anfield",
-      "pub_date": "Thu, 06 Aug 2026 06:00:30 +0000",
-      "category": "Transfer News",
-      "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:32.623963"
-    },
-    {
-      "title": "Liverpool transfer inaction would be hanging Andoni Iraola out to dry",
-      "link": "https://www.thisisanfield.com/2026/08/liverpool-hanging-andoni-iraola-out-to-dry/",
-      "description": "",
-      "image": "https://www.thisisanfield.com/wp-content/uploads/Konate-Guehi-1.jpg",
-      "source": "This Is Anfield",
-      "pub_date": "Wed, 05 Aug 2026 17:00:42 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "Manager"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.624084"
-    },
-    {
-      "title": "Liverpool named as Arsenal’s possible competition for £60m Ezri Konsa",
-      "link": "https://www.thisisanfield.com/2026/08/liverpool-ezri-konsa-arsenal-transfer-competition/",
-      "description": "",
-      "image": "https://www.thisisanfield.com/wp-content/uploads/2024-03-26-002-England_Belgium.jpg",
-      "source": "This Is Anfield",
-      "pub_date": "Wed, 05 Aug 2026 16:10:40 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.624150"
-    },
-    {
-      "title": "Tottenham “advancing” for Gakpo as Liverpool explore Mbaye deal – Latest LFC News",
-      "link": "https://www.thisisanfield.com/2026/08/tottenham-advancing-gakpo-liverpool-mbaye-transfer-news/",
-      "description": "",
-      "image": "https://www.thisisanfield.com/wp-content/uploads/ROUNDUP-COLLAGE38-1-scaled.jpg",
-      "source": "This Is Anfield",
-      "pub_date": "Wed, 05 Aug 2026 16:02:15 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.624217"
-    },
-    {
-      "title": "Liverpool ‘hybrid’ defender move only likely late in transfer window – if at all",
-      "link": "https://www.thisisanfield.com/2026/08/liverpool-hybrid-defender-transfer-late-move-journalist/",
-      "description": "",
-      "image": "https://www.thisisanfield.com/wp-content/uploads/P2026-08-02-Liverpool_Leeds-116.jpg",
-      "source": "This Is Anfield",
-      "pub_date": "Wed, 05 Aug 2026 14:53:22 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.624296"
-    },
-    {
-      "title": "‘Bad blood’ – Ex-Everton CEO makes controversial Liverpool transfer claim",
-      "link": "https://readliverpoolfc.com/news/bad-blood-ex-everton-ceo-makes-controversial-liverpool-transfer-claim/",
-      "description": "Liverpool have a lot of gaping holes in their squad, but it also goes without saying that some players are fighting for their futures. And none more so than Harvey Elliott, whose loan spell at Aston V...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/prsizmJqigHr.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Thu, 06 Aug 2026 14:16:28 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.958344"
-    },
-    {
-      "title": "England’s 2026 FIFA World Cup star ‘extremely receptive’ to Liverpool move",
-      "link": "https://readliverpoolfc.com/news/djed-spence-wants-liverpool-transfer-tottenham-hotspur/",
-      "description": "Liverpool remain in the market for reinforcements as Andoni Iraola faces a tough task to improve the team between now and the end of the summer. The Reds are ravaged by injuries at the back, so a vers...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBU1Ncv3Xz.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Thu, 06 Aug 2026 11:14:02 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "Manager"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.958725"
-    },
-    {
-      "title": "Revealed: Bradley Barcola’s clear transfer preference between Liverpool and Arsenal",
-      "link": "https://readliverpoolfc.com/news/bradley-barcola-transfer-preference-liverpool-arsenal-psg/",
-      "description": "We’re starting the day with an update on Bradley Barcola as Liverpool remain in talks with PSG to secure his signature. To be honest, there aren’t too many teams the Frenchman wouldn’t start for and h...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBy6OZblWA.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Thu, 06 Aug 2026 07:34:01 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.958900"
-    },
-    {
-      "title": "Liverpool agree personal terms with attacker Kylian Mbappe is a big fan of",
-      "link": "https://readliverpoolfc.com/news/liverpool-agree-personal-terms-barcola-mbappe-psg/",
-      "description": "Here’s everyone’s dose of Bradley Barcola for the day as he continues to be linked with a move to Liverpool. At this point, everyone knows he’s open to a move to Liverpool and that PSG aren’t complete...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBW7IvAiqW.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 21:13:29 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.959063"
-    },
-    {
-      "title": "Liverpool make contact with ‘top’ player’s family after transfer request",
-      "link": "https://readliverpoolfc.com/news/liverpool-transfer-news-bergvall-tottenham-barcelona/",
-      "description": "Liverpool are still in the market for potential reinforcements and have a lot of work to do between now and the end of the summer transfer window. The Reds have signed Victor Munoz and Jeremy Jacquet ...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/neimu0vCmlwx.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 20:54:40 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.959229"
-    },
-    {
-      "title": "Liverpool could rival Arsenal for £60m-rated England international",
-      "link": "https://readliverpoolfc.com/news/liverpool-rival-arsenal-konsa-aston-villa/",
-      "description": "We’ve made our feelings on Liverpool’s defensive options very, very clear. To put it bluntly, it’s just not good enough. Not in terms of quality, but based on availability, experience and their respec...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBGUX9QYgX.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 19:52:29 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.959408"
-    },
-    {
-      "title": "Victor Munoz impresses on first day in Liverpool training",
-      "link": "https://readliverpoolfc.com/first-team/victor-munoz-impresses-on-first-day-in-liverpool-training/",
-      "description": "Victor Munoz has impressed on his first day at Liverpool training. The new signing joined up with the squad after being part of the World Cup winning Spain side.  Munoz was announced as a new signing ...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBWR0DKRGU.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 19:21:42 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team",
-        "Youth/Academy"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.959563"
-    },
-    {
-      "title": "Liverpool offered opportunity to sign Real Madrid centre-back",
-      "link": "https://readliverpoolfc.com/transfers/liverpool-offered-opportunity-to-sign-real-madrid-centre-back/",
-      "description": "According to Graeme Bailey on TEAMTALK Liverpool have been offered the opportunity to sign young Real Madrid centre-back Raul Asencio.  The deal takes a strange turn as the defender would come into Li...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOB9elDGrNa.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 17:34:19 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.959765"
-    },
-    {
-      "title": "‘Alert’ – Liverpool linked with shock loan move for Newcastle United attacker",
-      "link": "https://readliverpoolfc.com/news/liverpool-manchester-united-nick-woltemade-loan-newcastle/",
-      "description": "Liverpool’s attack is an interesting space at the moment as Andoni Iraola prepares for his first season in charge of the club. After losing Mohamed Salah, the Reds signed Victor Munoz as a versatile o...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/neimROLe5Kkr.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 15:00:00 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "Manager",
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.960130"
-    },
-    {
-      "title": "‘Possible’ – Fabrizio Romano indicates Liverpool transfer u-turn for Cody Gakpo",
-      "link": "https://readliverpoolfc.com/news/fabrizio-romano-liverpool-transfer-u-turn-gakpo-tottenham/",
-      "description": "In recent weeks, there has been a lot of chatter about Cody Gakpo’s long-term Liverpool future. The Dutch international has been a reliable player for the Reds and signed a new contract to keep him at...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/wennccfNqSr2.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 12:26:12 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.960423"
-    },
-    {
-      "title": "Liverpool could have been without Virgil van Dijk after MLS approach",
-      "link": "https://readliverpoolfc.com/news/virgil-van-dijk-mls-transfer-pitch-revealed/",
-      "description": "An ambitious MLS club was left ‘gutted’ after a cheeky transfer pitch to sign Liverpool captain Virgil van Dijk failed. Read the full details.",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/04/neimuSul2KNk.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 12:00:00 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.960526"
-    },
-    {
-      "title": "Liverpool Barcola Premier League alternative slapped with £70 million valuation",
-      "link": "https://readliverpoolfc.com/transfers/liverpool-barcola-premier-league-alternative-slapped-with-70-million-valuation/",
-      "description": "Liverpool target as a Bradley Barcola alternative, Yankuba Minteh has been given a £70 million valuation by Brighton.",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/prsiJEYzLp49.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 11:00:00 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.960619"
-    },
-    {
-      "title": "Liverpool may need to sell Cody Gakpo to make a centre-back transfer move",
-      "link": "https://readliverpoolfc.com/transfers/gakpo-sale-opens-defender-door/",
-      "description": "Liverpool need to sell Cody Gakpo to sign a centre-back.  This sounds like a strange statement and most will automatically think that this comes down to the finances of a defender deal, but this isn’t...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/ARCH604321_00292521.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 06:54:47 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.960963"
-    },
-    {
-      "title": "Sadio Mane has already told Liverpool what they can expect from Ibrahim Mbaye",
-      "link": "https://readliverpoolfc.com/news/liverpool-transfer-news-mane-mbaye-psg/",
-      "description": "Liverpool seem to have woken up from their transfer slumber after entering the race to sign Ibrahim Mbaye from PSG. The Senegalese international is likely to leave this summer and is wanted by a host ...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/neimZVbM1ain.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 06:30:34 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team",
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.961116"
-    },
-    {
-      "title": "‘Priority’ – Fabrizio Romano confirms overnight Liverpool transfer bombshell",
-      "link": "https://readliverpoolfc.com/news/fabrizio-romano-liverpool-transfer-bombshell-mbaye-barcola-psg/",
-      "description": "Wednesday looks like it could be a good day to be a Liverpool fan as they have finally made a massive play in the transfer market. The Reds remain locked in talks to sign Bradley Barcola from PSG, whi...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBS8UtCuMZ.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Wed, 05 Aug 2026 05:59:38 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.961281"
-    },
-    {
-      "title": "Mohamed Salah completes next move after stellar Liverpool career",
-      "link": "https://readliverpoolfc.com/transfers/mohamed-salah-completes-next-move-after-stellar-liverpool-career/",
-      "description": "Mohamed Salah is set to sign for Trabzonspor in Turkey according to reports from Fabrizio Romano. Salah left Liverpool at the end of the 2025/26 season after he and the club mutually agreed to end his...",
-      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/ARCH91229_00060015.webp",
-      "source": "Read Liverpool FC",
-      "pub_date": "Tue, 04 Aug 2026 21:25:19 GMT",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:34.961448"
-    },
-    {
-      "title": "Green light given for £50m Liverpool signing, player \"extremely receptive\"",
-      "link": "https://live4liverpool.com/djed-spence-extremely-receptive-to-liverpool-transfer-which-could-cost-50m/",
-      "description": "Liverpool are working on completing deals to sign PSG stars Bradley Barcola and Ibrahim Mbaye, but they also need to sign defenders which makes news about Spurs right back Djed Spence very encouraging...",
-      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/neimwxiwtxVn-1024x683.webp",
-      "source": "Live4Liverpool",
-      "pub_date": "Thu, 06 Aug 2026 15:00:30 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:36.002885"
-    },
-    {
-      "title": "Liverpool accelerating: Official talks on €50m fee, player sees Anfield as \"his priority\"",
-      "link": "https://live4liverpool.com/liverpool-accelerating-deal-to-sign-ibrahim-mbaye-from-psg-with-talks-set-to-begin/",
-      "description": "Liverpool are preparing to start talks with PSG to sign Ibrahim Mbaye this summer, which will be in addition to already ongoing talks to sign Bradley Barcola. Barcola is Liverpool’s top priority this ...",
-      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/WmOBzpG4qZ6H-1024x683.webp",
-      "source": "Live4Liverpool",
-      "pub_date": "Thu, 06 Aug 2026 14:00:25 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:36.003099"
-    },
-    {
-      "title": "PSG president Nasser Al-Khelaifi to take charge of negotiations with senior LFC execs to complete Barcola transfer",
-      "link": "https://live4liverpool.com/psg-chief-nasser-al-khelaifi-set-to-lead-new-talks-with-liverpool-to-expedite-bradley-barcola-transfer/",
-      "description": "A new report claims that PSG president Nasser Al-Khelaifi is set to take charge of negotiations with Liverpool to expedite the Bradley Barcola transfer. It has been weeks since Liverpool pivoted from ...",
-      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/wennosRrStln-1024x809.webp",
-      "source": "Live4Liverpool",
-      "pub_date": "Thu, 06 Aug 2026 12:00:03 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:36.003519"
-    },
-    {
-      "title": "Liverpool set for talks to sign Champions League-winning \"phenomenon\" despite attitude issues",
-      "link": "https://live4liverpool.com/liverpool-set-for-talks-to-sign-ibrahim-mbaye-this-summer/",
-      "description": "Liverpool have been strongly linked with a move to Paris Saint-Germain star Ibrahim Mbaye, and now another positive update on the situation has emerged. The 18-year-old is a player with a huge future ...",
-      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/prsisjaPV9Nb-1024x683.webp",
-      "source": "Live4Liverpool",
-      "pub_date": "Thu, 06 Aug 2026 11:00:39 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:36.003726"
-    },
-    {
-      "title": "Wow: \"Decisive\" World Cup star now wants his agent to \"push\" hard for Liverpool transfer",
-      "link": "https://live4liverpool.com/djed-spence-wants-his-agent-to-push-for-liverpool-transfer/",
-      "description": "Liverpool have reportedly turned their attention to Tottenham and England full-back Djed Spence, who appears keen to complete a move to Anfield. Some claims on Wednesday suggested that Spence is a tar...",
-      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/esmewAawAlP1-1024x683.webp",
-      "source": "Live4Liverpool",
-      "pub_date": "Thu, 06 Aug 2026 10:00:17 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:36.003948"
-    },
-    {
-      "title": "Liverpool could potentially suffer massive blow in quest to sign Bradley Barcola",
-      "link": "https://live4liverpool.com/liverpool-could-suffer-massive-blow-in-quest-to-sign-bradley-barcola/",
-      "description": "Liverpool may see Bradley Barcola as their priority signing this summer, but a recent claim suggests that they could suffer a blow in their efforts to snap him up. The Frenchman is wanted by the Reds,...",
-      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/WmOBXuZ8umCY-1024x683.webp",
-      "source": "Live4Liverpool",
-      "pub_date": "Thu, 06 Aug 2026 09:00:40 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:36.004152"
-    },
-    {
-      "title": "Huge if true: Liverpool in talks over PSG transfer raid worth £212m",
-      "link": "https://live4liverpool.com/liverpool-in-talks-over-psg-transfer-raid-worth-212m-in-richard-hughes-masterclass/",
-      "description": "Liverpool may be set to spring into action by signing three PSG players this summer, which would give them the quality and depth to compete at the top again. The 2025/26 season was dire for Liverpool,...",
-      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/WmOBzZ0UUlMm-1024x802.webp",
-      "source": "Live4Liverpool",
-      "pub_date": "Thu, 06 Aug 2026 08:00:14 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:36.004345"
-    },
-    {
-      "title": "Liverpool offered €120k-a-week Real Madrid defender, Andoni Iraola loves him",
-      "link": "https://live4liverpool.com/liverpool-contacted-by-intermediaries-to-explore-raul-asencio-moving-to-anfield/",
-      "description": "Liverpool’s transfer plans may be taking longer than many fans would have hoped, but a groundswell of reports over the last few days suggests things are ramping up. That said, it does seem like Liverp...",
-      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/neimz1ftcSdR-1024x684.webp",
-      "source": "Live4Liverpool",
-      "pub_date": "Thu, 06 Aug 2026 07:00:18 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "Manager"
-      ],
-      "scraped_at": "2026-08-06T15:25:36.004548"
-    },
-    {
-      "title": "Premier League club expects Liverpool to submit bid £60m for \"excellent\" centre-back",
-      "link": "https://live4liverpool.com/liverpool-expected-to-bid-for-aston-villas-ezri-konsa-amid-competition-from-arsenal/",
-      "description": "Liverpool need to sign a centre-back this summer to replace Ibrahima Konate after he left to join Real Madrid on a free transfer, with multiple reports now claiming that the Reds are considering Ezri ...",
-      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/WmOBSp20ZJdL-1024x683.webp",
-      "source": "Live4Liverpool",
-      "pub_date": "Thu, 06 Aug 2026 06:00:45 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:36.004748"
-    },
-    {
-      "title": "Ibrahim Mbaye and Djed Spence | The Trends",
-      "link": "https://www.theanfieldwrap.com/2026/08/ibrahim-mbaye-and-djed-spence-the-trends-3/",
-      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nExamining football’s underlying numbers, using StatsBomb, to assess Ibrahim Mbaye and Djed Spence...",
-      "image": "",
-      "source": "The Anfield Wrap",
-      "pub_date": "Thu, 06 Aug 2026 15:15:19 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:39.413883"
-    },
-    {
-      "title": "Ibrahim Mbaye and Djed Spence  | The Trends",
-      "link": "https://www.theanfieldwrap.com/2026/08/ibrahim-mbaye-and-djed-spence-the-trends/",
-      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nExamining football’s underlying numbers, using StatsBomb, to assess Ibrahim Mbaye and Djed Spence...",
-      "image": "",
-      "source": "The Anfield Wrap",
-      "pub_date": "Thu, 06 Aug 2026 15:13:38 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:39.414134"
-    },
-    {
-      "title": "Ibrahim Mbaye Latest With Bence Bocsak | TAW Special",
-      "link": "https://www.theanfieldwrap.com/2026/08/ibrahim-mbaye-latest-with-bence-bocsak-taw-special/",
-      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nWith Liverpool linked to PSG’s Ibrahim Mbaye, John Gibbons chats to French football expert Bence ...",
-      "image": "",
-      "source": "The Anfield Wrap",
-      "pub_date": "Wed, 05 Aug 2026 15:21:05 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:39.415274"
-    },
-    {
-      "title": "Liverpool Interested In Ibrahim Mbaye | The Gutter",
-      "link": "https://www.theanfieldwrap.com/2026/08/liverpool-interested-in-ibrahim-mbaye-the-gutter-2/",
-      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nThe latest Gutter on Liverpool transfers, with the Reds linked not only with PSG’s Bradley Barcol...",
-      "image": "",
-      "source": "The Anfield Wrap",
-      "pub_date": "Wed, 05 Aug 2026 13:13:08 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:39.415605"
-    },
-    {
-      "title": "Jones & Gakpo To Leave? | Talking Transfers",
-      "link": "https://www.theanfieldwrap.com/2026/08/jones-gakpo-to-leave-talking-transfers/",
-      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nThe latest on Liverpool transfers and contracts, discussing whether Curtis Jones and Cody Gakpo w...",
-      "image": "",
-      "source": "The Anfield Wrap",
-      "pub_date": "Tue, 04 Aug 2026 13:58:35 +0000",
-      "category": "Transfer News",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:39.417196"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:13.611625"
     },
     {
       "title": "Djed Spence opens up on becoming England's first-ever Muslim footballer",
@@ -1508,20 +896,1200 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:40.853070"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:15.318603"
     },
     {
-      "title": "Wrexham face Liverpool with Premier League still in their sights despite setback",
-      "link": "https://www.theguardian.com/football/2026/jul/28/wrexham-face-liverpool-with-premier-league-still-in-their-sights-despite-setback",
-      "description": "Club have been promoted three times in four yearsPhil Parkinson’s side missed out on playoffs in 2026The Wrexham co-owner Ryan Reynolds called it a “punch-me moment” – his club playing Liverpool in a ...",
-      "image": "https://i.guim.co.uk/img/media/1d3e9f5fefa52460b77ecf1276bfbcd4fdb67bac/90_0_1102_882/master/1102.jpg?width=140&quality=85&auto=format&fit=max&s=fe65af9c75d616af3470741bddd0166a",
-      "source": "The Guardian",
-      "pub_date": "Tue, 28 Jul 2026 16:40:00 GMT",
-      "category": "Injury News",
+      "title": "Jahmyr Gibbs’ Wordless Response Fuels Contract Speculation",
+      "link": "https://sports.yahoo.com/articles/jahmyr-gibbs-wordless-response-fuels-152112405.html",
+      "description": "Jahmyr Gibbs avoided speaking with reporters after Thursday’s practice, but he gave Dave Birkett a thumbs-up when asked whether a Lions extension was close. The gesture adds to growing optimism, thoug...",
+      "image": "",
+      "source": "Yahoo Sports",
+      "pub_date": "Thu, 06 Aug 2026 15:21:12 +0000",
+      "category": "Transfer News",
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:27.788362"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:15.753259"
+    },
+    {
+      "title": "Ben Jacobs confirms World Cup star has been offered to Liverpool",
+      "link": "https://sports.yahoo.com/articles/ben-jacobs-confirms-world-cup-151500069.html",
+      "description": "Liverpool Transfer News: Reds Offered the Chance to Sign World Cup StarAfter weeks of rumours, Liverpool are set for a busy few weeks at the end of the summer transfer window. Under new head coach And...",
+      "image": "",
+      "source": "Yahoo Sports",
+      "pub_date": "Thu, 06 Aug 2026 15:15:00 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:15.756007"
+    },
+    {
+      "title": "Bradley Barcola: 3 factors can help deal – Liverpool and PSG “confident”",
+      "link": "https://www.thisisanfield.com/2026/08/bradley-barcola-3-factors-liverpool-psg-transfer-deal/",
+      "description": "",
+      "image": "https://www.thisisanfield.com/wp-content/uploads/Paris-Saint-Germain-v-Atletico-de-Madrid-UEFA-Champions-League-202425-League-Phase-MD4-10-copy.jpg",
+      "source": "This Is Anfield",
+      "pub_date": "Thu, 06 Aug 2026 10:34:20 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.112664"
+    },
+    {
+      "title": "Mo Salah wages at Trabzonspor: 2-year contract, record-breaking salary",
+      "link": "https://www.thisisanfield.com/2026/08/mo-salah-wages-trabzonspor-2-year-contract-salary/",
+      "description": "",
+      "image": "https://www.thisisanfield.com/wp-content/uploads/featureimage-540.jpg",
+      "source": "This Is Anfield",
+      "pub_date": "Thu, 06 Aug 2026 09:09:40 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.112753"
+    },
+    {
+      "title": "When Liverpool’s manager punched player over a transfer – and he fought back!",
+      "link": "https://www.thisisanfield.com/2026/08/graeme-souness-punched-don-hutchison/",
+      "description": "",
+      "image": "https://www.thisisanfield.com/wp-content/uploads/Feature-image-template-43.jpg",
+      "source": "This Is Anfield",
+      "pub_date": "Thu, 06 Aug 2026 06:00:30 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.113064"
+    },
+    {
+      "title": "Liverpool transfer inaction would be hanging Andoni Iraola out to dry",
+      "link": "https://www.thisisanfield.com/2026/08/liverpool-hanging-andoni-iraola-out-to-dry/",
+      "description": "",
+      "image": "https://www.thisisanfield.com/wp-content/uploads/Konate-Guehi-1.jpg",
+      "source": "This Is Anfield",
+      "pub_date": "Wed, 05 Aug 2026 17:00:42 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.113258"
+    },
+    {
+      "title": "Liverpool named as Arsenal’s possible competition for £60m Ezri Konsa",
+      "link": "https://www.thisisanfield.com/2026/08/liverpool-ezri-konsa-arsenal-transfer-competition/",
+      "description": "",
+      "image": "https://www.thisisanfield.com/wp-content/uploads/2024-03-26-002-England_Belgium.jpg",
+      "source": "This Is Anfield",
+      "pub_date": "Wed, 05 Aug 2026 16:10:40 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.113359"
+    },
+    {
+      "title": "Tottenham “advancing” for Gakpo as Liverpool explore Mbaye deal – Latest LFC News",
+      "link": "https://www.thisisanfield.com/2026/08/tottenham-advancing-gakpo-liverpool-mbaye-transfer-news/",
+      "description": "",
+      "image": "https://www.thisisanfield.com/wp-content/uploads/ROUNDUP-COLLAGE38-1-scaled.jpg",
+      "source": "This Is Anfield",
+      "pub_date": "Wed, 05 Aug 2026 16:02:15 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.113463"
+    },
+    {
+      "title": "Liverpool ‘hybrid’ defender move only likely late in transfer window – if at all",
+      "link": "https://www.thisisanfield.com/2026/08/liverpool-hybrid-defender-transfer-late-move-journalist/",
+      "description": "",
+      "image": "https://www.thisisanfield.com/wp-content/uploads/P2026-08-02-Liverpool_Leeds-116.jpg",
+      "source": "This Is Anfield",
+      "pub_date": "Wed, 05 Aug 2026 14:53:22 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.113567"
+    },
+    {
+      "title": "‘Bad blood’ – Ex-Everton CEO makes controversial Liverpool transfer claim",
+      "link": "https://readliverpoolfc.com/news/bad-blood-ex-everton-ceo-makes-controversial-liverpool-transfer-claim/",
+      "description": "Liverpool have a lot of gaping holes in their squad, but it also goes without saying that some players are fighting for their futures. And none more so than Harvey Elliott, whose loan spell at Aston V...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/prsizmJqigHr.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Thu, 06 Aug 2026 14:16:28 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.462877"
+    },
+    {
+      "title": "England’s 2026 FIFA World Cup star ‘extremely receptive’ to Liverpool move",
+      "link": "https://readliverpoolfc.com/news/djed-spence-wants-liverpool-transfer-tottenham-hotspur/",
+      "description": "Liverpool remain in the market for reinforcements as Andoni Iraola faces a tough task to improve the team between now and the end of the summer. The Reds are ravaged by injuries at the back, so a vers...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBU1Ncv3Xz.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Thu, 06 Aug 2026 11:14:02 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.463422"
+    },
+    {
+      "title": "Revealed: Bradley Barcola’s clear transfer preference between Liverpool and Arsenal",
+      "link": "https://readliverpoolfc.com/news/bradley-barcola-transfer-preference-liverpool-arsenal-psg/",
+      "description": "We’re starting the day with an update on Bradley Barcola as Liverpool remain in talks with PSG to secure his signature. To be honest, there aren’t too many teams the Frenchman wouldn’t start for and h...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBy6OZblWA.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Thu, 06 Aug 2026 07:34:01 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.463663"
+    },
+    {
+      "title": "Liverpool agree personal terms with attacker Kylian Mbappe is a big fan of",
+      "link": "https://readliverpoolfc.com/news/liverpool-agree-personal-terms-barcola-mbappe-psg/",
+      "description": "Here’s everyone’s dose of Bradley Barcola for the day as he continues to be linked with a move to Liverpool. At this point, everyone knows he’s open to a move to Liverpool and that PSG aren’t complete...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBW7IvAiqW.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 21:13:29 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.463881"
+    },
+    {
+      "title": "Liverpool make contact with ‘top’ player’s family after transfer request",
+      "link": "https://readliverpoolfc.com/news/liverpool-transfer-news-bergvall-tottenham-barcelona/",
+      "description": "Liverpool are still in the market for potential reinforcements and have a lot of work to do between now and the end of the summer transfer window. The Reds have signed Victor Munoz and Jeremy Jacquet ...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/neimu0vCmlwx.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 20:54:40 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.464095"
+    },
+    {
+      "title": "Liverpool could rival Arsenal for £60m-rated England international",
+      "link": "https://readliverpoolfc.com/news/liverpool-rival-arsenal-konsa-aston-villa/",
+      "description": "We’ve made our feelings on Liverpool’s defensive options very, very clear. To put it bluntly, it’s just not good enough. Not in terms of quality, but based on availability, experience and their respec...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBGUX9QYgX.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 19:52:29 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.464343"
+    },
+    {
+      "title": "Victor Munoz impresses on first day in Liverpool training",
+      "link": "https://readliverpoolfc.com/first-team/victor-munoz-impresses-on-first-day-in-liverpool-training/",
+      "description": "Victor Munoz has impressed on his first day at Liverpool training. The new signing joined up with the squad after being part of the World Cup winning Spain side.  Munoz was announced as a new signing ...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBWR0DKRGU.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 19:21:42 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.464550"
+    },
+    {
+      "title": "Liverpool offered opportunity to sign Real Madrid centre-back",
+      "link": "https://readliverpoolfc.com/transfers/liverpool-offered-opportunity-to-sign-real-madrid-centre-back/",
+      "description": "According to Graeme Bailey on TEAMTALK Liverpool have been offered the opportunity to sign young Real Madrid centre-back Raul Asencio.  The deal takes a strange turn as the defender would come into Li...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOB9elDGrNa.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 17:34:19 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.464770"
+    },
+    {
+      "title": "‘Possible’ – Fabrizio Romano indicates Liverpool transfer u-turn for Cody Gakpo",
+      "link": "https://readliverpoolfc.com/news/fabrizio-romano-liverpool-transfer-u-turn-gakpo-tottenham/",
+      "description": "In recent weeks, there has been a lot of chatter about Cody Gakpo’s long-term Liverpool future. The Dutch international has been a reliable player for the Reds and signed a new contract to keep him at...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/wennccfNqSr2.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 12:26:12 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": "Fabrizio Romano",
+      "scraped_at": "2026-08-06T15:32:16.465674"
+    },
+    {
+      "title": "Liverpool could have been without Virgil van Dijk after MLS approach",
+      "link": "https://readliverpoolfc.com/news/virgil-van-dijk-mls-transfer-pitch-revealed/",
+      "description": "An ambitious MLS club was left ‘gutted’ after a cheeky transfer pitch to sign Liverpool captain Virgil van Dijk failed. Read the full details.",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/04/neimuSul2KNk.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 12:00:00 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.465824"
+    },
+    {
+      "title": "Liverpool Barcola Premier League alternative slapped with £70 million valuation",
+      "link": "https://readliverpoolfc.com/transfers/liverpool-barcola-premier-league-alternative-slapped-with-70-million-valuation/",
+      "description": "Liverpool target as a Bradley Barcola alternative, Yankuba Minteh has been given a £70 million valuation by Brighton.",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/prsiJEYzLp49.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 11:00:00 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.465959"
+    },
+    {
+      "title": "Liverpool may need to sell Cody Gakpo to make a centre-back transfer move",
+      "link": "https://readliverpoolfc.com/transfers/gakpo-sale-opens-defender-door/",
+      "description": "Liverpool need to sell Cody Gakpo to sign a centre-back.  This sounds like a strange statement and most will automatically think that this comes down to the finances of a defender deal, but this isn’t...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/ARCH604321_00292521.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 06:54:47 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.466445"
+    },
+    {
+      "title": "Sadio Mane has already told Liverpool what they can expect from Ibrahim Mbaye",
+      "link": "https://readliverpoolfc.com/news/liverpool-transfer-news-mane-mbaye-psg/",
+      "description": "Liverpool seem to have woken up from their transfer slumber after entering the race to sign Ibrahim Mbaye from PSG. The Senegalese international is likely to leave this summer and is wanted by a host ...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/neimZVbM1ain.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 06:30:34 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.466684"
+    },
+    {
+      "title": "‘Priority’ – Fabrizio Romano confirms overnight Liverpool transfer bombshell",
+      "link": "https://readliverpoolfc.com/news/fabrizio-romano-liverpool-transfer-bombshell-mbaye-barcola-psg/",
+      "description": "Wednesday looks like it could be a good day to be a Liverpool fan as they have finally made a massive play in the transfer market. The Reds remain locked in talks to sign Bradley Barcola from PSG, whi...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/WmOBS8UtCuMZ.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 05:59:38 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": "Fabrizio Romano",
+      "scraped_at": "2026-08-06T15:32:16.466880"
+    },
+    {
+      "title": "Mohamed Salah completes next move after stellar Liverpool career",
+      "link": "https://readliverpoolfc.com/transfers/mohamed-salah-completes-next-move-after-stellar-liverpool-career/",
+      "description": "Mohamed Salah is set to sign for Trabzonspor in Turkey according to reports from Fabrizio Romano. Salah left Liverpool at the end of the 2025/26 season after he and the club mutually agreed to end his...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/ARCH91229_00060015.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Tue, 04 Aug 2026 21:25:19 GMT",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": "Fabrizio Romano",
+      "scraped_at": "2026-08-06T15:32:16.467091"
+    },
+    {
+      "title": "Green light given for £50m Liverpool signing, player \"extremely receptive\"",
+      "link": "https://live4liverpool.com/djed-spence-extremely-receptive-to-liverpool-transfer-which-could-cost-50m/",
+      "description": "Liverpool are working on completing deals to sign PSG stars Bradley Barcola and Ibrahim Mbaye, but they also need to sign defenders which makes news about Spurs right back Djed Spence very encouraging...",
+      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/neimwxiwtxVn-1024x683.webp",
+      "source": "Live4Liverpool",
+      "pub_date": "Thu, 06 Aug 2026 15:00:30 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:17.465194"
+    },
+    {
+      "title": "Liverpool accelerating: Official talks on €50m fee, player sees Anfield as \"his priority\"",
+      "link": "https://live4liverpool.com/liverpool-accelerating-deal-to-sign-ibrahim-mbaye-from-psg-with-talks-set-to-begin/",
+      "description": "Liverpool are preparing to start talks with PSG to sign Ibrahim Mbaye this summer, which will be in addition to already ongoing talks to sign Bradley Barcola. Barcola is Liverpool’s top priority this ...",
+      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/WmOBzpG4qZ6H-1024x683.webp",
+      "source": "Live4Liverpool",
+      "pub_date": "Thu, 06 Aug 2026 14:00:25 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:17.465478"
+    },
+    {
+      "title": "PSG president Nasser Al-Khelaifi to take charge of negotiations with senior LFC execs to complete Barcola transfer",
+      "link": "https://live4liverpool.com/psg-chief-nasser-al-khelaifi-set-to-lead-new-talks-with-liverpool-to-expedite-bradley-barcola-transfer/",
+      "description": "A new report claims that PSG president Nasser Al-Khelaifi is set to take charge of negotiations with Liverpool to expedite the Bradley Barcola transfer. It has been weeks since Liverpool pivoted from ...",
+      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/wennosRrStln-1024x809.webp",
+      "source": "Live4Liverpool",
+      "pub_date": "Thu, 06 Aug 2026 12:00:03 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:17.466049"
+    },
+    {
+      "title": "Liverpool set for talks to sign Champions League-winning \"phenomenon\" despite attitude issues",
+      "link": "https://live4liverpool.com/liverpool-set-for-talks-to-sign-ibrahim-mbaye-this-summer/",
+      "description": "Liverpool have been strongly linked with a move to Paris Saint-Germain star Ibrahim Mbaye, and now another positive update on the situation has emerged. The 18-year-old is a player with a huge future ...",
+      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/prsisjaPV9Nb-1024x683.webp",
+      "source": "Live4Liverpool",
+      "pub_date": "Thu, 06 Aug 2026 11:00:39 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": "Paul Joyce",
+      "scraped_at": "2026-08-06T15:32:17.466311"
+    },
+    {
+      "title": "Wow: \"Decisive\" World Cup star now wants his agent to \"push\" hard for Liverpool transfer",
+      "link": "https://live4liverpool.com/djed-spence-wants-his-agent-to-push-for-liverpool-transfer/",
+      "description": "Liverpool have reportedly turned their attention to Tottenham and England full-back Djed Spence, who appears keen to complete a move to Anfield. Some claims on Wednesday suggested that Spence is a tar...",
+      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/esmewAawAlP1-1024x683.webp",
+      "source": "Live4Liverpool",
+      "pub_date": "Thu, 06 Aug 2026 10:00:17 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:17.466591"
+    },
+    {
+      "title": "Liverpool could potentially suffer massive blow in quest to sign Bradley Barcola",
+      "link": "https://live4liverpool.com/liverpool-could-suffer-massive-blow-in-quest-to-sign-bradley-barcola/",
+      "description": "Liverpool may see Bradley Barcola as their priority signing this summer, but a recent claim suggests that they could suffer a blow in their efforts to snap him up. The Frenchman is wanted by the Reds,...",
+      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/WmOBXuZ8umCY-1024x683.webp",
+      "source": "Live4Liverpool",
+      "pub_date": "Thu, 06 Aug 2026 09:00:40 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:17.466831"
+    },
+    {
+      "title": "Huge if true: Liverpool in talks over PSG transfer raid worth £212m",
+      "link": "https://live4liverpool.com/liverpool-in-talks-over-psg-transfer-raid-worth-212m-in-richard-hughes-masterclass/",
+      "description": "Liverpool may be set to spring into action by signing three PSG players this summer, which would give them the quality and depth to compete at the top again. The 2025/26 season was dire for Liverpool,...",
+      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/WmOBzZ0UUlMm-1024x802.webp",
+      "source": "Live4Liverpool",
+      "pub_date": "Thu, 06 Aug 2026 08:00:14 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:17.467079"
+    },
+    {
+      "title": "Liverpool offered €120k-a-week Real Madrid defender, Andoni Iraola loves him",
+      "link": "https://live4liverpool.com/liverpool-contacted-by-intermediaries-to-explore-raul-asencio-moving-to-anfield/",
+      "description": "Liverpool’s transfer plans may be taking longer than many fans would have hoped, but a groundswell of reports over the last few days suggests things are ramping up. That said, it does seem like Liverp...",
+      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/neimz1ftcSdR-1024x684.webp",
+      "source": "Live4Liverpool",
+      "pub_date": "Thu, 06 Aug 2026 07:00:18 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:17.467333"
+    },
+    {
+      "title": "Premier League club expects Liverpool to submit bid £60m for \"excellent\" centre-back",
+      "link": "https://live4liverpool.com/liverpool-expected-to-bid-for-aston-villas-ezri-konsa-amid-competition-from-arsenal/",
+      "description": "Liverpool need to sign a centre-back this summer to replace Ibrahima Konate after he left to join Real Madrid on a free transfer, with multiple reports now claiming that the Reds are considering Ezri ...",
+      "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/WmOBSp20ZJdL-1024x683.webp",
+      "source": "Live4Liverpool",
+      "pub_date": "Thu, 06 Aug 2026 06:00:45 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:17.467581"
+    },
+    {
+      "title": "Ibrahim Mbaye and Djed Spence | The Trends",
+      "link": "https://www.theanfieldwrap.com/2026/08/ibrahim-mbaye-and-djed-spence-the-trends-3/",
+      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nExamining football’s underlying numbers, using StatsBomb, to assess Ibrahim Mbaye and Djed Spence...",
+      "image": "",
+      "source": "The Anfield Wrap",
+      "pub_date": "Thu, 06 Aug 2026 15:15:19 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:20.481002"
+    },
+    {
+      "title": "Ibrahim Mbaye and Djed Spence  | The Trends",
+      "link": "https://www.theanfieldwrap.com/2026/08/ibrahim-mbaye-and-djed-spence-the-trends/",
+      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nExamining football’s underlying numbers, using StatsBomb, to assess Ibrahim Mbaye and Djed Spence...",
+      "image": "",
+      "source": "The Anfield Wrap",
+      "pub_date": "Thu, 06 Aug 2026 15:13:38 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:20.481373"
+    },
+    {
+      "title": "Ibrahim Mbaye Latest With Bence Bocsak | TAW Special",
+      "link": "https://www.theanfieldwrap.com/2026/08/ibrahim-mbaye-latest-with-bence-bocsak-taw-special/",
+      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nWith Liverpool linked to PSG’s Ibrahim Mbaye, John Gibbons chats to French football expert Bence ...",
+      "image": "https://www.theanfieldwrap.com/uploads/2026/08/JGBB050826CLIP.mp3",
+      "source": "The Anfield Wrap",
+      "pub_date": "Wed, 05 Aug 2026 15:21:05 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:20.482924"
+    },
+    {
+      "title": "Liverpool Interested In Ibrahim Mbaye | The Gutter",
+      "link": "https://www.theanfieldwrap.com/2026/08/liverpool-interested-in-ibrahim-mbaye-the-gutter-2/",
+      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nThe latest Gutter on Liverpool transfers, with the Reds linked not only with PSG’s Bradley Barcol...",
+      "image": "",
+      "source": "The Anfield Wrap",
+      "pub_date": "Wed, 05 Aug 2026 13:13:08 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:20.483339"
+    },
+    {
+      "title": "Jones & Gakpo To Leave? | Talking Transfers",
+      "link": "https://www.theanfieldwrap.com/2026/08/jones-gakpo-to-leave-talking-transfers/",
+      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nThe latest on Liverpool transfers and contracts, discussing whether Curtis Jones and Cody Gakpo w...",
+      "image": "",
+      "source": "The Anfield Wrap",
+      "pub_date": "Tue, 04 Aug 2026 13:58:35 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:20.485484"
+    },
+    {
+      "title": "Liverpool Women announce the signing of Natalia Ramos",
+      "link": "https://rushthekop.com/liverpool-women-announce-the-signing-of-natalia-ramos-01kzbkxvb49w?utm_source=RSS",
+      "description": "Midfielder Natalia Ramos has joined Liverpool from Liga F side CD Tenerife Femenino, so what will the 27 year old bring?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5194,h_2921,x_0,y_104/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kzbm0dempnrm9t7fxj.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 06 Aug 2026 13:51:24 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "WSL"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.310878"
+    },
+    {
+      "title": "WSL News: Liverpool's Mia Enderby signs with 'The Team' agency alongside Jess Park & Tyler Toland",
+      "link": "https://rushthekop.com/wsl-news-liverpool-s-mia-enderby-signs-with-the-team-agency-alongside-jess-park-tyler?utm_source=RSS",
+      "description": "Liverpool attacker Mia Enderby secures off-pitch move, signing representation with 'The Team' agency alongside Jess Park and Tyler Toland.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6197,h_3485,x_0,y_881/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz97nnqbpnb1m8cat9.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 05 Aug 2026 21:00:00 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "WSL"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.311045"
+    },
+    {
+      "title": "Liverpool offered the chance to sign centre-back to ease Andoni Iraola's injury crisis",
+      "link": "https://rushthekop.com/liverpool-offer-the-chance-to-sign-centre-back-to-ease-andoni-iraola-s-injury-crisis-01kz9fcv54dc?utm_source=RSS",
+      "description": "With Liverpool very light of centre-back options, could the Reds sign an out of favour 23 year old who is they have a \"long-standing admiration\" for.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4000,h_2250,x_0,y_40/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz9fwj8g9pg2f5zw5h.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 05 Aug 2026 17:35:40 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.311206"
+    },
+    {
+      "title": "Liverpool Transfer News: Reds Exploring Shock Reunion with Former Star",
+      "link": "https://rushthekop.com/liverpool-transfer-news-reds-exploring-shock-reunion-with-former-star?utm_source=RSS",
+      "description": "Liverpool have been urged to consider a sensational move to bring Trent Alexander-Arnold back to his boyhood club.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3452,h_1941,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz91ktrngad12jdvjd.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 05 Aug 2026 14:43:26 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.311329"
+    },
+    {
+      "title": "Liverpool confirm squad number for £34.5m signing Victor Muñoz",
+      "link": "https://rushthekop.com/liverpool-confirm-squad-number-for-34-5m-signing-victor-munoz?utm_source=RSS",
+      "description": "Liverpool have officially confirmed that summer recruit Victor Muñoz will wear the iconic No. 23 shirt for the upcoming 2026-27 campaign. The Reds agreed a £34.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3078,h_1731,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz9137n32vgyac89ky.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 05 Aug 2026 13:18:25 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.311654"
+    },
+    {
+      "title": "Liverpool quietly confirm £34.5m summer arrival",
+      "link": "https://rushthekop.com/liverpool-quietly-confirm-34-5m-summer-arrival?utm_source=RSS",
+      "description": "Liverpool supporters believed they had caught their first glimpse of £34.5million summer signing Victor Muñoz arriving on Merseyside",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4371,h_2458,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz8x4ntfymffc0zhbx.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 05 Aug 2026 13:01:38 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.311788"
+    },
+    {
+      "title": "Liverpool star Federico Chiesa offered surprise route out of Anfield this summer",
+      "link": "https://rushthekop.com/liverpool-star-federico-chiesa-offered-surprise-route-out-of-anfield-this-summer?utm_source=RSS",
+      "description": "A surprise Serie A club is exploring an ambitious loan move to rescue Federico Chiesa from Anfield. Inside the shock transfer plot brewing in Italy.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2350,h_1321,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kxgttea45wgj1jhj43.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 15 Jul 2026 11:45:00 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.312335"
+    },
+    {
+      "title": "Liverpool suffer transfer blow as Aston Villa agree £38m package for midfield target",
+      "link": "https://rushthekop.com/liverpool-suffer-transfer-blow-as-aston-villa-agree-38m-package-for-midfield-target?utm_source=RSS",
+      "description": "Liverpool have suffered a major transfer blow after Aston Villa agreed a £38m package to sign one of the Reds' primary midfield targets this summer.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4550,h_2559,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kxndhy8yjck7kndxq0.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 16 Jul 2026 15:00:01 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.312767"
+    },
+    {
+      "title": "BREAKING: Dominik Szoboszlai commits future to Liverpool with long-term extension",
+      "link": "https://rushthekop.com/breaking-dominik-szoboszlai-commits-future-to-liverpool-with-long-term-extension?utm_source=RSS",
+      "description": "Liverpool reward Player of the Year Dominik Szoboszlai with a bumper 5-year contract extension.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_7029,h_3953,x_0,y_828/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kxr6zbt1xzee9jt1n1.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Fri, 17 Jul 2026 14:18:41 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.312893"
+    },
+    {
+      "title": "Mohamed Salah set for medical as Trabzonspor move nears completion after Liverpool exit",
+      "link": "https://rushthekop.com/mohamed-salah-set-for-medical-as-trabzonspor-move-nears-completion-after-liverpool?utm_source=RSS",
+      "description": "After months of speculation surrounding the future of Mohamed Salah, his next destination has been confirmed.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4283,h_2409,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz7efj5cmzrkmekaek.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Tue, 04 Aug 2026 23:00:54 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.313999"
+    },
+    {
+      "title": "BREAKING: Liverpool “step up pursuit” of second PSG star alongside Barcola",
+      "link": "https://rushthekop.com/breaking-liverpool-step-up-pursuit-of-second-psg-star-alongside-barcola-01kz7a7dz44n?utm_source=RSS",
+      "description": "As Liverpool continue their pursuit of Bradley Barcola from Paris Saint-Germain, could they also bring in another attacker from the Ligue 1 champions?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4724,h_2657,x_0,y_276/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz7aafg1yywaywqz22.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Tue, 04 Aug 2026 21:58:08 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.314345"
+    },
+    {
+      "title": "Mohamed Salah transfer battle intensifies as third club submits improved bid",
+      "link": "https://rushthekop.com/mohamed-salah-transfer-battle-intensifies-as-third-club-submits-improved-bid-01kz6zpecsxk?utm_source=RSS",
+      "description": "After leaving Liverpool, it appeared set that Mohamed Salah was heading to the Turkish Süper Lig, but a third club has entered the race to sign him.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4420,h_2486,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz6zr32da2gjjm9jaw.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Tue, 04 Aug 2026 18:52:17 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.314685"
+    },
+    {
+      "title": "Mohamed Salah \"reaches agreement\" to join club aiming to hijack Besiktas bid",
+      "link": "https://rushthekop.com/mohamed-salah-reaches-agreement-to-join-club-aiming-to-hijack-besiktas-bid-01kz6npy7a4z?utm_source=RSS",
+      "description": "It seemed set in stone that Mohamed Salah will join Beşiktaş, but reports in Türkiye now suggest the Egyptian is heading to a different Süper Lig side",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3718,h_2091,x_0,y_298/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz6nw2xj6yfzck39r7.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Tue, 04 Aug 2026 16:11:45 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.315022"
+    },
+    {
+      "title": "Liverpool goalkeeper \"expected\" to stay and sign a new contract",
+      "link": "https://rushthekop.com/liverpool-goalkeeper-expected-to-stay-and-sign-a-new-contract?utm_source=RSS",
+      "description": "Liverpool's goalkeeping roster is starting to take shape, with one of Andoni Iraola's back-ups now expected to stay and sign a new contract.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5000,h_2812,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz69tx0ygknadme8dt.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Tue, 04 Aug 2026 12:40:52 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.315360"
+    },
+    {
+      "title": "Andoni Iraola confirms £34.5m Liverpool arrival",
+      "link": "https://rushthekop.com/andoni-iraola-confirms-34-5m-liverpool-arrival?utm_source=RSS",
+      "description": "Andoni Iraola delivers a big Liverpool transfer update as the Reds' £34.5m summer arrival cuts short his post-World Cup break.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4877,h_2743,x_0,y_717/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz3s0zyn0d7r45gfpv.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 03 Aug 2026 19:20:00 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.316081"
+    },
+    {
+      "title": "2 winners (and 2 begrudged losers) if Liverpool sign Bradley Barcola",
+      "link": "https://rushthekop.com/2-winners-and-2-begrudged-losers-if-liverpool-sign-bradley-barcola?utm_source=RSS",
+      "description": "Liverpool players will be keeping an eye on the Bradley Barcola transfer saga with their own futures in the spotlight.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3191,h_1794,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz3n2267x1a1ynknd0.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 03 Aug 2026 16:30:00 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.316211"
+    },
+    {
+      "title": "Former Liverpool captain completes surprise switch to Chelsea",
+      "link": "https://rushthekop.com/former-liverpool-captain-completes-surprise-switch-to-chelsea-01kz456nddns?utm_source=RSS",
+      "description": "Jordan Henderson officially joined Chelsea on a free transfer from Brentford on Monday, continuing his bizarre career post-Liverpool.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6000,h_3375,x_0,y_457/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz458wqfv905kwwf6c.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 03 Aug 2026 16:26:05 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.316349"
+    },
+    {
+      "title": "Fabrizio Romano: 'Understand' Liverpool have opened official talks with PSG for Bradley Barcola",
+      "link": "https://rushthekop.com/fabrizio-romano-understand-liverpool-have-opened-official-talks-with-psg-for-bradley-barcola?utm_source=RSS",
+      "description": "Liverpool have officially opened club-to-club talks with PSG for top summer target Bradley Barcola. Get the latest transfer update.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4000,h_2250,x_0,y_62/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz413wphwjq5z988hk.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 03 Aug 2026 14:46:01 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": "Fabrizio Romano",
+      "scraped_at": "2026-08-06T15:32:22.316470"
+    },
+    {
+      "title": "Cody Gakpo transfer latest: Tottenham step up efforts for Liverpool forward",
+      "link": "https://rushthekop.com/cody-gakpo-transfer-latest-tottenham-step-up-efforts-for-liverpool-forward?utm_source=RSS",
+      "description": "Tottenham Hotspur are reportedly intensifying their interest in Cody Gakpo, valued at around £70 million, but will Liverpool sell the attacker?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5069,h_2851,x_0,y_182/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz3rgazgzvyyy9n2ty.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 03 Aug 2026 14:14:52 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.316778"
+    },
+    {
+      "title": "PSG’s latest transfer market move opens door for Bradley Barcola to join Liverpool",
+      "link": "https://rushthekop.com/psg-s-latest-transfer-market-move-opens-door-for-bradley-barcola-to-join-liverpool-01kyyvwdynht?utm_source=RSS",
+      "description": "With Liverpool having intensified their interest in Bradley Barcola, have Paris Saint-Germain just signed a replacement for €60 million?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3852,h_2166,x_0,y_138/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyyw0f32h5hr3ayec0.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sat, 01 Aug 2026 16:18:27 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.318595"
+    },
+    {
+      "title": "Andoni Iraola identifies his dream £40m signing after Joe Gomez injury blow",
+      "link": "https://rushthekop.com/andoni-iraola-identifies-his-dream-40m-signing-after-joe-gomez-injury-blow-01kywchsnxbt?utm_source=RSS",
+      "description": "Would he be the answer to Liverpool's defensive issues?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3869,h_2176,x_0,y_160/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kywckcq55bt9b36jxa.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Fri, 31 Jul 2026 16:50:20 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "Manager",
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.319223"
+    },
+    {
+      "title": "Curtis Jones transfer takes fresh twist as Inter Milan prepare increased bid",
+      "link": "https://rushthekop.com/curtis-jones-transfer-takes-fresh-twist-as-inter-milan-prepare-increased-bid-01kyvy8bpct5?utm_source=RSS",
+      "description": "Inter Milan have previously had a €25 million bid rejected by Liverpool for Curtis Jones, but the Serie A champions have now \"renewed their pursuit\".",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5040,h_2835,x_0,y_241/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyvycdb5p2d9czwemz.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Fri, 31 Jul 2026 12:08:27 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.319399"
+    },
+    {
+      "title": "\"I'm not sure about that\" – Jamie Carragher warns Liverpool over clear transfer priority",
+      "link": "https://rushthekop.com/i-m-not-sure-about-that-jamie-carragher-warns-liverpool-over-clear-transfer-priority-01kysgjh46p6?utm_source=RSS",
+      "description": "Should Liverpool be looking for a left-footed right winger instead?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5110,h_2874,x_0,y_121/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyssxmjr0c670hsery.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 30 Jul 2026 15:37:06 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "Legends"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.320722"
+    },
+    {
+      "title": "Jamie Carragher responds to Bradley Barcola transfer rumours with clear Mohamed Salah warning",
+      "link": "https://rushthekop.com/jamie-carragher-responds-to-bradley-barcola-transfer-rumours-with-clear-mohamed-salah-warning-01kyrzsgfny1?utm_source=RSS",
+      "description": "Amid much excitement that Liverpool are set to land Bradley Barcola from PSG for at leat £100m, Jamie Carragher is not convinced he's what they need.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4282,h_2408,x_0,y_6/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyrzwmr7b9j8tdfw2a.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 30 Jul 2026 10:45:00 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team",
+        "Legends"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.321043"
+    },
+    {
+      "title": "Premier League rivals \"really like\" Liverpool attacker Cody Gakpo",
+      "link": "https://rushthekop.com/premier-league-rivals-really-like-liverpool-attacker-cody-gakpo-01kypyxkxp29?utm_source=RSS",
+      "description": "With Liverpool advancing in their pursuit of Bradley Barcola, could they sell Cody Gakpo to a Premier League rival for \"really like\" the Dutchman?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5677,h_3193,x_0,y_317/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kypz0w43m6vnebty8m.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 29 Jul 2026 14:24:21 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.321679"
+    },
+    {
+      "title": "Alongside Barcola: Liverpool face a problem landing \"dream target\" worth £85m",
+      "link": "https://rushthekop.com/alongside-barcola-liverpool-face-a-problem-landing-dream-target-worth-85m-01kypsk3gh8x?utm_source=RSS",
+      "description": "Liverpool have identified their \"dream target\" to start on the opposite wing to Bradley Barcola, but there is an issue with his £85m release clause.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6553,h_3686,x_0,y_256/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kypstds1zg8cp15e3t.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 29 Jul 2026 12:40:43 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.321820"
+    },
+    {
+      "title": "Fabrizio Romano: Bradley Barcola \"wants to join Liverpool\" as PSG set their price",
+      "link": "https://rushthekop.com/fabrizio-romano-bradley-barcola-wants-to-join-liverpool-as-psg-set-their-price-01kymhdgtcv2?utm_source=RSS",
+      "description": "Bradley Barcola has been Liverpool's number one target all throughout the summer, but is the Frenchman now nearing a move to Anfield?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6000,h_3375,x_0,y_375/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kymj5j5s7z9z48gw8s.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Tue, 28 Jul 2026 15:26:59 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": "Fabrizio Romano",
+      "scraped_at": "2026-08-06T15:32:22.322386"
+    },
+    {
+      "title": "Liverpool \"actively exploring\" deals to sign 2 experienced Premier League centre-backs",
+      "link": "https://rushthekop.com/liverpool-actively-exploring-deals-to-sign-2-experienced-premier-league-centre-backs-01kyj5t8zn7r?utm_source=RSS",
+      "description": "Liverpool are in desperate need of defensive reinforcements this summer, so do they have 2 England internationals on their centre-back shortlist?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2607,h_1466,x_0,y_57/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyj5zwanxzvxzah88z.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 27 Jul 2026 16:57:30 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.323031"
+    },
+    {
+      "title": "Who is Maghnes Akliouche? Things Liverpool fans should know about the Monaco star",
+      "link": "https://rushthekop.com/who-maghnes-akliouche-liverpool-fans-should-know-about-monaco-star?utm_source=RSS",
+      "description": "Discover key facts about Maghnes Akliouche. Learn about his rise, playing style, World Cup role, and transfer links to Liverpool, PSG and more.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4625,h_2601,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kygp10c7vv0rs5eaqw.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 27 Jul 2026 08:31:48 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.323553"
+    },
+    {
+      "title": "Fabrizio Romano's latest update a major boost to Liverpool's hopes of signing Bradley Barcola",
+      "link": "https://rushthekop.com/fabrizio-romano-s-latest-update-a-major-boost-to-liverpool-s-hopes-of-signing-bradley-barcola-01kyf17aabrg?utm_source=RSS",
+      "description": "Liverpool have Bradley Barcola \"top of their list\" according to Fabrizio Romano, but has a move for the PSG winger just become more realistic?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6700,h_3768,x_0,y_698/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyf19ndpt5eq2dvrd9.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 26 Jul 2026 11:30:00 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": "Fabrizio Romano",
+      "scraped_at": "2026-08-06T15:32:22.324318"
+    },
+    {
+      "title": "Joe Gomez's injury underlines Liverpool's desperate need for defensive signings",
+      "link": "https://rushthekop.com/joe-gomez-s-injury-underlines-liverpool-s-desperate-need-for-defensive-signings-01kyepgw4q31?utm_source=RSS",
+      "description": "Liverpool began their U.S. tour with a 4-2 victory over Sunderland in Nashville, but the victory was overshadowed by Joe Gomez injury.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3500,h_1968,x_0,y_157/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyepk5fjr0rphhd9vr.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 26 Jul 2026 08:27:05 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.324600"
+    },
+    {
+      "title": "Not just Mohamed Salah: Besiktas \"edging closer\" to signing a second former Liverpool forward",
+      "link": "https://rushthekop.com/not-just-mohamed-salah-besiktas-edging-closer-to-signing-a-second-former-liverpool-forward-01kycxfwshzz?utm_source=RSS",
+      "description": "Beşiktaş are close to an agreement to sign Mohamed Salah as a free agent, but could he be reunited with a former Liverpool teammate in İstanbul?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6395,h_3597,x_0,y_567/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kycxr067ywxv981d84.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sat, 25 Jul 2026 16:02:33 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.325119"
+    },
+    {
+      "title": "Liverpool’s 5 best signings of the last 20 years",
+      "link": "https://www.empireofthekop.com/2026/08/06/liverpools-5-best-signings-of-the-last-20-years/",
+      "description": "This 1xbet.ie review looks at five legendary footballers without whom it is impossible to imagine 21st-century Liverpool.  Mo Salah In 2014, Liverpool lost out to Chelsea in the race to sign Salah. Ho...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/Mo-Salah-Virgil-van-Dijk-Liverpool-Premier-League.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Thu, 06 Aug 2026 15:07:00 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.741178"
+    },
+    {
+      "title": "Liverpool could pounce on Arsenal hesitation to snap up ‘Rolls-Royce’ defender for £60m",
+      "link": "https://www.empireofthekop.com/2026/08/06/liverpool-could-pounce-on-arsenal-hesitation-to-snap-up-rolls-royce-defender/",
+      "description": "Liverpool may have the perfect opportunity to pounce on any hesitation from Arsenal in the transfer race for one Premier League centre-back this summer. The Reds’ defensive shortage has been extensive...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/iraola-arteta.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Thu, 06 Aug 2026 14:28:08 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.741618"
+    },
+    {
+      "title": "“From what I’ve heard…” – Ex-club chief names one team as ‘favourites’ to sign Harvey Elliott",
+      "link": "https://www.empireofthekop.com/2026/08/06/wyness-names-one-club-as-favourites-to-sign-harvey-elliott/",
+      "description": "The future of Harvey Elliott continues to be a talking point during the final month of the summer transfer window. It looked for all the world as though the 23-year-old had closed the book on the Live...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/harvey-elliott.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Thu, 06 Aug 2026 13:35:26 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.741987"
+    },
+    {
+      "title": "‘Barcola wants…’ – Journalist states which club PSG star is ‘leaning towards’ in transfer race",
+      "link": "https://www.empireofthekop.com/2026/08/06/barcola-leaning-towards-liverpool-in-transfer-race/",
+      "description": "One journalist has claimed that, if Bradley Barcola were to leave Paris Saint-Germain in the current transfer window, Liverpool would be his preferred destination. The French forward has reportedly be...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/barcola-liverpool.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Thu, 06 Aug 2026 10:37:23 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.742380"
+    },
+    {
+      "title": "(Video) Mo Salah looked genuinely speechless at seeing euphoric welcome from Trabzonspor fans",
+      "link": "https://www.empireofthekop.com/2026/08/06/salah-speechless-at-euphoric-welcome-from-trabzonspor-fans/",
+      "description": "To say that many Trabzonspor fans are delighted with the signing of Mo Salah would be quite the understatement. After nine glorious years at Liverpool during which he won the Premier League twice and ...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/salah-trabzonspor-fans.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Thu, 06 Aug 2026 09:46:25 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.742772"
+    },
+    {
+      "title": "Report: Liverpool set to open ‘official talks’ for £43m winger; Anfield is his first choice",
+      "link": "https://www.empireofthekop.com/2026/08/06/liverpool-set-to-open-official-talks-for-43m-winger/",
+      "description": "Liverpool are reportedly set to step up their efforts to sign Paris Saint-Germain winger Ibrahim Mbaye in the final month of the summer transfer window. In addition to the pursuit of Bradley Barcola, ...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/kop-anfield-1.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Thu, 06 Aug 2026 08:39:55 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.743139"
+    },
+    {
+      "title": "Barcola alternative: Liverpool hold ‘concrete interest’ in £70m-valued ‘role model’ winger",
+      "link": "https://www.empireofthekop.com/2026/08/05/liverpool-hold-concrete-interest-in-70m-valued-role-model-winger/",
+      "description": "Amid the ongoing pursuits of Bradley Barcola and Ibrahim Mbaye, Liverpool are also understood to hold a ‘concrete interest’ in a current Premier League winger. The Reds have reportedly made an opening...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/anfield-mystery-player.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Wed, 05 Aug 2026 15:39:53 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.744439"
+    },
+    {
+      "title": "Who is Ibrahim Mbaye and why do Liverpool want to sign him from PSG?",
+      "link": "https://www.empireofthekop.com/2026/08/05/who-is-ibrahim-mbaye-and-why-do-liverpool-want-to-sign-him/",
+      "description": "Liverpool have been linked with a prospective move for teenage Paris Saint-Germain winger Ibrahim Mbaye. In late July, Graeme Bailey reported for TEAMtalk that the 18-year-old has been offered to the ...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/ibrahim-mbaye-liverpool.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Wed, 05 Aug 2026 15:06:00 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.744822"
+    },
+    {
+      "title": "One thing spotted at Anfield may have momentarily teased potential Liverpool transfer clue",
+      "link": "https://www.empireofthekop.com/2026/08/05/rutter-liverpool-transfer-hint-anfield-advertising-boards/",
+      "description": "Visitors to Anfield spotted what some might seek to interpret as a clue over a potential transfer involving Liverpool. The Reds are on the lookout for attacking reinforcements before the 1 September d...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/kop-anfield.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Wed, 05 Aug 2026 13:51:28 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.746095"
+    },
+    {
+      "title": "Report: Liverpool offered chance to sign 23y/o who could solve one of Iraola’s biggest problems",
+      "link": "https://www.empireofthekop.com/2026/08/05/liverpool-offered-chance-to-sign-23yo-who-could-solve-big-problem/",
+      "description": "Liverpool have reportedly been offered a chance to sign a player from Real Madrid who could solve one of the biggest issues with which Andoni Iraola is currently faced. For almost the entirety of thei...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/iraola-asencio-liverpool.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Wed, 05 Aug 2026 13:12:56 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.746509"
+    },
+    {
+      "title": "Bradley Barcola twist could now prompt Liverpool business with Tottenham – Fabrizio Romano",
+      "link": "https://www.empireofthekop.com/2026/08/05/bradley-barcola-twist-could-now-prompt-liverpool-business-with-tottenham-fabrizio-romano/",
+      "description": "Tottenham are reportedly “in direct talks” with Cody Gakpo’s entourage this summer. DOWNLOAD THE OFFICIAL EMPIRE OF THE KOP APP FOR ALL THE LATEST & BREAKING UPDATES – STRAIGHT TO YOUR PHONE! ON APPLE...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/Bradley-Barcola-Cody-Gakpo-Liverpool-Tottenham-Premier-League-Fabrizio-Romano.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Wed, 05 Aug 2026 12:12:58 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": "Fabrizio Romano",
+      "scraped_at": "2026-08-06T15:32:23.746853"
+    },
+    {
+      "title": "Celtic Send Offer For Winger, ‘Just A Few Details Left To Iron Out’",
+      "link": "https://insidefutbol.com/2026/08/06/celtic-send-offer-for-winger-just-a-few-details-left-to-iron-out/722563/",
+      "description": "Celtic have submitted a significant bid for their top target Haissem Hassan and are rapidly closing in on the Egyptian.\nThe post Celtic Send Offer For Winger, ‘Just A Few Details Left To Iron Out’ app...",
+      "image": "https://insidefutbol.com/app/uploads/2026/07/Egypt_Haissem_Hassan_1200_ofg.webp",
+      "source": "Inside Futbol",
+      "pub_date": "Thu, 06 Aug 2026 14:24:11 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:31.818002"
+    },
+    {
+      "title": "‘High Standards, Leadership Qualities’ – West Ham Director Hails New Boy",
+      "link": "https://insidefutbol.com/2026/08/06/high-standards-leadership-qualities-west-ham-director-hails-new-boy/722523/",
+      "description": "West Ham United director of player recruitment Nils Koppen has shed light on the qualities new signing Joel Veltman possesses.\nThe post ‘High Standards, Leadership Qualities’ – West Ham Director Hails...",
+      "image": "https://insidefutbol.com/app/uploads/2026/06/General_West_Ham4_1200_ofg.webp",
+      "source": "Inside Futbol",
+      "pub_date": "Thu, 06 Aug 2026 14:01:59 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:31.818572"
+    },
+    {
+      "title": "‘Just Need To Iron Out’ – Club Confident On Leeds United Star Deal",
+      "link": "https://insidefutbol.com/2026/08/06/just-need-to-iron-out-club-confident-on-leeds-united-star-deal/722536/",
+      "description": "Torino now just need to iron out a few remaining details before signing Leeds United goalkeeper Lucas Perri.\nThe post ‘Just Need To Iron Out’ – Club Confident On Leeds United Star Deal appeared first ...",
+      "image": "https://insidefutbol.com/app/uploads/2025/08/Leeds_Daniel_Farke7_1200_ofg.webp",
+      "source": "Inside Futbol",
+      "pub_date": "Thu, 06 Aug 2026 12:54:39 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:31.819093"
+    },
+    {
+      "title": "Aston Villa Monitored Star Could Be Late Window Deal As Loan Floated",
+      "link": "https://insidefutbol.com/2026/08/06/aston-villa-monitored-star-could-be-late-window-deal-as-loan-floated/722545/",
+      "description": "Aston Villa target Teun Koopmeiners could become a late transfer window move, with Juventus also open to letting him leave on loan.\nThe post Aston Villa Monitored Star Could Be Late Window Deal As Loa...",
+      "image": "https://insidefutbol.com/app/uploads/2026/08/Juventus_Teun_Koopmeiners_1200_ofg.webp",
+      "source": "Inside Futbol",
+      "pub_date": "Thu, 06 Aug 2026 12:45:13 +0000",
+      "category": "Transfer News",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:31.819386"
     },
     {
       "title": "Liverpool start Iraola era in style to beat Sunderland but Gomez injury deepens defensive worries",
@@ -1533,37 +2101,11 @@
       "category": "Injury News",
       "topics": [
         "Manager",
-        "Coaching Staff",
         "First Team",
         "Youth/Academy"
       ],
-      "scraped_at": "2026-08-06T15:25:27.789967"
-    },
-    {
-      "title": "One dead and 12 injured after horrific lightning strike during football match",
-      "link": "https://www.mirror.co.uk/sport/football/news/thai-footballer-killed-lightning-strike-37519618",
-      "description": "A tragic incident has unfolded during a football match, where a lightning strike caused the death of one player and 12 others",
-      "image": "https://i2-prod.mirror.co.uk/incoming/article37519572.ece/ALTERNATES/s615/1_Screenshot-2026-08-06-at-082810-copy.jpg",
-      "source": "Mirror",
-      "pub_date": "Thu, 6 Aug 2026 07:56:59 +0000",
-      "category": "Injury News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:28.194931"
-    },
-    {
-      "title": "Everton and Aston Villa make contact – Leeds United also keen 18 G/A player",
-      "link": "https://sportwitness.co.uk/everton-and-aston-villa-make-contact-leeds-united-also-keen-18-g-a-player/",
-      "description": "Everton, Aston Villa and Leeds United are on the lookout for Lyon’s Pavel Šulc this summer.  Leeds United and Aston Villa scouts had followed Šulc before the 25-year-old joined Lyon from Viktoria Plze...",
-      "image": "",
-      "source": "Sport Witness",
-      "pub_date": "Thu, 06 Aug 2026 13:56:13 +0000",
-      "category": "Injury News",
-      "topics": [
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.260042"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.878754"
     },
     {
       "title": "Jayden Danns injury update after Liverpool striker misses USA tour",
@@ -1576,20 +2118,8 @@
       "topics": [
         "Youth/Academy"
       ],
-      "scraped_at": "2026-08-06T15:25:32.623456"
-    },
-    {
-      "title": "Jeremy Jacquet not in Liverpool team training – doubt for Monaco friendly",
-      "link": "https://www.thisisanfield.com/2026/08/jeremy-jacquet-absent-liverpool-training-monaco-friendly-doubt/",
-      "description": "",
-      "image": "https://www.thisisanfield.com/wp-content/uploads/2026-08-02-189-Liverpool_Leeds.jpg",
-      "source": "This Is Anfield",
-      "pub_date": "Thu, 06 Aug 2026 12:08:48 +0000",
-      "category": "Injury News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:32.623535"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.112304"
     },
     {
       "title": "Victor Munoz gives early fitness update: Why he cut holiday short for Liverpool",
@@ -1602,7 +2132,23 @@
       "topics": [
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:32.623891"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.112956"
+    },
+    {
+      "title": "‘Alert’ – Liverpool linked with shock loan move for Newcastle United attacker",
+      "link": "https://readliverpoolfc.com/news/liverpool-manchester-united-nick-woltemade-loan-newcastle/",
+      "description": "Liverpool’s attack is an interesting space at the moment as Andoni Iraola prepares for his first season in charge of the club. After losing Mohamed Salah, the Reds signed Victor Munoz as a versatile o...",
+      "image": "https://media.readliverpoolfc.com/readliverpoolfc/2026/08/neimROLe5Kkr.webp",
+      "source": "Read Liverpool FC",
+      "pub_date": "Wed, 05 Aug 2026 15:00:00 GMT",
+      "category": "Injury News",
+      "topics": [
+        "Manager",
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.465270"
     },
     {
       "title": "Liverpool get massive injury boost before start of new Premier League season",
@@ -1616,100 +2162,135 @@
         "Manager",
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:34.960801"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.466213"
     },
     {
-      "title": "Harriet Prior | The Shoot Treatment",
-      "link": "https://www.theanfieldwrap.com/2026/08/harriet-prior-the-shoot-treatment/",
-      "description": "New Liverpool FC Podcast, Video and Written content from The Anfield Wrap. The Best Liverpool Podcast.\nIt’s the ‘The Shoot Treatment’, Martin Fitzgerald takes a classic player profile from Shoot Magaz...",
-      "image": "",
-      "source": "The Anfield Wrap",
-      "pub_date": "Tue, 04 Aug 2026 06:55:12 +0000",
+      "title": "Giovanni Leoni “edging closer” to Liverpool return in much-needed defensive boost",
+      "link": "https://rushthekop.com/giovanni-leoni-edging-closer-to-liverpool-return-in-much-needed-defensive-boost?utm_source=RSS",
+      "description": "Giovanni Leoni is edging closer to a Liverpool return, giving the squad a much-needed defensive boost. Get the latest injury news here.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4986,h_2804,x_0,y_174/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz8ff58ppv86wx4n2f.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 05 Aug 2026 11:02:58 +0000",
+      "category": "Injury News",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.312182"
+    },
+    {
+      "title": "Liverpool star reminds supporters why they should be excited for his return",
+      "link": "https://rushthekop.com/liverpool-star-reminds-supporters-why-they-should-be-excited-for-his-return?utm_source=RSS",
+      "description": "Hugo Ekitiké has dropped a brilliant training reminder of why Liverpool fans should be excited for his recovery.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_7098,h_3992,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kxtkvf7rdk589jfs99.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 19 Jul 2026 11:00:05 +0000",
       "category": "Injury News",
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:39.418078"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.313392"
     },
     {
-      "title": "Argentina mark World Cup win over England with 'National Football Teams Day'",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cn9n8q8w7ndo?at_medium=RSS&at_campaign=rss",
-      "description": "The Argentine Football Association announces 15 July as National Football Teams Day to mark Argentina's 2026 World Cup semi-final victory over England.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a436/live/19c96960-9174-11f1-b59e-3d7a9337129d.jpg",
-      "source": "BBC Sport",
-      "pub_date": "Thu, 06 Aug 2026 10:02:31 GMT",
-      "category": "Match Result",
+      "title": "Alexander Isak fitness declaration gives Andoni Iraola timely boost",
+      "link": "https://rushthekop.com/alexander-isak-fitness-declaration-gives-andoni-iraola-timely-boost?utm_source=RSS",
+      "description": "Liverpool’s £125m striker Alexander Isak speaks out on his recovery, the Leeds pre-season defeat, and replacing injured Hugo Ekitike for the new season",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4200,h_2362,x_0,y_65/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz3z097fh89qdcfx36.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 03 Aug 2026 22:30:00 +0000",
+      "category": "Injury News",
       "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.315774"
+    },
+    {
+      "title": "Liverpool latest: Andoni Iraola plays down Jeremie Frimpong Injury concerns after early exit vs Leeds",
+      "link": "https://rushthekop.com/liverpool-latest-andoni-iraola-plays-down-jeremie-frimpong-injury-concerns-after-early-exit-vs-leeds?utm_source=RSS",
+      "description": "Jeremie Frimpong was forced off towards the end of Sunday's pre-season friendly against Leeds, but Andoni Iraola has alleviated serious injury fears.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4400,h_2475,x_0,y_72/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz3n038w49khyv6hjr.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 03 Aug 2026 20:25:00 +0000",
+      "category": "Injury News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.315949"
+    },
+    {
+      "title": "Liverpool \"have held initial talks\" to sign centre-back seeking to ease injury crisis",
+      "link": "https://rushthekop.com/liverpool-have-held-initial-talks-to-sign-centre-back-seeking-to-ease-injury-crisis-01kyz7763b4r?utm_source=RSS",
+      "description": "Given that Liverpool currently have no available senior centre-backs, it is an obvious area of need for Andoni Iraola, but could that be addressed?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4320,h_2430,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyz7fdkjy6ctt1mmz2.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sat, 01 Aug 2026 19:45:00 +0000",
+      "category": "Injury News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.318241"
+    },
+    {
+      "title": "Andoni Iraola gives Joe Gomez injury update that fans feared",
+      "link": "https://rushthekop.com/andoni-iraola-gives-joe-gomez-injury-update-that-fans-feared-01kysz9wj29z?utm_source=RSS",
+      "description": "Joe Gomez suffered a muscle injury during Liverpool's pre-season opener against Sunderland, and Andoni Iraola has revealed how long he will be out.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3500,h_1968,x_0,y_150/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyszek309n2xh87f7z.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 30 Jul 2026 17:27:05 +0000",
+      "category": "Injury News",
+      "topics": [
+        "Manager",
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:26.901797"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.320341"
     },
     {
-      "title": "Chelsea lose friendly as Juventus score stunning winner",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c62qvzn4zx1o?at_medium=RSS&at_campaign=rss",
-      "description": "Watch highlights as Chelsea suffer a narrow defeat in a friendly match by Juventus in Hong Kong thanks to a wonderful goal by Edon Zhegrova.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/443a/live/ba594120-90e8-11f1-b2ab-0dd01740f9f6.jpg",
-      "source": "BBC Sport",
-      "pub_date": "Wed, 05 Aug 2026 16:16:08 GMT",
-      "category": "Match Result",
+      "title": "Why Liverpool will be forced to loan out Ifeanyi Ndukwe despite defensive injury crisis",
+      "link": "https://rushthekop.com/why-liverpool-will-be-forced-to-loan-out-ifeanyi-ndukwe-despite-defensive-injury-crisis-01kyf39szt4q?utm_source=RSS",
+      "description": "Ifeanyi Ndukwe joined Liverpool from Austria Wien for £2.5 million, coming off the bench against Sunderland, but he will be forced to go out on loan.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5000,h_2812,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyf3cvezpargrfr1s6.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 26 Jul 2026 12:45:00 +0000",
+      "category": "Injury News",
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:26.902270"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.324052"
     },
     {
-      "title": "Nygren header earns Celtic opening victory against Dundee",
-      "link": "https://www.bbc.co.uk/sport/videos/ce856g741mmo?at_medium=RSS&at_campaign=rss",
-      "description": "Watch highlights as Celtic begin their Scottish Premiership title defence with a narrow home victory as Benjamin Nygren's header downs Dundee.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cb9/live/abd95c10-8ffe-11f1-b2ab-0dd01740f9f6.jpg",
-      "source": "BBC Sport",
-      "pub_date": "Tue, 04 Aug 2026 12:22:30 GMT",
-      "category": "Match Result",
+      "title": "Liverpool team news and predicted lineup ahead of Leeds United friendly",
+      "link": "https://rushthekop.com/liverpool-team-news-and-predicted-lineup-ahead-of-leeds-united-friendly-01kyzaykckr5?utm_source=RSS",
+      "description": "Liverpool take on Leeds United at Soldier Field in Chicago on Sunday, so here is all the teams news and predicted lineups for Andoni Iraola's team.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2592,h_1458,x_0,y_108/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyzbb6dfrdwex8399n.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sat, 01 Aug 2026 22:00:01 +0000",
+      "category": "Match Preview",
       "topics": [
-        "First Team"
+        "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:26.902383"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.318080"
     },
     {
-      "title": "McAllister proud of Wales' stance against Infantino",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cz7dpg07pq1o?at_medium=RSS&at_campaign=rss",
-      "description": "Uefa vice-president Laura McAllister proud that Wales were the first home nation to withdraw their backing for Gianni Infantino.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6f58/live/9ca8d5b0-9006-11f1-9dfb-fd4408d16f2f.jpg",
-      "source": "BBC Sport",
-      "pub_date": "Tue, 04 Aug 2026 13:29:51 GMT",
-      "category": "Match Result",
+      "title": "Early Liverpool vs Wrexham team news: 3 World Cup stars in line to feature",
+      "link": "https://rushthekop.com/early-liverpool-vs-wrexham-team-news-3-world-cup-stars-in-line-to-feature-01kyj8cp1k74?utm_source=RSS",
+      "description": "Liverpool take on Wrexham in the second pre-season friendly of their U.S. tour at Yankee Stadium, but who will be available to Andoni Iraola?",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6191,h_3482,x_0,y_645/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyj8etve4w8667g0nf.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 27 Jul 2026 22:00:00 +0000",
+      "category": "Match Preview",
       "topics": [
-        "First Team"
+        "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:26.902495"
-    },
-    {
-      "title": "Pakistan end eight-match away Test losing streak ahead of England clash",
-      "link": "https://www.skysports.com/cricket/news/12040/13570191/pakistan-end-eight-match-overseas-test-drought-with-west-indies-victory",
-      "description": "Pakistan ended their eight-match away Test losing streak in emphatic fashion on Wednesday, securing an eight-wicket victory over the West Indies.",
-      "image": "https://e2.365dm.com/26/08/1920x1080/skysports-mohammad-abbas-babar-azam_7314918.jpg?20260805204657",
-      "source": "Sky Sports",
-      "pub_date": "Wed, 05 Aug 2026 20:50:00 BST",
-      "category": "Match Result",
-      "topics": [
-        "First Team"
-      ],
-      "scraped_at": "2026-08-06T15:25:27.365353"
-    },
-    {
-      "title": "The five big beasts are gone: who will be the Premier League’s next alpha manager? | Jonathan Wilson",
-      "link": "https://www.theguardian.com/football/2026/aug/02/premier-league-managers-arteta-alonso-de-zerbi-carrick-klopp-guardiola",
-      "description": "Arsenal’s Mikel Arteta is perhaps best placed to fill the void but the coaching contenders are legion as another season loomsThis used to be a land of giants. This used to be a land where big men foug...",
-      "image": "https://i.guim.co.uk/img/media/4e4edf2754e332a379c814ff14cdb76b9e039d43/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=27bda46f1f8c971f125de53fab24d37f",
-      "source": "The Guardian",
-      "pub_date": "Sun, 02 Aug 2026 07:00:15 GMT",
-      "category": "Match Result",
-      "topics": [
-        "Manager",
-        "Coaching Staff",
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:27.771810"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.322867"
     },
     {
       "title": "Chiesa wants ‘new chapter’ with Iraola after frustrating time under Slot at Liverpool",
@@ -1722,7 +2303,8 @@
       "topics": [
         "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:27.789498"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.878476"
     },
     {
       "title": "Liverpool U18s thrash Taiwan side 12-0 as new striker scores hat-trick",
@@ -1735,7 +2317,8 @@
       "topics": [
         "Youth/Academy"
       ],
-      "scraped_at": "2026-08-06T15:25:32.623390"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.112183"
     },
     {
       "title": "GOAL RUSH: Inside Liverpool’s new Anfield exhibit for Reds’ record goalscorer",
@@ -1748,20 +2331,50 @@
       "topics": [
         "General"
       ],
-      "scraped_at": "2026-08-06T15:25:32.623834"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:16.112871"
     },
     {
-      "title": "Neymar left in tears after Santos suffer humbling 6-0 defeat",
-      "link": "https://www.90min.com/neymar-in-tears-santos-humbling-6-0-defeat?utm_source=RSS",
-      "description": "Neymar was left in tears as Santos suffered a 6-0 home defeat to Vasco da Gama, the heaviest of his career, prompting the sacking of coach Cleber Xavier.",
-      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3000,h_1687,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_en_international_web/01k2yhkpm3m5cz6h3z0h.jpg",
-      "source": "90min",
-      "pub_date": "Thu, 21 Aug 2025 08:55:00 +0000",
+      "title": "Iraola predicts that Alexander Isak is \"going to be massive\" for Liverpool this season",
+      "link": "https://rushthekop.com/iraola-predicts-that-alexander-isak-is-going-to-be-massive-for-liverpool-this-season-01kywe9jegc4?utm_source=RSS",
+      "description": "Alexander Isak scored 4 goals during his first season at Liverpool, not what they were hoping for, but Andoni Iraola vows to get the best out of him.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5000,h_2812,x_0,y_8/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kywecp54aqqwygwhpe.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Fri, 31 Jul 2026 18:00:01 +0000",
       "category": "Match Result",
       "topics": [
-        "Coaching Staff"
+        "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:40.858546"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.319112"
+    },
+    {
+      "title": "Rio Ngumoha continues to \"showcase\" his Liverpool potential by scoring the winner vs Wrexham",
+      "link": "https://rushthekop.com/rio-ngumoha-continues-to-showcase-his-liverpool-potential-by-scoring-the-winner-vs-wrexham-01kyt7xnn6ky?utm_source=RSS",
+      "description": "Rio Ngumoha has taken his chance in Liverpool's pre-season and will hope to score many more for the club this season.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6134,h_3450,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyt7znv5pf1e8fgqb6.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 30 Jul 2026 22:30:01 +0000",
+      "category": "Match Result",
+      "topics": [
+        "General"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.319556"
+    },
+    {
+      "title": "Harvey Elliott outlines \"incredible\" Liverpool return after \"mentally tough\" Aston Villa loan",
+      "link": "https://rushthekop.com/harvey-elliott-outlines-incredible-liverpool-return-after-mentally-tough-aston-villa-loan-01kysvghbvt5?utm_source=RSS",
+      "description": "Harvey Elliott endured a nightmare campaign at Aston Villa, playing only 9 times for the club, but is now determined to make up for lost time.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5226,h_2939,x_0,y_179/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kysx5gk2fe8s0trxm8.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 30 Jul 2026 20:56:00 +0000",
+      "category": "Match Result",
+      "topics": [
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.319737"
     },
     {
       "title": "Victor Munoz hints when he could make Liverpool debut as Andoni Iraola influence revealed",
@@ -1775,7 +2388,22 @@
         "Manager",
         "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:26.497160"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.340537"
+    },
+    {
+      "title": "Rush urges Liverpool to give Iraola time to succeed",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5yd98ep9r8o?at_medium=RSS&at_campaign=rss",
+      "description": "Liverpool legend Ian Rush says new boss Andoni Iraola deserves time to succeed at Anfield but should target winning silverware in his debut campaign.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ed90/live/ba106ef0-9101-11f1-b8ee-9b3c26ad07bb.png",
+      "source": "BBC Sport",
+      "pub_date": "Thu, 06 Aug 2026 08:58:29 GMT",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:05.772286"
     },
     {
       "title": "Football Daily | Mohamed Salah and a potted history of Liverpool legends visiting Trabzon",
@@ -1787,10 +2415,10 @@
       "category": "Manager News",
       "topics": [
         "Manager",
-        "First Team",
-        "Legends/Ex-Players"
+        "First Team"
       ],
-      "scraped_at": "2026-08-06T15:25:27.769889"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.874613"
     },
     {
       "title": "Experimental Liverpool down Wrexham thanks to Rio Ngumoha’s winner",
@@ -1801,10 +2429,10 @@
       "pub_date": "Thu, 30 Jul 2026 01:53:17 GMT",
       "category": "Manager News",
       "topics": [
-        "Manager",
-        "Coaching Staff"
+        "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:27.774375"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.876970"
     },
     {
       "title": "Milos Kerkez: ‘I’m delighted – Andoni Iraola is the perfect fit for Liverpool’",
@@ -1817,7 +2445,8 @@
       "topics": [
         "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:27.789085"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.878249"
     },
     {
       "title": "Andoni Iraola backs backroom staff to help cure Liverpool’s set-piece ills",
@@ -1828,36 +2457,38 @@
       "pub_date": "Fri, 24 Jul 2026 11:00:13 GMT",
       "category": "Manager News",
       "topics": [
-        "Manager",
-        "Coaching Staff"
+        "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:27.790558"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.879071"
     },
     {
-      "title": "Liverpool sign Spanish midfielder Ramos",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cz6484p441yo?at_medium=RSS&at_campaign=rss",
-      "description": "Liverpool have signed Spanish midfielder Natalia Ramos from CD Tenerife Femenino, subject to visa approval and international clearance.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/74ae/live/9d6baf60-9199-11f1-9c53-0382b914b78c.jpg",
-      "source": "BBC Sport",
-      "pub_date": "Thu, 06 Aug 2026 13:39:35 GMT",
-      "category": "WSL",
+      "title": "‘Don’t become the protagonist’: Andoni Iraola on the secret of Spain’s success and his role at Liverpool",
+      "link": "https://www.theguardian.com/football/2026/jul/23/andoni-iraola-liverpool-interview-spain",
+      "description": "Liverpool’s new head coach is settling into the pre-season tour in Chicago as he begins to reshape the Reds’ identityOver coffee in Liverpool’s plush hotel in Chicago, Andoni Iraola presents his theor...",
+      "image": "https://i.guim.co.uk/img/media/05a4c677b7e2c83207eb515fea4b8af5f8dc4b28/1138_612_1730_1383/master/1730.jpg?width=140&quality=85&auto=format&fit=max&s=ccee97d99d518b7df7bc140f5fc9e6f2",
+      "source": "The Guardian",
+      "pub_date": "Thu, 23 Jul 2026 11:00:42 GMT",
+      "category": "Manager News",
       "topics": [
-        "WSL"
+        "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:26.902829"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:06.879454"
     },
     {
-      "title": "27-man Liverpool squad in training: 6 youngsters cut, no Jacquet, Frimpong ok",
-      "link": "https://www.thisisanfield.com/2026/08/27-man-liverpool-squad-in-training-6-youngsters-cut-no-jacquet-frimpong-ok/",
-      "description": "",
-      "image": "https://www.thisisanfield.com/wp-content/uploads/GettyImages-2289217815-copy-2.jpg",
-      "source": "This Is Anfield",
-      "pub_date": "Wed, 05 Aug 2026 18:33:42 +0000",
-      "category": "Youth/Academy",
+      "title": "Jamal Musiala silences critic Jurgen Klopp as Germany put Curacao to sword",
+      "link": "https://www.telegraph.co.uk/football/2026/06/14/germany-vs-curacao-live-world-cup-2026-score-latest/",
+      "description": "Jamal Musiala silences critic Jurgen Klopp as Germany put Curacao to sword",
+      "image": "https://www.telegraph.co.uk/content/dam/football/2026/06/14/TELEMMGLPICT000490600207_17814646471090_trans_NvBQzQNjv4BqOGyWjGBLShQVrPuoe64zS2vNHfrgdjrNpG5ZnfNzvDg.jpeg",
+      "source": "The Telegraph",
+      "pub_date": "Sun, 14 Jun 2026 21:05:20 GMT",
+      "category": "Manager News",
       "topics": [
-        "Youth/Academy"
+        "Manager"
       ],
-      "scraped_at": "2026-08-06T15:25:32.624027"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:09.808613"
     },
     {
       "title": "Andoni Iraola set to promote five Liverpool youngsters after impressing during pre-season tour of USA",
@@ -1866,158 +2497,385 @@
       "image": "https://cdn.live4liverpool.com/wp-content/uploads/2026/08/fwuQI0rSfd5w-1024x719.webp",
       "source": "Live4Liverpool",
       "pub_date": "Thu, 06 Aug 2026 13:00:05 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:17.465785"
+    },
+    {
+      "title": "Opinion: Why Liverpool’s decision not to sign a defender could backfire",
+      "link": "https://rushthekop.com/opinion-why-liverpool-s-decision-not-to-sign-a-defender-could-backfire?utm_source=RSS",
+      "description": "Liverpool's decision not to sign a defender could prove costly. Here's why the Reds' lack of defensive depth may backfire under Andoni Iraola this season.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4098,h_2305,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz6vdjpt3q9f3mykte.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 05 Aug 2026 12:45:00 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.312008"
+    },
+    {
+      "title": "Liverpool make enquiry for Brazilian prospect who has impressed under Andoni Iraola",
+      "link": "https://rushthekop.com/liverpool-make-enquiry-for-brazilian-prospect-who-has-impressed-under-andoni-iraola?utm_source=RSS",
+      "description": "Liverpool turn to Bournemouth winger Rayan as a premier Mohamed Salah replacement. Read how his form under Andoni Iraola sparked Anfield enquiries.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5178,h_2912,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kxnxtg2kcp20tjttrf.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Fri, 17 Jul 2026 17:45:00 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager",
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.313074"
+    },
+    {
+      "title": "5 Things Spotted in Liverpool Pre-Season Training Under Andoni Iraola",
+      "link": "https://rushthekop.com/5-things-spotted-in-liverpool-pre-season-training-under-andoni-iraola?utm_source=RSS",
+      "description": "What did day one of the Andoni Iraola era look like? We break down 5 major things spotted at the AXA Training Centre as Liverpool return for pre-season.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4810,h_2705,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kxqyh6ja1g95f0466w.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sat, 18 Jul 2026 13:30:00 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.313249"
+    },
+    {
+      "title": "5 players who will have impressed Andoni Iraola during Liverpool's win over Wrexham",
+      "link": "https://rushthekop.com/5-players-who-will-have-impressed-andoni-iraola-during-liverpool-s-win-over-wrexham-01kys6vv978m?utm_source=RSS",
+      "description": "Who said you can't win things with youngsters? And by 'things', we mean preseason games",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5329,h_2997,x_0,y_326/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kys6ybevtc80r8bt08.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 30 Jul 2026 12:49:22 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.313702"
+    },
+    {
+      "title": "Liverpool youngster Trey Nyoni makes admission after Leeds defeat as first-team hopes grow",
+      "link": "https://rushthekop.com/liverpool-youngster-trey-nyoni-makes-admission-after-leeds-defeat-as-first-team-hopes-grow-01kz6cv2yf6s?utm_source=RSS",
+      "description": "Trey Nyoni reflects on Liverpool's 4-2 defeat to Leeds after another impressive pre-season display, with the 19-year-old continuing to stake his claim under Andoni Iraola.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6099,h_3430,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz6cyy0str34mh9edq.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Tue, 04 Aug 2026 20:15:00 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.314537"
+    },
+    {
+      "title": "Milos Kerkez makes Arne Slot comparison with Andoni Iraola's Liverpool training claim",
+      "link": "https://rushthekop.com/milos-kerkez-makes-arne-slot-comparison-with-andoni-iraola-s-liverpool-training-claim-01kz5taddasb?utm_source=RSS",
+      "description": "Following Sunday's 4-2 friendly defeat against Leeds United, Miloš Kerkez made some revealing comments about Liverpool training under Andoni Iraola.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5348,h_3008,x_0,y_291/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz5th5c6yatka2g8bw.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Tue, 04 Aug 2026 08:05:31 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.315570"
+    },
+    {
+      "title": "Szoboszlai makes right-back admission as Iraola face first Liverpool pre-season defeat",
+      "link": "https://rushthekop.com/szoboszlai-makes-right-back-admission-as-iraola-face-first-liverpool-pre-season-defeat?utm_source=RSS",
+      "description": "Dominik Szoboszlai delivers a clear tactical message to Andoni Iraola after Liverpool's 4-2 pre-season loss to Leeds in Chicago.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6029,h_3391,x_0,y_188/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz3ppa3trf2y1hm55p.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 03 Aug 2026 14:15:00 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager",
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.316640"
+    },
+    {
+      "title": "Liverpool confirmed lineup vs Leeds: Alexander Isak and Florian Wirtz both in the starting XI",
+      "link": "https://rushthekop.com/liverpool-confirmed-lineup-vs-leeds-alexander-isak-and-florian-wirtz-both-in-the-starting-xi-01kz1p4e19g8?utm_source=RSS",
+      "description": "Liverpool take on Leeds United at Soldier Field in Chicago in a pre-season friendly on Sunday and here is Andoni Iraola's starting lineup.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2624,h_1476,x_0,y_125/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz1x10td2rqtfhmzbn.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 02 Aug 2026 18:56:47 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.317292"
+    },
+    {
+      "title": "Andoni Iraola confirmed when Liverpool's World Cup representatives will return",
+      "link": "https://rushthekop.com/andoni-iraola-confirmed-when-liverpool-s-world-cup-representatives-will-return-01kz149d7kra?utm_source=RSS",
+      "description": "Andoni Iraola has confirmed when Alisson, Víctor Muñoz and Alexis Mac Allister will return to pre-season training following their World Cup exploits.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3530,h_1985,x_0,y_65/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz14hsynhmht1m8a5s.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 02 Aug 2026 13:53:19 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager",
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.317462"
+    },
+    {
+      "title": "Andoni Iraola confirms the return of Liverpool trio for final pre-season fixture",
+      "link": "https://rushthekop.com/andoni-iraola-confirms-the-return-of-liverpool-trio-for-final-pre-season-fixture-01kz151fjj2n?utm_source=RSS",
+      "description": "Alexander Isak, Florian Wirtz, Jérémy Jacquet and Ryan Gravenberch are all set to feature tonight against Leeds",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_7697,h_4329,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz15erc6jjs3tgq3d6.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 02 Aug 2026 13:03:10 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager",
+        "First Team"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.317618"
+    },
+    {
+      "title": "Florian Wirtz vows to do \"a lot of things better\" ahead of second season at Liverpool",
+      "link": "https://rushthekop.com/florian-wirtz-vows-to-do-a-lot-of-things-better-ahead-of-second-season-at-liverpool-01kyz25jw09h?utm_source=RSS",
+      "description": "Florian Wirtz did not not hit the heights expected during his first season at Liverpool, but is confident he can produce better under Andoni Iraola.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5818,h_3272,x_0,y_280/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyz31y665sj1gss4e1.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sat, 01 Aug 2026 17:47:48 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.318422"
+    },
+    {
+      "title": "Andoni Iraola confirms which position is Florian Wirtz's best at Liverpool",
+      "link": "https://rushthekop.com/andoni-iraola-confirms-which-position-is-florian-wirtz-s-best-at-liverpool-01kyt58xnp47?utm_source=RSS",
+      "description": "Speaking during a press conference in Chicago on Thursday morning, Andoni Iraola confirmed how he plans to deploy Florian Wirtz this season.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2624,h_1476,x_0,y_118/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyt5dm090vjfcffnk8.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 30 Jul 2026 19:16:03 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.320152"
+    },
+    {
+      "title": "Why is Jérémy Jacquet not playing for Liverpool vs Wrexham?",
+      "link": "https://rushthekop.com/why-is-jeremy-jacquet-not-playing-for-liverpool-vs-wrexham-01kyq9tk5vcz?utm_source=RSS",
+      "description": "Jérémy Jacquet has joined Liverpool for £60m and, despite the fact Andoni Iraola has no other senior centre-backs, he will not feature vs Wrexham.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_6793,h_3821,x_0,y_190/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyq9wj6706bx056rxr.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Wed, 29 Jul 2026 21:00:03 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.321365"
+    },
+    {
+      "title": "Milos Kerkez outlines his delight at being reunited with Andoni Iraola at Liverpool",
+      "link": "https://rushthekop.com/milos-kerkez-outlines-his-delight-at-being-reunited-with-andoni-iraola-at-liverpool-01kyhtaw6xmk?utm_source=RSS",
+      "description": "Everyone at Liverpool appears delighted to have Andoni Iraola as the new Liverpool manager, none more so than left-back Miloš Kerkez.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5000,h_2812,x_0,y_258/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyhtehpn3y2jy07zf6.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 27 Jul 2026 13:25:42 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.323408"
+    },
+    {
+      "title": "Federico Chiesa announces surprise decision over Liverpool future after goal vs Sunderland",
+      "link": "https://rushthekop.com/federico-chiesa-announces-surprise-decision-over-liverpool-future-after-goal-vs-sunderland-01kyfs9y28zm?utm_source=RSS",
+      "description": "Federico Chiesa appeared likely to leave Liverpool for a return to Serie A this summer, now stating he wants a \"new chapter\" under Andoni Iraola.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3000,h_1687,x_0,y_75/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyfsckzh5zv6971pkm.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 26 Jul 2026 18:28:53 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.323741"
+    },
+    {
+      "title": "Ranked: The 30 Greatest Liverpool FC Players of All Time",
+      "link": "https://rushthekop.com/ranked-the-30-greatest-liverpool-fc-players-of-all-time?utm_source=RSS",
+      "description": "Ranking the 30 biggest legends in Liverpool's illustrious history, including Mohamed Salah, Ian Rush, Kenny Dalglish, Steven Gerrard and more.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4227,h_2377,x_0,y_370/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01ky7q11g9p49my3e4x2.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 26 Jul 2026 10:30:00 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager",
+        "First Team",
+        "Legends"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.324467"
+    },
+    {
+      "title": "Liverpool confirmed lineup vs Sunderland: Andoni Iraola names his first XI",
+      "link": "https://rushthekop.com/liverpool-confirmed-lineup-vs-sunderland-andoni-iraola-names-his-first-xi-01kydexz9m7h?utm_source=RSS",
+      "description": "Liverpool are taking on Sunderland in a pre-season friendly in Nashville on Saturday night, and here is the Reds' confirmed starting lineup.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5525,h_3107,x_0,y_369/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kydggm6t8dz519v34g.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sat, 25 Jul 2026 20:51:59 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.324767"
+    },
+    {
+      "title": "‘He will make mistakes…’ – Jamie Carragher has one worry about Andoni Iraola at Liverpool",
+      "link": "https://www.empireofthekop.com/2026/08/06/he-will-make-mistakes-jamie-carragher-has-one-worry-about-iraola/",
+      "description": "Jamie Carragher has expressed one concern about Andoni Iraola heading into the Basque’s first season as Liverpool head coach. The 44-year-old has replaced Arne Slot in the Anfield dugout, being awarde...",
+      "image": "https://icdn.empireofthekop.com/wp-content/uploads/2026/08/carragher-iraola.jpg",
+      "source": "Empire of the Kop",
+      "pub_date": "Thu, 06 Aug 2026 07:41:11 +0000",
+      "category": "Manager News",
+      "topics": [
+        "Manager",
+        "Legends"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:23.743612"
+    },
+    {
+      "title": "Liverpool Women's Subway Players Cup fixture list confirmed",
+      "link": "https://rushthekop.com/liverpool-women-s-subway-players-cup-fixture-list-confirmed-01kzbnj0p0e2?utm_source=RSS",
+      "description": "Liverpool will enter the revamped Subway Players Cup in the league phase, playing six matches, so find out their opponents, venues and dates.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4199,h_2361,x_0,y_163/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kzbnvts1awx8e3gn36.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 06 Aug 2026 14:49:37 +0000",
+      "category": "WSL",
+      "topics": [
+        "WSL"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.310718"
+    },
+    {
+      "title": "Liverpool's Women's Super League fixtures confirmed",
+      "link": "https://rushthekop.com/liverpool-s-women-s-super-league-fixtures-confirmed-01kyqjp69crd?utm_source=RSS",
+      "description": "Thursday 30 July was a big day in the women's football calendar as it is WSL fixture release day, so check out all of Liverpool's fixtures here.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4968,h_2794,x_0,y_209/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyqjvf1syayg68vwj6.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 30 Jul 2026 09:29:29 +0000",
+      "category": "WSL",
+      "topics": [
+        "WSL"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.321192"
+    },
+    {
+      "title": "WSL fixture release and Subway Cup: Everything Liverpool Women fans need to know",
+      "link": "https://rushthekop.com/wsl-fixture-release-and-subway-cup-everything-liverpool-women-fans-need-to-know-01kympebkbdx?utm_source=RSS",
+      "description": "With Women's Super League fixture release day coming up this week, here is everything that all Liverpool Women fans need to know.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3704,h_2083,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kympmg8vvjhcechws2.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Tue, 28 Jul 2026 16:50:55 +0000",
+      "category": "WSL",
+      "topics": [
+        "WSL"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.322144"
+    },
+    {
+      "title": "Leanne Kiernan leaves Liverpool for Newcastle on a permanent basis",
+      "link": "https://rushthekop.com/leanne-kiernan-leaves-liverpool-for-newcastle-on-a-permanent-basis-01kym9bwmg7g?utm_source=RSS",
+      "description": "Leanne Kiernan is one of the biggest legends in Liverpool women's history, but she has now departed to join Newcastle United.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4962,h_2791,x_0,y_190/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kym9n3ebk25vx88f5x.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Tue, 28 Jul 2026 13:13:06 +0000",
+      "category": "WSL",
+      "topics": [
+        "WSL"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.322537"
+    },
+    {
+      "title": "5 Liverpool U21 standouts who made a statement in Leeds friendly",
+      "link": "https://rushthekop.com/5-liverpool-u21-standouts-who-made-a-statement-in-leeds-friendly?utm_source=RSS",
+      "description": "Five Liverpool U21 starlets caught the eye in their friendly against Leeds, with one academy graduate sending a clear message to the first-team coaching staff.",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4550,h_2559,x_0,y_92/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kz2zxmvk8bq85rbsx3.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Mon, 03 Aug 2026 10:41:15 +0000",
+      "category": "Youth/Academy",
+      "topics": [
+        "Youth/Academy"
+      ],
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.317099"
+    },
+    {
+      "title": "Andoni Iraola praises Liverpool's young players after Wrexham pre-season win",
+      "link": "https://rushthekop.com/andoni-iraola-praises-liverpool-s-young-players-after-wrexham-pre-season-win-01kyt1bee5ra?utm_source=RSS",
+      "description": "With several first-team players coming back from the World Cup, the academy prospects have stepped up to impress their new boss in pre-season",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2709,h_1523,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyt1jh3av6bkxc3n5p.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Thu, 30 Jul 2026 19:45:00 +0000",
       "category": "Youth/Academy",
       "topics": [
         "Manager",
-        "Coaching Staff",
         "Youth/Academy"
       ],
-      "scraped_at": "2026-08-06T15:25:36.003311"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.319935"
     },
     {
-      "title": "Jamie Carragher hijacks FIFA's Gianni Infantino announcement with 'bribery' dig",
-      "link": "https://www.mirror.co.uk/sport/football/news/jamie-carragher-fifa-infantino-announcement-37522226",
-      "description": "Jamie Carragher refused to hold his tongue as FIFA announced their decision on the future of Gianni Infantino's FIFA presidency following waves of backlash for controversial World Cup plans",
-      "image": "https://i2-prod.mirror.co.uk/incoming/article37522091.ece/ALTERNATES/s615/0_Gianni-Infantino-File-Photo.jpg",
-      "source": "Mirror",
-      "pub_date": "Thu, 6 Aug 2026 15:18:15 +0000",
-      "category": "Legends/Ex-Players",
+      "title": "'Unbelievable moment' - Lewis Koumas opens up on Wembley promotion joy as Liverpool pre-season decision awaits",
+      "link": "https://rushthekop.com/unbelievable-moment-lewis-koumas-opens-up-on-wembley-promotion-joy-as-liverpool-pre-season-decision-awaits-01kyf17hxb8f?utm_source=RSS",
+      "description": "After securing promotion with Hull, Koumas has an opportunity to impress Iraola",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5000,h_2812,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyf19hzx4jcdf3d2dz.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 26 Jul 2026 17:55:00 +0000",
+      "category": "Youth/Academy",
       "topics": [
-        "Legends/Ex-Players"
+        "Manager",
+        "Youth/Academy"
       ],
-      "scraped_at": "2026-08-06T15:25:28.193298"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.323886"
     },
     {
-      "title": "Mo Salah is taking a step down with Turkey move but it is about more than just money",
-      "link": "https://www.mirror.co.uk/sport/football/news/mo-salah-taking-step-down-37521695",
-      "description": "Jamie Carragher has said he was surprised by the Liverpool legend's switch to Trabzonspor but Super Lig clubs are spending big and attracting some top talent",
-      "image": "https://i2-prod.dailystar.co.uk/sport/football/article37516730.ece/ALTERNATES/s615/1_FBL-TUR-SUPERLIG-TRABZONSPOR.jpg",
-      "source": "Mirror",
-      "pub_date": "Thu, 6 Aug 2026 14:18:31 +0000",
-      "category": "Legends/Ex-Players",
+      "title": "Lewis Koumas names Liverpool teammate helping him settle back at Anfield",
+      "link": "https://rushthekop.com/lewis-koumas-names-liverpool-teammate-helping-him-settle-back-at-anfield-01kyeysxjfja?utm_source=RSS",
+      "description": "The Welsh forward is relishing being back amongst the first-team during the pre-season tour in the USA",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2903,h_1632,x_0,y_63/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/287/01kyeyx2wb47ra3zh882.jpg",
+      "source": "Rush The Kop",
+      "pub_date": "Sun, 26 Jul 2026 14:30:00 +0000",
+      "category": "Youth/Academy",
       "topics": [
-        "First Team",
-        "Legends/Ex-Players"
+        "Youth/Academy"
       ],
-      "scraped_at": "2026-08-06T15:25:28.193731"
-    },
-    {
-      "title": "Jamie Carragher criticises Mohamed Salah's Turkey move after Liverpool exit",
-      "link": "https://www.mirror.co.uk/sport/football/news/jamie-carragher-mo-salah-trabzonspor-37519389",
-      "description": "Mohamed Salah was given a hero's welcome after touching down in Turkey before his official unveiling as a new Trabzonspor player, but Jamie Carragher thinks he's made a mistake",
-      "image": "https://i2-prod.mirror.co.uk/incoming/article37519397.ece/ALTERNATES/s615/0_Untitled-1.jpg",
-      "source": "Mirror",
-      "pub_date": "Thu, 6 Aug 2026 06:51:09 +0000",
-      "category": "Legends/Ex-Players",
-      "topics": [
-        "First Team",
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:28.195076"
-    },
-    {
-      "title": "‘He creates issues’ – Frank Leboeuf tells Xabi Alonso to replace Chelsea star",
-      "link": "https://metro.co.uk/2026/08/06/he-creates-issues-frank-leboeuf-tells-xabi-alonso-replace-chelsea-star-29313197/",
-      "description": "",
-      "image": "",
-      "source": "Metro",
-      "pub_date": "Thu, 06 Aug 2026 14:52:48 +0000",
-      "category": "Legends/Ex-Players",
-      "topics": [
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:28.591987"
-    },
-    {
-      "title": "Liverpool legends take on shot power challenge - and find out who strikes hardest",
-      "link": "https://www.90min.com/liverpool-legends-shot-power-challenge-who-strikes-hardest?utm_source=RSS",
-      "description": "Liverpool legends Steven Gerrard and John Arne Riise finally put their famous shots to the test in Seoul.",
-      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2092,h_1176,x_0,y_182/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_en_international_web/01k56yjj7s05ybv6ec0k.jpg",
-      "source": "90min",
-      "pub_date": "Thu, 18 Sep 2025 02:00:00 +0000",
-      "category": "Legends/Ex-Players",
-      "topics": [
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:40.848601"
-    },
-    {
-      "title": "Peter Crouch busts out robot celebration in iconic mascot appearance",
-      "link": "https://www.90min.com/peter-crouch-busts-out-robot-celebration-iconic-mascot-appearance?utm_source=RSS",
-      "description": "Peter Crouch made a hilarious return to football as mascot for Farnham Town, walking out with players and breaking out his trademark robot celebration.",
-      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_1080,h_607,x_0,y_116/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/90min_en_international_web/01k4mjbvj8e940w44q11.jpg",
-      "source": "90min",
-      "pub_date": "Tue, 09 Sep 2025 10:05:07 +0000",
-      "category": "Legends/Ex-Players",
-      "topics": [
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:40.851564"
-    },
-    {
-      "title": "Jamie Carragher goes bananas after dramatic Rio Ngumoha Liverpool winner",
-      "link": "https://www.90min.com/jamie-carragher-goes-bananas-rio-ngumoha-liverpool-winner?utm_source=RSS",
-      "description": "Jamie Carragher went wild in the Sky Sports studio after Rio Ngumoha’s 100th-minute winner for Liverpool against Newcastle, hailing the game as one of the greatest in Premier League history.",
-      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_560,h_315,x_0,y_105/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/90min_en_international_web/01k3jtgey52pdva056rn.avif",
-      "source": "90min",
-      "pub_date": "Wed, 27 Aug 2025 00:00:01 +0000",
-      "category": "Legends/Ex-Players",
-      "topics": [
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:40.856272"
-    },
-    {
-      "title": "Dean Henderson: Crystal Palace star pays for £1,000 of drinks at pub for jubilant fans",
-      "link": "https://www.90min.com/dean-henderson-crystal-palace-drinks-pub-jubilant-fans?utm_source=RSS",
-      "description": "Dean Henderson wins over Crystal Palace fans with match-winning penalty saves and a generous £1,000 pub tab.",
-      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2179,h_1225,x_183,y_552/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_en_international_web/01k2ca96b7897jpa7vkj.jpg",
-      "source": "90min",
-      "pub_date": "Mon, 11 Aug 2025 13:40:00 +0000",
-      "category": "Legends/Ex-Players",
-      "topics": [
-        "Legends/Ex-Players"
-      ],
-      "scraped_at": "2026-08-06T15:25:40.861517"
-    },
-    {
-      "title": "Liverpool coach breaks silence on sacking and what went wrong under Arne Slot",
-      "link": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-coach-aaron-briggs-sacking-34416004",
-      "description": "Aaron Briggs was dismissed as Liverpool set-piece coach in December 2025",
-      "image": "https://i2-prod.liverpool.com/incoming/article31073768.ece/ALTERNATES/s615/1_GettyImages-2175873898.jpg",
-      "source": "Liverpool Echo",
-      "pub_date": "Thu, 6 Aug 2026 14:04:44 +0000",
-      "category": "General News",
-      "topics": [
-        "Coaching Staff"
-      ],
-      "scraped_at": "2026-08-06T15:25:26.496825"
-    },
-    {
-      "title": "Carabao Cup first round TV schedule: How to watch every game this weekend",
-      "link": "https://www.liverpoolecho.co.uk/sport/football/football-news/carabao-cup-first-round-tv-34413840",
-      "description": "The Carabao Cup first round kicks off this week with comprehensive coverage broadcast on Sky Sports and ITV. Here is the full TV schedule and how to watch",
-      "image": "https://i2-prod.birminghammail.co.uk/incoming/article34186248.ece/ALTERNATES/s615/0_Newcastle-United-v-Manchester-City-Carabao-Cup-Semi-Final-First-Leg-St-James-Park.jpg",
-      "source": "Liverpool Echo",
-      "pub_date": "Thu, 6 Aug 2026 10:38:45 +0000",
-      "category": "General News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:26.497304"
-    },
-    {
-      "title": "Everton told what Jack Grealish wants as Man City outcast prepares for return",
-      "link": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/everton-told-what-jack-grealish-34413428",
-      "description": "Jack Grealish's future remains up in the air but Everton fans want him back and he has been working hard training alone throughout the summer as he looks to get back to Premier League action",
-      "image": "https://i2-prod.birminghammail.co.uk/incoming/article34413644.ece/ALTERNATES/s615/0_Grealish.jpg",
-      "source": "Liverpool Echo",
-      "pub_date": "Thu, 6 Aug 2026 10:08:10 +0000",
-      "category": "General News",
-      "topics": [
-        "General"
-      ],
-      "scraped_at": "2026-08-06T15:25:26.497735"
+      "journalist": null,
+      "scraped_at": "2026-08-06T15:32:22.324190"
     }
   ]
 }
