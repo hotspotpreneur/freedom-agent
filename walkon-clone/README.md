@@ -130,4 +130,46 @@ walkon-clone/
 
 ---
 
+# 🚀 WordPress Theme - Kopite News
+
+## Installation
+
+1. Upload the `wp-theme` folder to `/wp-content/themes/`
+2. Log in to WordPress admin at https://kopite.online/wp-admin
+3. Go to **Appearance → Themes**
+4. Activate **Kopite News**
+5. Go to **Appearance → Widgets** to configure ad spaces
+6. Create pages: Home, News, Contact
+7. Go to **Settings → Reading** and set "Your homepage displays" to "A static page"
+
+## Ad Spaces
+
+- **Banner Ad**: 728x90px - appears below header
+- **Sidebar Ads**: 160x600px - appear on left/right of content
+
+## Header Image
+
+Use this prompt to generate the header graphic with DALL-E:
+
+```
+Create a minimalist Liverpool FC themed header graphic. On the left, show the iconic ANFIELD PAVILION ARCH (Paisley Gates) as an elegant black line drawing. On the right, arrange six legendary Liverpool managers as stylized black pencil sketches in a row: Bill Shankly, Bob Paisley, Kenny Dalglish, Joe Fagan, Rafael Benítez, and Jürgen Klopp. The style should be vintage football programme artwork - Art Deco inspired line drawings with clean strokes. Use white background with subtle red accents. The overall composition should be professional and suitable for a sports news website header. Horizontal layout, 1200x200 pixels.
+```
+
+## Importing News Articles
+
+The scraper outputs to `liverpool-news.json`. To import into WordPress:
+
+1. Install "WP All Import" plugin or use the REST API
+2. Create a simple script to POST articles to /wp-json/wp/v2/posts
+3. Or manually import JSON using WP's import tools
+
+## Theme Features
+
+- White background with red (#C8102E) accents
+- Black text links (like WalkOn)
+- Auto-updating copyright in footer
+- Ad widget areas for monetization
+- Responsive design
+- Custom meta field for article source
+
 Built with 🔥 for Paul
