@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalkOn Clone | Liverpool News & Transfers</title>
+    <meta name="description" content="The latest Liverpool news, match previews and reviews, transfer news from around the world, updated 24 hours a day">
+    <style>
+        :root {
+            --red: #ab2f27;
+            --dark-red: #8a241f;
+            --light-bg: #f5f5f5;
+            --border: #e0e0e0;
+            --text: #333;
+            --text-light: #666;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--light-bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+        
+        /* Header */
+        .site-header {
+            background: var(--red);
+            padding: 15px 20px;
+            text-align: center;
+        }
+        
+        .site-header h1 {
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .site-header p {
+            color: rgba(255,255,255,0.8);
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        
+        /* Navigation */
+        .main-nav {
+            background: white;
+            border-bottom: 1px solid var(--border);
+            padding: 0 20px;
+        }
+        
+        .main-nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            list-style: none;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 0;
+            justify-content: center;
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .main-nav a:hover, .main-nav a.active {
+            color: var(--red);
+        }
+        
+        /* Page Nav */
+        .page-nav {
+            background: #1a1a1a;
+            padding: 10px 20px;
+        }
+        
+        .page-nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .page-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        
+        .page-nav a:hover {
+            opacity: 1;
+            color: var(--red);
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        /* Featured Article */
+        .featured {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .featured img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .featured-content {
+            padding: 25px;
+        }
+        
+        .featured-label {
+            background: var(--red);
+            color: white;
+            padding: 4px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        
+        .featured h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .featured .source {
+            color: var(--text-light);
+            font-size: 13px;
+        }
+        
+        /* News Grid */
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--red);
+            display: inline-block;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .news-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        
+        .news-card-content {
+            padding: 15px;
+        }
+        
+        .news-card .category {
+            color: var(--red);
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        
+        .news-card h3 {
+            font-size: 15px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+        
+        .news-card .source {
+            color: var(--text-light);
+            font-size: 12px;
+        }
+        
+        /* Time Sections */
+        .time-section {
+            margin-bottom: 35px;
+        }
+        
+        .time-header {
+            background: var(--dark-red);
+            color: white;
+            padding: 8px 15px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        
+        /* Footer */
+        .site-footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .site-footer p {
+            opacity: 0.7;
+            font-size: 13px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-nav ul {
+                gap: 15px;
+            }
+            
+            .featured img {
+                height: 250px;
+            }
+            
+            .featured h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <h1>WalkOn Clone</h1>
+        <p>Latest Liverpool News and Transfers</p>
+    </header>
+    
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Transfer News</a></li>
+            <li><a href="#">Injury News</a></li>
+            <li><a href="#">Match Previews</a></li>
+            <li><a href="#">WSL</a></li>
+            <li><a href="#">Fixtures</a></li>
+        </ul>
+    </nav>
+    
+    <nav class="page-nav">
+        <ul>
+            <li><a href="#">Breaking</a></li>
+            <li><a href="#">Most Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Poll</a></li>
+            <li><a href="#">Table</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <!-- Featured -->
+        <article class="featured">
+            <img src="https://placehold.co/1200x400/ab2f27/white?text=Liverpool+News" alt="Featured">
+            <div class="featured-content">
+                <span class="featured-label">Breaking News</span>
+                <h2>Mo Salah completes shock move to Trabzonspor following Liverpool exit</h2>
+                <p class="source">The Football Faithful • 2 hours ago</p>
+            </div>
+        </article>
+        
+        <!-- Latest News by Time -->
+        <section class="time-section">
+            <span class="time-header">30 minutes to 1 hour old</span>
+            <div class="news-grid" id="news-30min"></div>
+        </section>
+        
+        <section class="time-section">
+            <span class="time-header">1 hour to 2 hours old</span>
+            <div class="news-grid" id="news-1hour"></div>
+        </section>
+        
+        <section class="time-section">
+            <span class="time-header">2 hours to 3 hours old</span>
+            <div class="news-grid" id="news-2hours"></div>
+        </section>
+    </div>
+    
+    <footer class="site-footer">
+        <p>WalkOn Clone - Unofficial Liverpool FC News</p>
+        <p>This site is not affiliated with Liverpool Football Club</p>
+    </footer>
+    
+    <script>
+        // Sample data - in production, this comes from scraped news
+        const sampleNews = [
+            {
+                title: "Liverpool coach breaks silence on sacking and what went wrong under Arne Slot",
+                source: "Liverpool Echo",
+                category: "Transfer News",
+                time: "30min",
+                image: "https://placehold.co/400x300/333/white?text=News"
+            },
+            {
+                title: "Liverpool accelerating: Official talks on €50m fee, player sees Anfield as his priority",
+                source: "Live4Liverpool",
+                category: "Transfer News",
+                time: "30min",
+                image: "https://placehold.co/400x300/333/white?text=News"
+            },
+            {
+                title: "Jody Morris names Arsenal and Liverpool transfer target as dream Chelsea signing",
+                source: "Metro",
+                category: "Transfer News",
+                time: "30min",
+                image: "https://placehold.co/400x300/333/white?text=News"
+            },
+            {
+                title: "Mo Salah completes shock move to Trabzonspor following Liverpool exit",
+                source: "The Football Faithful",
+                category: "Transfer News",
+                time: "1hour",
+                image: "https://placehold.co/400x300/333/white?text=News"
+            },
+            {
+                title: "Former Arsenal star claims Liverpool has already missed out on ideal Mohamed Salah replacement",
+                source: "Liverpool.com",
+                category: "Transfer News",
+                time: "1hour",
+                image: "https://placehold.co/400x300/333/white?text=News"
+            },
+            {
+                title: "Liverpool Women announce the signing of Natalia Ramos",
+                source: "Rush The Kop",
+                category: "WSL",
+                time: "1hour",
+                image: "https://placehold.co/400x300/333/white?text=News"
+            },
+            {
+                title: "Salah joins Turkish side Trabzonspor",
+                source: "Sky Sports",
+                category: "Transfer News",
+                time: "2hours",
+                image: "https://placehold.co/400x300/333/white?text=News"
+            },
+            {
+                title: "Michael Owen can see Tottenham signing consistently poor Liverpool man",
+                source: "Football365",
+                category: "Transfer News",
+                time: "2hours",
+                image: "https://placehold.co/400x300/333/white?text=News"
+            }
+        ];
+        
+        function renderNews() {
+            const containers = {
+                '30min': document.getElementById('news-30min'),
+                '1hour': document.getElementById('news-1hour'),
+                '2hours': document.getElementById('news-2hours')
+            };
+            
+            sampleNews.forEach(news => {
+                const card = document.createElement('article');
+                card.className = 'news-card';
+                card.innerHTML = `
+                    <img src="${news.image}" alt="${news.title}">
+                    <div class="news-card-content">
+                        <div class="category">${news.category}</div>
+                        <h3>${news.title}</h3>
+                        <p class="source">${news.source}</p>
+                    </div>
+                `;
+                
+                if (containers[news.time]) {
+                    containers[news.time].appendChild(card);
+                }
+            });
+        }
+        
+        renderNews();
+    </script>
+</body>
+</html>
