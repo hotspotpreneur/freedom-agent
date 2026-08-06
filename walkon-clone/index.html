@@ -154,6 +154,31 @@
             font-size: 13px;
         }
         
+        /* Category Tabs */
+        .category-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .category-tab {
+            padding: 8px 16px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .category-tab:hover, .category-tab.active {
+            background: var(--red);
+            color: white;
+            border-color: var(--red);
+        }
+        
         /* News Grid */
         .section-title {
             font-size: 20px;
@@ -187,6 +212,7 @@
             width: 100%;
             height: 160px;
             object-fit: cover;
+            background: #ddd;
         }
         
         .news-card-content {
@@ -199,6 +225,21 @@
             font-weight: 600;
             text-transform: uppercase;
             margin-bottom: 8px;
+        }
+        
+        .news-card .topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+        
+        .news-card .topic-tag {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            font-size: 10px;
+            border-radius: 3px;
+            color: var(--text-light);
         }
         
         .news-card h3 {
@@ -242,6 +283,12 @@
             font-size: 13px;
         }
         
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-light);
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             .main-nav ul {
@@ -266,12 +313,14 @@
     
     <nav class="main-nav">
         <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Transfer News</a></li>
-            <li><a href="#">Injury News</a></li>
-            <li><a href="#">Match Previews</a></li>
-            <li><a href="#">WSL</a></li>
-            <li><a href="#">Fixtures</a></li>
+            <li><a href="#" class="active" data-category="all">All News</a></li>
+            <li><a href="#" data-category="Transfer News">Transfer News</a></li>
+            <li><a href="#" data-category="Injury News">Injury News</a></li>
+            <li><a href="#" data-category="Match Preview">Match Previews</a></li>
+            <li><a href="#" data-category="WSL">WSL</a></li>
+            <li><a href="#" data-category="Youth/Academy">Youth</a></li>
+            <li><a href="#" data-category="Legends/Ex-Players">Legends</a></li>
+            <li><a href="#" data-category="Manager News">Managers</a></li>
         </ul>
     </nav>
     
@@ -288,124 +337,128 @@
     
     <div class="container">
         <!-- Featured -->
-        <article class="featured">
-            <img src="https://placehold.co/1200x400/ab2f27/white?text=Liverpool+News" alt="Featured">
-            <div class="featured-content">
-                <span class="featured-label">Breaking News</span>
-                <h2>Mo Salah completes shock move to Trabzonspor following Liverpool exit</h2>
-                <p class="source">The Football Faithful • 2 hours ago</p>
-            </div>
+        <article class="featured" id="featured-article">
+            <div class="loading">Loading...</div>
         </article>
         
-        <!-- Latest News by Time -->
-        <section class="time-section">
-            <span class="time-header">30 minutes to 1 hour old</span>
-            <div class="news-grid" id="news-30min"></div>
-        </section>
+        <!-- Summary Stats -->
+        <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <div id="summary-stats"></div>
+        </div>
         
-        <section class="time-section">
-            <span class="time-header">1 hour to 2 hours old</span>
-            <div class="news-grid" id="news-1hour"></div>
-        </section>
-        
-        <section class="time-section">
-            <span class="time-header">2 hours to 3 hours old</span>
-            <div class="news-grid" id="news-2hours"></div>
-        </section>
+        <!-- News by Category -->
+        <h2 class="section-title">Latest News</h2>
+        <div class="news-grid" id="news-grid">
+            <div class="loading">Loading...</div>
+        </div>
     </div>
     
     <footer class="site-footer">
         <p>WalkOn Clone - Unofficial Liverpool FC News</p>
-        <p>This site is not affiliated with Liverpool Football Club</p>
+        <p>Aggregated from multiple sources</p>
     </footer>
     
     <script>
-        // Sample data - in production, this comes from scraped news
-        const sampleNews = [
-            {
-                title: "Liverpool coach breaks silence on sacking and what went wrong under Arne Slot",
-                source: "Liverpool Echo",
-                category: "Transfer News",
-                time: "30min",
-                image: "https://placehold.co/400x300/333/white?text=News"
-            },
-            {
-                title: "Liverpool accelerating: Official talks on €50m fee, player sees Anfield as his priority",
-                source: "Live4Liverpool",
-                category: "Transfer News",
-                time: "30min",
-                image: "https://placehold.co/400x300/333/white?text=News"
-            },
-            {
-                title: "Jody Morris names Arsenal and Liverpool transfer target as dream Chelsea signing",
-                source: "Metro",
-                category: "Transfer News",
-                time: "30min",
-                image: "https://placehold.co/400x300/333/white?text=News"
-            },
-            {
-                title: "Mo Salah completes shock move to Trabzonspor following Liverpool exit",
-                source: "The Football Faithful",
-                category: "Transfer News",
-                time: "1hour",
-                image: "https://placehold.co/400x300/333/white?text=News"
-            },
-            {
-                title: "Former Arsenal star claims Liverpool has already missed out on ideal Mohamed Salah replacement",
-                source: "Liverpool.com",
-                category: "Transfer News",
-                time: "1hour",
-                image: "https://placehold.co/400x300/333/white?text=News"
-            },
-            {
-                title: "Liverpool Women announce the signing of Natalia Ramos",
-                source: "Rush The Kop",
-                category: "WSL",
-                time: "1hour",
-                image: "https://placehold.co/400x300/333/white?text=News"
-            },
-            {
-                title: "Salah joins Turkish side Trabzonspor",
-                source: "Sky Sports",
-                category: "Transfer News",
-                time: "2hours",
-                image: "https://placehold.co/400x300/333/white?text=News"
-            },
-            {
-                title: "Michael Owen can see Tottenham signing consistently poor Liverpool man",
-                source: "Football365",
-                category: "Transfer News",
-                time: "2hours",
-                image: "https://placehold.co/400x300/333/white?text=News"
-            }
-        ];
+        // Load news data from JSON file
+        let allNews = [];
+        let currentCategory = 'all';
         
-        function renderNews() {
-            const containers = {
-                '30min': document.getElementById('news-30min'),
-                '1hour': document.getElementById('news-1hour'),
-                '2hours': document.getElementById('news-2hours')
-            };
-            
-            sampleNews.forEach(news => {
-                const card = document.createElement('article');
-                card.className = 'news-card';
-                card.innerHTML = `
-                    <img src="${news.image}" alt="${news.title}">
-                    <div class="news-card-content">
-                        <div class="category">${news.category}</div>
-                        <h3>${news.title}</h3>
-                        <p class="source">${news.source}</p>
-                    </div>
-                `;
+        async function loadNews() {
+            try {
+                const response = await fetch('liverpool-news.json');
+                const data = await response.json();
+                allNews = data.articles;
                 
-                if (containers[news.time]) {
-                    containers[news.time].appendChild(card);
-                }
-            });
+                console.log(`Loaded ${allNews.length} articles`);
+                console.log('Categories:', data.summary);
+                
+                renderSummary(data.summary);
+                renderFeatured();
+                renderNews();
+            } catch (error) {
+                console.error('Error loading news:', error);
+                document.getElementById('news-grid').innerHTML = 
+                    '<div class="loading">Error loading news. Run the scraper first: python3 comprehensive-scraper.py</div>';
+            }
         }
         
-        renderNews();
+        function renderSummary(summary) {
+            const container = document.getElementById('summary-stats');
+            let html = '<strong>Categories:</strong> ';
+            const items = [];
+            for (const [cat, count] of Object.entries(summary)) {
+                items.push(`<span style="margin-right: 15px;">${cat}: <strong>${count}</strong></span>`);
+            }
+            container.innerHTML = items.join('');
+        }
+        
+        function renderFeatured() {
+            const container = document.getElementById('featured-article');
+            const article = allNews.find(a => a.category === 'Transfer News') || allNews[0];
+            
+            if (!article) {
+                container.innerHTML = '<div class="loading">No articles available</div>';
+                return;
+            }
+            
+            const imageUrl = article.image || 'https://placehold.co/1200x400/ab2f27/white?text=Liverpool+News';
+            
+            container.innerHTML = `
+                <img src="${imageUrl}" alt="${article.title}" onerror="this.src='https://placehold.co/1200x400/ab2f27/white?text=Liverpool+News'">
+                <div class="featured-content">
+                    <span class="featured-label">${article.category}</span>
+                    <h2>${article.title}</h2>
+                    <p class="source">${article.source}</p>
+                    <p style="margin-top: 10px; color: #666;">${article.description}</p>
+                </div>
+            `;
+        }
+        
+        function renderNews() {
+            const container = document.getElementById('news-grid');
+            
+            const filtered = currentCategory === 'all' 
+                ? allNews 
+                : allNews.filter(a => a.category === currentCategory);
+            
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="loading">No articles in this category</div>';
+                return;
+            }
+            
+            container.innerHTML = filtered.map(article => {
+                const imageUrl = article.image || 'https://placehold.co/400x300/333/white?text=News';
+                const topicsHtml = article.topics 
+                    ? `<div class="topics">${article.topics.map(t => `<span class="topic-tag">${t}</span>`).join('')}</div>`
+                    : '';
+                
+                return `
+                    <article class="news-card">
+                        <img src="${imageUrl}" alt="${article.title}" onerror="this.src='https://placehold.co/400x300/333/white?text=News'">
+                        <div class="news-card-content">
+                            <div class="category">${article.category}</div>
+                            ${topicsHtml}
+                            <h3>${article.title}</h3>
+                            <p class="source">${article.source}</p>
+                        </div>
+                    </article>
+                `;
+            }).join('');
+        }
+        
+        // Category filter handlers
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelectorAll('.main-nav a').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                currentCategory = link.dataset.category;
+                renderNews();
+            });
+        });
+        
+        // Load on startup
+        loadNews();
     </script>
 </body>
 </html>

@@ -1,89 +1,103 @@
-# WalkOn Clone - Liverpool News Aggregator
+# WalkOn Clone - Liverpool FC News Aggregator
 
 A self-hosted alternative to Newsfinity-powered Liverpool FC news aggregation.
 
+## ⚽ Comprehensive Coverage
+
+This scraper captures news about:
+- **1st Team** - Current players, manager, coaching staff
+- **Managers** - Bill Shankly, Bob Paisley, Kenny Dalglish, Rafa Benítez, Jürgen Klopp, Andoni Iraola
+- **Coaches** - Pep Lijnders, Pete Krawietz, John Achterberg, etc.
+- **AXA Training Ground** - Academy and training news
+- **Youth Teams** - U21, U23, U18, Academy
+- **Legends & Ex-Players** - From the 60s to modern day
+- **WSL** - Liverpool Women
+
 ## Features
 
-- **Live News Aggregation** - Pulls from RSS feeds (Liverpool Echo, etc.)
-- **Auto-categorization** - Tags articles as Transfer News, Injury News, Match Previews, WSL
-- **Time-based Sections** - Shows articles by age (30min, 1hr, 2hr)
-- **Clean Design** - Mobile-responsive, similar to original WalkOn
-- **No Monthly Fees** - Runs on your own server
+- ✅ **Multi-source scraping** - Liverpool Echo, Sky Sports, BBC Sport
+- ✅ **Auto-categorization** - Transfer, Injury, Match Preview, WSL, Youth, Legends
+- ✅ **Topic detection** - Identifies if article is about managers, players, youth, etc.
+- ✅ **No Monthly Fees** - Runs on your own server
+- ✅ **JSON output** - Easy to integrate with any frontend
 
 ## Quick Start
 
-### Option 1: Static (No Backend)
-
-1. Copy `index.html` to any web server
-2. Manually update the JSON data in the `<script>` section
-3. Deploy!
-
-### Option 2: Python Scraper
+### 1. Run the Scraper
 
 ```bash
-# Install dependencies (if needed)
-pip install requests feedparser
-
-# Run the scraper
-python3 scraper.py
-
-# This creates news-data.json with latest articles
+python3 comprehensive-scraper.py
 ```
 
-Then update `index.html` to load `news-data.json` instead of hardcoded data.
+This creates `liverpool-news.json` with all the latest articles.
 
-## RSS Feed Sources
+### 2. View the Frontend
 
-- **Liverpool Echo**: `https://www.liverpoolecho.co.uk/sport/football/?service=rss`
-- **Sky Sports (search results)**: Various team-specific feeds
+Open `index.html` in a browser (use a local server to avoid CORS):
 
-## Adding More Sources
+```bash
+# Using Python
+python3 -m http.server 8000
 
-Edit `scraper.py` and add to `RSS_FEEDS`:
-
-```python
-{
-    "name": "Your Source",
-    "url": "https://example.com/rss.xml",
-    "filter_keywords": ["Liverpool"]
-}
+# Then open http://localhost:8000
 ```
 
-## Automation (Cron Job)
+## Sources
 
-Run the scraper every 15 minutes:
+The scraper pulls from:
+- **Liverpool Echo** - Primary local coverage
+- **Sky Sports** - Transfer news & match coverage
+- **BBC Sport** - General football news
+
+## Keyword Categories
+
+The scraper searches for:
+
+| Category | Examples |
+|----------|----------|
+| Managers | Iraola, Klopp, Shankly, Paisley, Dalglish, Benítez |
+| Players | Van Dijk, Salah, Trent, Robertson, Mac Allister, etc. |
+| Youth | U21, U23, U18, Academy, Melwood, Kirkby |
+| Legends | Gerrard, Carragher, Owen, Fowler, Barnes, etc. |
+| Women's | WSL, Liverpool Women, Natalia Ramos |
+
+## Automation
+
+Set up a cron job to run the scraper every 15 minutes:
 
 ```bash
 # Edit crontab
 crontab -e
 
 # Add this line
-*/15 * * * * /usr/bin/python3 /path/to/walkon-clone/scraper.py
+*/15 * * * * cd /path/to/walkon-clone && python3 comprehensive-scraper.py >> scraper.log 2>&1
 ```
 
 ## File Structure
 
 ```
 walkon-clone/
-├── index.html      # Main frontend
-├── scraper.py      # Python RSS scraper
-├── news-data.json  # Generated news data
-└── README.md       # This file
+├── index.html              # Main frontend
+├── comprehensive-scraper.py # Full-featured scraper
+├── liverpool-news.json     # Generated news data
+├── scraper.py              # Simple scraper (legacy)
+└── README.md               # This file
 ```
+
+## TODO / Coming Soon
+
+- [ ] Add more RSS sources (Metro, Mirror, Daily Star)
+- [ ] Add Google News / Bing News API integration
+- [ ] Search functionality
+- [ ] Fixtures & Results section
+- [ ] Player profiles database
+- [ ] Historical news archive
 
 ## Tech Stack
 
-- **Frontend**: Pure HTML/CSS/JS (no framework needed)
-- **Backend**: Python for scraping
-- **Storage**: JSON file (easily upgradeable to SQLite/PostgreSQL)
-
-## TODO
-
-- [ ] Add more RSS sources (BBC, Sky Sports filtered)
-- [ ] Create a simple Node.js server for auto-updates
-- [ ] Add search functionality
-- [ ] Add "Most Popular" tracking (requires DB)
-- [ ] Add fixtures/results section
+- **Scraper**: Python 3 (no external dependencies)
+- **Frontend**: Pure HTML/CSS/JS
+- **Storage**: JSON file (easily upgradeable to SQLite)
 
 ## License
 
