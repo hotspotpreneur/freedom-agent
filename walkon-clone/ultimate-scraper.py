@@ -24,13 +24,7 @@ import html
 
 RSS_FEEDS = [
     # OFFICIAL Liverpool FC
-    {"name": "LFC Official - News", "url": "https://www.liverpoolfc.com/news/rss.xml", "priority": 1},
-    {"name": "LFC Official - First Team", "url": "https://www.liverpoolfc.com/teams/first-team/rss.xml", "priority": 1},
-    {"name": "LFC Official - Academy", "url": "https://www.liverpoolfc.com/teams/academy/rss.xml", "priority": 1},
-    {"name": "LFC Official - Women", "url": "https://www.liverpoolfc.com/teams/women/rss.xml", "priority": 1},
-    {"name": "LFC Official - Match Reports", "url": "https://www.liverpoolfc.com/match-reports/rss.xml", "priority": 1},
-    {"name": "LFC Official - Transfer News", "url": "https://www.liverpoolfc.com/topic/transfer-news/rss.xml", "priority": 1},
-    {"name": "LFC Official - Videos", "url": "https://www.liverpoolfc.com/videos/rss.xml", "priority": 2},
+    {"name": "LFC Official - News", "url": "https://www.liverpoolfc.com/news.rss", "priority": 1},
     
     # Major UK Newspapers
     {"name": "Liverpool Echo", "url": "https://www.liverpoolecho.co.uk/sport/football/?service=rss", "priority": 1},
@@ -291,7 +285,13 @@ def is_liverpool_article(title: str, description: str = "", keywords_str: str = 
 
 def fetch_url(url: str, referer: str = "") -> Optional[str]:
     """Fetch URL with error handling"""
+    import ssl
     try:
+        # Create SSL context that doesn't verify certificates (for some RSS feeds)
+        ssl_context = ssl.create_default_context()
+        ssl_context.check_hostname = False
+        ssl_context.verify_mode = ssl.CERT_NONE
+        
         req = urllib.request.Request(
             url,
             headers={
@@ -303,7 +303,7 @@ def fetch_url(url: str, referer: str = "") -> Optional[str]:
         if referer:
             req.add_header('Referer', referer)
             
-        with urllib.request.urlopen(req, timeout=15) as response:
+        with urllib.request.urlopen(req, timeout=15, context=ssl_context) as response:
             return response.read().decode('utf-8', errors='ignore')
     except Exception as e:
         print(f"  ⚠️ Error: {e}")
