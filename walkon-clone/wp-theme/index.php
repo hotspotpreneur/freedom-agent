@@ -9,8 +9,8 @@
 
     <div class="main-content">
         <?php
-        // Read the scraped news JSON
-        $json_path = dirname(__FILE__) . '/../liverpool-news.json';
+        // Read the scraped news JSON (from theme folder)
+        $json_path = dirname(__FILE__) . '/liverpool-news.json';
         $articles = array();
         $last_updated = '';
         
