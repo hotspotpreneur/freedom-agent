@@ -26,6 +26,15 @@ import sys
 # ============================================================================
 
 RSS_FEEDS = [
+    # Tier 0: OFFICIAL Liverpool FC
+    {"name": "LFC Official - News", "url": "https://www.liverpoolfc.com/news/rss.xml", "priority": 1},
+    {"name": "LFC Official - First Team", "url": "https://www.liverpoolfc.com/teams/first-team/rss.xml", "priority": 1},
+    {"name": "LFC Official - Academy", "url": "https://www.liverpoolfc.com/teams/academy/rss.xml", "priority": 1},
+    {"name": "LFC Official - Women", "url": "https://www.liverpoolfc.com/teams/women/rss.xml", "priority": 1},
+    {"name": "LFC Official - Match Reports", "url": "https://www.liverpoolfc.com/match-reports/rss.xml", "priority": 1},
+    {"name": "LFC Official - Transfer News", "url": "https://www.liverpoolfc.com/topic/transfer-news/rss.xml", "priority": 1},
+    {"name": "LFC Official - Videos", "url": "https://www.liverpoolfc.com/videos/rss.xml", "priority": 2},
+    
     # Tier 1: Major UK Newspapers
     {"name": "Liverpool Echo", "url": "https://www.liverpoolecho.co.uk/sport/football/?service=rss", "priority": 1},
     {"name": "BBC Sport", "url": "https://feeds.bbci.co.uk/sport/football/rss.xml", "priority": 1},
