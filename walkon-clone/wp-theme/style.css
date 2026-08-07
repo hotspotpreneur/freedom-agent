@@ -3,8 +3,8 @@ Theme Name: Kopite News
 Theme URI: https://kopite.online
 Author: Paul & James
 Author URI: https://kopite.online
-Description: Liverpool FC news aggregator - designed to beat WalkOn! White background with red accents, black links.
-Version: 1.0.0
+Description: Liverpool FC news aggregator - reads from scraper JSON to display news. Matches WalkOn style with red/white theme.
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: kopite-news
@@ -283,5 +283,145 @@ a:hover {
         width: 100%;
         height: auto;
         min-height: 90px;
+    }
+}
+
+/* ============================================================================
+   AGGREGATOR STYLES - Matching index.html
+   ============================================================================ */
+
+/* Last Updated */
+.last-updated {
+    text-align: center;
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: var(--light-gray);
+    border-radius: 4px;
+}
+
+/* Featured Article */
+.featured-article {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.featured-article img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 25px;
+}
+
+.featured-category {
+    background: var(--primary-red);
+    color: white;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.featured-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.featured-title a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.featured-title a:hover {
+    color: var(--primary-red);
+}
+
+.featured-excerpt {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Article Card with Image */
+.article-card {
+    display: flex;
+    gap: 15px;
+    border: 1px solid var(--border-gray);
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+}
+
+.article-card:hover {
+    border-color: var(--primary-red);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.article-image {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.article-image img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.article-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.article-card .article-title {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.article-card .article-excerpt {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* No Articles Message */
+.no-articles {
+    text-align: center;
+    padding: 40px;
+    background: var(--light-gray);
+    border-radius: 8px;
+}
+
+.no-articles p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Mobile adjustments for article cards */
+@media (max-width: 600px) {
+    .article-card {
+        flex-direction: column;
+    }
+    
+    .article-image {
+        width: 100%;
+    }
+    
+    .article-image img {
+        height: 180px;
+    }
+    
+    .featured-article img {
+        height: 200px;
     }
 }
