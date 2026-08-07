@@ -425,3 +425,45 @@ a:hover {
         height: 200px;
     }
 }
+
+/* Tablet adjustments (iPad) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .article-card {
+        flex-direction: column;
+    }
+    
+    .article-image {
+        width: 100%;
+    }
+    
+    .article-image img {
+        height: 200px;
+    }
+    
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+    .site-title {
+        font-size: 1.5rem;
+    }
+    
+    .featured-title {
+        font-size: 18px;
+    }
+    
+    .article-card .article-title {
+        font-size: 14px;
+    }
+    
+    .main-navigation ul {
+        gap: 10px;
+    }
+    
+    .main-navigation a {
+        font-size: 12px;
+    }
+}
