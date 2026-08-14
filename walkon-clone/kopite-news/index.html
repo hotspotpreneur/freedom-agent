@@ -458,6 +458,16 @@
                 const data = await response.json();
                 allNews = data.articles || [];
                 
+                // Sort by date (newest first) - handle null dates
+                allNews.sort((a, b) => {
+                    const dateA = a.pubDate || '';
+                    const dateB = b.pubDate || '';
+                    if (!dateA && !dateB) return 0;
+                    if (!dateA) return 1;  // Put null at end
+                    if (!dateB) return -1;
+                    return dateB.localeCompare(dateA);  // Descending
+                });
+                
                 console.log(`Loaded ${allNews.length} articles`);
                 
                 // Render featured
@@ -479,8 +489,8 @@
         function renderFeatured() {
             const container = document.getElementById('featured');
             
-            // Prefer transfer news for featured, then first article
-            let article = allNews.find(a => a.category === 'Transfer News') || allNews[0];
+            // Use the first (newest) article after sorting
+            let article = allNews[0];
             
             if (!article) {
                 container.innerHTML = '<div class="no-articles">No articles available</div>';
