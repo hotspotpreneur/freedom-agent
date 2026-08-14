@@ -458,7 +458,7 @@
                 const data = await response.json();
                 allNews = data.articles || [];
                 
-                // Sort by date (newest first) - handle null/None dates
+                // DEBUG: Sorting by date (newest first) - handle null/None dates
                 allNews.sort((a, b) => {
                     let dateA = a.pub_date;
                     let dateB = b.pub_date;
