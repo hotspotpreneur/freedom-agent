@@ -460,8 +460,8 @@
                 
                 // Sort by date (newest first) - handle null/None dates
                 allNews.sort((a, b) => {
-                    let dateA = a.pubDate;
-                    let dateB = b.pubDate;
+                    let dateA = a.pub_date;
+                    let dateB = b.pub_date;
                     // Handle null, undefined, or "None" string
                     if (!dateA || dateA === 'None') dateA = '';
                     if (!dateB || dateB === 'None') dateB = '';
@@ -544,7 +544,7 @@
                 const journalistBadge = article.journalist 
                     ? `<span class="journalist-badge">${article.journalist}</span>` 
                     : '';
-                const timeAgo = getTimeAgo(article.pubDate);
+                const timeAgo = getTimeAgo(article.pub_date);
                 
                 return `
                     <article class="news-card">
@@ -583,11 +583,11 @@
             return str.length > len ? str.substring(0, len) + '...' : str;
         }
         
-        function getTimeAgo(pubDate) {
+        function getTimeAgo(pub_date) {
             if (!pubDate) return '';
             
             const now = new Date();
-            const pub = new Date(pubDate);
+            const pub = new Date(pub_date);
             const diffMs = now - pub;
             const diffMins = Math.floor(diffMs / 60000);
             const diffHours = Math.floor(diffMins / 60);
