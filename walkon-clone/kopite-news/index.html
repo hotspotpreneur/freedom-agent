@@ -458,12 +458,15 @@
                 const data = await response.json();
                 allNews = data.articles || [];
                 
-                // Sort by date (newest first) - handle null dates
+                // Sort by date (newest first) - handle null/None dates
                 allNews.sort((a, b) => {
-                    const dateA = a.pubDate || '';
-                    const dateB = b.pubDate || '';
+                    let dateA = a.pubDate;
+                    let dateB = b.pubDate;
+                    // Handle null, undefined, or "None" string
+                    if (!dateA || dateA === 'None') dateA = '';
+                    if (!dateB || dateB === 'None') dateB = '';
                     if (!dateA && !dateB) return 0;
-                    if (!dateA) return 1;  // Put null at end
+                    if (!dateA) return 1;  // Put empty at end
                     if (!dateB) return -1;
                     return dateB.localeCompare(dateA);  // Descending
                 });
