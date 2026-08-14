@@ -141,24 +141,6 @@
             padding: 0 20px;
         }
         
-        /* Stats Bar */
-        .stats-bar {
-            background: var(--white);
-            padding: 2px 5px;
-            border-radius: 2px;
-            margin-bottom: 4px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            justify-content: center;
-            font-size: 10px;
-            box-shadow: none;
-        }
-        
-        .stats-bar strong {
-            color: var(--red);
-        }
-        
         /* Featured Article */
         .featured {
             background: var(--white);
@@ -430,11 +412,6 @@
     
     <!-- Main Content -->
     <div class="container">
-        <!-- Stats Bar -->
-        <div class="stats-bar" id="stats-bar">
-            <span>Loading stats...</span>
-        </div>
-        
         <!-- Featured Article -->
         <article class="featured" id="featured">
             <div class="loading">Loading featured article...</div>
@@ -483,9 +460,6 @@
                 
                 console.log(`Loaded ${allNews.length} articles`);
                 
-                // Render stats
-                renderStats(data);
-                
                 // Render featured
                 renderFeatured();
                 
@@ -500,29 +474,6 @@
                 </div>`;
                 featured.innerHTML = '';
             }
-        }
-        
-        function renderStats(data) {
-            const stats = document.getElementById('stats-bar');
-            const articleCount = allNews.length;
-            const sources = data.sources ? data.sources.length : 0;
-            
-            // Count journalists
-            const journalists = {};
-            allNews.forEach(article => {
-                if (article.journalist) {
-                    journalists[article.journalist] = (journalists[article.journalist] || 0) + 1;
-                }
-            });
-            
-            let html = `<span>📰 <strong>${articleCount}</strong> articles</span>`;
-            html += `<span>📡 <strong>${sources}</strong> sources</span>`;
-            
-            if (Object.keys(journalists).length > 0) {
-                html += `<span>✍️ <strong>${Object.keys(journalists).length}</strong> journalists tracked</span>`;
-            }
-            
-            stats.innerHTML = html;
         }
         
         function renderFeatured() {
